@@ -1,0 +1,14 @@
+claude:
+OPENERS_UNIFORM = {4: 'aore', 5: 'careo', 6: 'carieo'}
+OPENERS_FREQ    = {4: 'aore', 5: 'careo', 6: 'carieo'}
+
+
+gemini:
+self.openers = {
+    (4, 'uniform'): 'roia',
+    (4, 'frequency'): 'cora',
+    (5, 'uniform'): 'careo',
+    (5, 'frequency'): 'careo',
+    (6, 'uniform'): 'careto',
+    (6, 'frequency'): 'cerito',
+}
