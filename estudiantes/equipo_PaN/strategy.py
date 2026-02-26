@@ -153,19 +153,29 @@ class MiEstrategia(Strategy):
         }
 
         # Parámetros exploit + performance
-        self.stats["T"] = {4: 4, 5: 6, 6: 8}
+        # T[L]: umbral de tamaño de candidatos para pasar a exploit.
+        # En 6-letter frequency queremos explorar un poco más (T más bajo).
+        self.stats["T"] = {4: 4, 5: 6, 6: 5}
         self.stats["K"] = {4: 220, 5: 280, 6: 320}
-        self.stats["N_eval"] = {4: 900, 5: 650, 6: 550}
-        self.stats["K_eval"] = {4: 60, 5: 55, 6: 50}
+        # N_eval[L]: máximo de candidatos sobre los que calculamos expected remaining.
+        # Subimos ligeramente para L=6, manteniendo costo controlado.
+        self.stats["N_eval"] = {4: 900, 5: 650, 6: 650}
+        # K_eval[L]: tamaño del pool refinado para expected remaining.
+        # Un poco más grande en L=6 para mejorar la exploración.
+        self.stats["K_eval"] = {4: 60, 5: 55, 6: 60}
         self.stats["p_star"] = {
             "uniform": {4: 0.60, 5: 0.60, 6: 0.60},
-            "frequency": {4: 0.18, 5: 0.12, 6: 0.10},
+            # En 6-letter frequency evitamos explotar demasiado pronto:
+            # p_star más alto => se mantiene exploración (expected remaining) más tiempo.
+            "frequency": {4: 0.18, 5: 0.12, 6: 0.18},
         }
 
         # Pesos scoring barato
         self.stats["w_pos"] = 1.00
         self.stats["w_uniq"] = 0.70
-        self.stats["w_prob"] = 0.90 if self._mode == "frequency" else 0.25
+        # En frequency favorecemos un poco más las palabras probables, pero sin
+        # matar la exploración de letras. Ligero boost en modo frequency.
+        self.stats["w_prob"] = 1.05 if self._mode == "frequency" else 0.25
         self.stats["w_rep_pen"] = 0.35
         self.stats["w_lev"] = 0.40
 
@@ -477,6 +487,9 @@ class MiEstrategia(Strategy):
 
         L = self._L
         n_patterns = 3 ** L
+        # En 6-letter frequency usamos una versión entropía-like que se parece más
+        # a la estrategia Entropy pura, pero ponderada por probabilidades.
+        use_entropy_like = (self._mode == "frequency" and L == 6)
 
         best_guess, best_obj = None, float("inf")
         w2i = data["word_to_idx"]
@@ -496,10 +509,23 @@ class MiEstrategia(Strategy):
                 counts[pc] += 1
                 masses[pc] += float(probs[i])
 
-            exp_post = 0.0
-            for pc in range(n_patterns):
-                if counts[pc]:
-                    exp_post += masses[pc] * counts[pc]
+            if use_entropy_like:
+                # Aproximación a entropía ponderada por probabilidad:
+                # ent = -sum_k p_k * log(p_k), donde p_k = masa de probabilidad
+                # que cae en cada patrón de feedback. Buscamos maximizar entropía
+                # (reducir incertidumbre en promedio).
+                ent = 0.0
+                for pc in range(n_patterns):
+                    mk = masses[pc]
+                    if mk > 0.0:
+                        ent -= mk * math.log(mk + 1e-12)
+            else:
+                # Objetivo original: tamaño esperado de los bloques ponderado
+                # por probabilidad total de cada patrón.
+                exp_post = 0.0
+                for pc in range(n_patterns):
+                    if counts[pc]:
+                        exp_post += masses[pc] * counts[pc]
 
             # bonus por hit directo (frequency)
             p_hit = 0.0
@@ -510,7 +536,12 @@ class MiEstrategia(Strategy):
                         p_hit = float(probs[j])
                         break
 
-            obj = exp_post - 1.25 * p_hit
+            if use_entropy_like:
+                # Queremos maximizar entropía y también p_hit.
+                # Minimizar obj equivale a maximizar ent y p_hit.
+                obj = -ent - 0.20 * p_hit
+            else:
+                obj = exp_post - 1.25 * p_hit
             if obj < best_obj:
                 best_obj, best_guess = obj, g
 
