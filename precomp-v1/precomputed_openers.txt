@@ -12,3 +12,22 @@ self.openers = {
     (6, 'uniform'): 'careto',
     (6, 'frequency'): 'cerito',
 }
+
+--------------------
+FAST:
+uniform: aore
+frequency: aore
+
+uniform: sareo
+frequency: sareo
+
+uniform: ceriao
+frequency: ceriao
+--------------------
+-------------
+PARALLEL:
+uniform: aore
+frequency: aore
+
+uniform: sareo 
+frequency: 
