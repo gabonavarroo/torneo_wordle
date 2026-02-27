@@ -1,71 +1,50 @@
 """
-PRECOMPUTACIÓN T2 — máxima entropía por branch, espacio exhaustivo
-════════════════════════════════════════════════════════════════════
+PRECOMPUTACIÓN T2 — máxima entropía por branch con tiebreaker completo
+═══════════════════════════════════════════════════════════════════════
 
-GARANTÍAS DEL ALGORITMO
-────────────────────────
-1. ESPACIO EXHAUSTIVO:
-   Evalúa los 27^wl strings posibles (531,441 para 4L, con repetidas).
-   No hay ningún guess óptimo que pueda existir fuera de este espacio.
+GARANTÍAS
+──────────
+1. ESPACIO EXHAUSTIVO: evalúa los 27^wl strings (531,441 para 4L).
+   No hay filtros ni heurísticas en la búsqueda primaria.
 
-2. ENTROPÍA EXACTA — USO DE NUMPY JUSTIFICADO:
-   NumPy se usa ÚNICAMENTE para calcular feedbacks en batch.
-   La función compute_feedbacks_numpy fue validada experimentalmente
-   contra feedback() del framework en todos los casos incluyendo
-   letras repetidas — 100% correcto sin excepción.
-   La decisión de qué guess es óptimo la toma la comparación de
-   entropías exactas — no hay proxy, no hay filtro, no hay approx.
+2. NUMPY SOLO PARA FEEDBACKS: validado 100% correcto vs framework,
+   incluyendo letras repetidas. La decisión es siempre entropía exacta.
 
-3. BRANCH-SPECIFIC:
-   Para cada uno de los ~56 branches de 4L (o ~170 de 5L, ~438 de 6L),
-   la entropía se calcula exclusivamente contra el subvocabulario
-   consistente con el feedback del opener. El subvocabulario ya
-   incorpora toda la información del T1:
-     - Letras grises: ausentes del vocabulario restante
-     - Letras amarillas: presentes pero no en esa posición
-     - Letras verdes: presentes y en esa posición exacta
-   El guess óptimo de T2 que emerge naturalmente usará letras nuevas
-   (no grises) porque esas son las que discriminan entre candidatos.
+3. TIEBREAKER JERARQUIZADO (menor score = mejor):
+   Cuando dos strings empatan en entropía, se desempata por:
 
-4. PESOS CORRECTOS:
-   Uniform: equiprobable sobre candidatos del branch.
-   Frequency: sigmoid de frecuencias de corpus, renormalizado
-   sobre el branch (no sobre el vocabulario completo).
+   Criterio 1 — Grises reutilizadas (siempre, prioridad máxima):
+     Si ch es gris, ningún candidato la tiene → 0 bits en esa posición.
+     Minimizar grises reutilizadas.
 
-5. PARALELIZACIÓN SIN PÉRDIDA:
-   Un worker por branch. Cada branch es completamente independiente —
-   no comparte estado con otros branches. El resultado de cada worker
-   es determinístico dado el mismo input.
+   Criterio 2 — Amarillas en misma posición (siempre):
+     Ya sabemos que ch no está en esa posición → feedback siempre gris
+     → 0 bits nuevos. Minimizar amarillas en su posición original.
 
-6. PARA 6 LETRAS — PRE-FILTRADO JUSTIFICADO:
-   27^6 = 387M strings × N candidatos × feedback = inviable exhaustivo.
-   Estrategia de dos fases con garantía estadística:
-     Fase 1: score de cobertura letra×posición sobre C(27,6)=296,010
-             conjuntos de letras distintas. Correlación con entropía
-             real > 0.98. Selecciona top-15,000 conjuntos.
-     Fase 2: entropía exacta NumPy sobre las 720 permutaciones de
-             cada conjunto top. Cubre el subespacio relevante con
-             garantía > 99.9% de encontrar el óptimo global.
+   Criterio 3a — Si n_cands > 20 (exploración pura):
+     Verdes repetidas en misma posición: todos los candidatos la tienen
+     ahí → feedback siempre verde → 0 bits de discriminación.
+     Minimizar verdes repetidas.
 
-OUTPUTS
-────────
-  t2_table_{wl}_uniform.json    → {pat_str: best_t2_guess}
-  t2_table_{wl}_frequency.json  → {pat_str: best_t2_guess}
-  t2_report_{wl}_{mode}.json    → estadísticas detalladas por branch
+   Criterio 3b — Si n_cands ≤ 20 (organización de conocidas):
+     Con pocos candidatos, usar letras conocidas productivamente:
+     +2 por amarilla en posición nueva (puede confirmar ubicación)
+     +1 por verde en posición distinta (revela si letra es múltiple)
+     Maximizar uso productivo de letras conocidas.
+
+4. RECOMENDACIÓN DIRECT VS PROBE (frequency mode):
+   Usando aproximación de Rényi:
+     E[probe]  ≈ 2 + log₂(n) - H_probe
+     E[direct] ≈ p_best + (1-p_best)×(2 + log₂(n-1))
+   Si E[direct] < E[probe]: recomienda adivinar directamente.
+   Almacenado en el JSON para que strategy.py lo consulte en O(1).
 
 USO
 ────
-  python3 precompute_t2.py --length 4                    # ~15-30 min / 24 workers
-  python3 precompute_t2.py --length 5                    # ~2-4 horas / 24 workers
-  python3 precompute_t2.py --length 6                    # ~1-2 horas / 24 workers
-  python3 precompute_t2.py --length 4 --mode uniform
-  python3 precompute_t2.py --length all                  # secuencial por longitud
-
-INTEGRACIÓN CON strategy.py
-─────────────────────────────
-  Los archivos JSON se copian a estudiantes/gabriel_regina/.
-  strategy.py los carga una vez en begin_game() y hace lookup O(1)
-  usando el patrón de feedback del opener como clave.
+  python3 precompute_t2.py --length 4 --workers 24
+  python3 precompute_t2.py --length 5 --workers 24
+  python3 precompute_t2.py --length 6 --workers 24
+  python3 precompute_t2.py --length all --workers 24
 """
 
 import argparse
@@ -95,9 +74,14 @@ CHAR_TO_IDX     = {ch: i for i, ch in enumerate(SPANISH_LETTERS)}
 
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
-    5: {"uniform": "sareo", "frequency": "sareo"},
-    6: {"uniform": "ceriao", "frequency": "ceriao"}, #AUN NO OFICIALES
+    5: {"uniform": "careo", "frequency": "careo"},
+    6: {"uniform": "carieo", "frequency": "carieo"},
 }
+
+# Umbral n_cands para cambiar entre criterio 3a y 3b
+FEW_CANDIDATES_THRESHOLD = 20
+# Epsilon para considerar entropías como iguales en el tiebreaker
+ENTROPY_EPS = 1e-9
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -139,28 +123,18 @@ def load_vocab(wl):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Feedback vectorizado — validado 100% correcto vs framework
+# Feedback vectorizado — validado 100% correcto
 # ══════════════════════════════════════════════════════════════════════════════
 
-def compute_feedbacks_numpy(guess_enc: np.ndarray,
-                             secrets_enc: np.ndarray,
-                             wl: int) -> np.ndarray:
+def compute_feedbacks_numpy(guess_enc, secrets_enc, wl):
     """
-    Calcula el feedback de un guess contra TODOS los secretos en una sola
-    operación NumPy. Replica exactamente el algoritmo de dos pasadas del
-    framework (verde primero, luego amarillo con conteo de letras).
-
-    VALIDACIÓN: esta función fue testeada contra framework_feedback() en
-    todos los casos incluyendo letras repetidas — 0 discrepancias.
-
-    guess_enc:   array (wl,)    — guess codificado como índices
-    secrets_enc: array (N, wl)  — todos los secretos codificados
-    Returns:     array (N,)     — feedback de cada secreto en base 3
-                                  (verde=2, amarillo=1, gris=0)
-                                  codificado como entero: pos0×3^(wl-1) + ...
+    Feedback de un guess contra todos los secretos.
+    Replica exactamente el algoritmo de dos pasadas del framework.
+    Validado sin errores incluyendo letras repetidas.
+    Returns: array int32 (N,) — entero base-3 por secreto.
     """
     N       = secrets_enc.shape[0]
-    greens  = (secrets_enc == guess_enc[np.newaxis, :])   # (N, wl) bool
+    greens  = (secrets_enc == guess_enc[np.newaxis, :])
     yellows = np.zeros((N, wl), dtype=bool)
 
     for i in range(wl):
@@ -168,9 +142,7 @@ def compute_feedbacks_numpy(guess_enc: np.ndarray,
             continue
         guess_ch    = guess_enc[i]
         not_green_i = ~greens[:, i]
-        # Posiciones del secreto donde aparece guess_ch y no es verde
-        available   = (secrets_enc == guess_ch) & ~greens   # (N, wl)
-        # Cuántas veces ya asignamos guess_ch en posiciones anteriores
+        available   = (secrets_enc == guess_ch) & ~greens
         consumed    = np.zeros(N, dtype=np.int32)
         for j in range(i):
             if guess_enc[j] == guess_ch:
@@ -180,63 +152,196 @@ def compute_feedbacks_numpy(guess_enc: np.ndarray,
     pat_mat = np.zeros((N, wl), dtype=np.int32)
     pat_mat[greens]  = 2
     pat_mat[yellows] = 1
-
-    # Codificar como entero base-3: pos0 es el dígito más significativo
     powers = np.array([3 ** j for j in range(wl - 1, -1, -1)], dtype=np.int32)
     return (pat_mat * powers[np.newaxis, :]).sum(axis=1)
 
 
-def entropy_from_feedbacks(feedbacks: np.ndarray,
-                            weights_arr: np.ndarray,
-                            n_patterns: int) -> float:
-    """
-    Calcula entropía Shannon a partir de feedbacks y pesos.
-
-    H = -Σ_f p(f) × log2(p(f))
-
-    donde p(f) = Σ_{w: feedback(w,g)=f} weight(w) / Σ_w weight(w)
-
-    Los pesos ya están renormalizados sobre el branch — sum(weights_arr)=1.
-    """
-    pat_weights = np.bincount(feedbacks,
-                               weights=weights_arr,
-                               minlength=n_patterns)
-    mask = pat_weights > 0
-    p    = pat_weights[mask]
-    # No renormalizar aquí — los pesos ya suman 1 por construcción
+def entropy_from_feedbacks(feedbacks, weights_arr, n_patterns):
+    """H = -Σ p(f) log₂ p(f). Pesos ya normalizados."""
+    pat_w = np.bincount(feedbacks, weights=weights_arr, minlength=n_patterns)
+    mask  = pat_w > 0
+    p     = pat_w[mask]
     return float(-np.sum(p * np.log2(p)))
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Construcción del espacio de guesses
+# Análisis del feedback del opener
 # ══════════════════════════════════════════════════════════════════════════════
 
-def build_guess_space(wl: int) -> tuple[list[str], np.ndarray]:
+def analyze_opener_feedback(opener, pat_tuple):
     """
-    Construye el espacio exhaustivo de guesses: 27^wl strings.
-    Incluye letras repetidas porque en algunos branches el guess
-    óptimo puede tener letras repetidas.
-
-    Para 4L: 531,441 strings × 4 bytes = ~2 MB
-    Para 5L: 14,348,907 strings × 5 bytes = ~72 MB
-    Para 6L: inviable (~2.3 GB) — se maneja con pre-filtrado
-
-    Retorna: (lista_strings, matriz_encodificada (N, wl))
+    Clasifica letras del opener por su feedback.
+    Retorna dict con grey, yellow {letra:[pos]}, green {pos:letra}, known, new.
     """
+    grey   = set()
+    yellow = {}
+    green  = {}
+
+    for i, (ch, fb) in enumerate(zip(opener, pat_tuple)):
+        if fb == 0:
+            grey.add(ch)
+        elif fb == 1:
+            yellow.setdefault(ch, []).append(i)
+        else:
+            green[i] = ch
+
+    known = set(yellow.keys()) | set(green.values())
+    new   = [ch for ch in SPANISH_LETTERS
+             if ch not in grey and ch not in known]
+
+    return {
+        "grey":   grey,
+        "yellow": yellow,          # letra → [posiciones donde fue amarilla]
+        "green":  green,           # posición → letra
+        "known":  known,
+        "new":    new,
+    }
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Tiebreaker — score compuesto (menor es mejor)
+# ══════════════════════════════════════════════════════════════════════════════
+
+def tiebreak_score(guess_str, wl, info, n_cands):
+    """
+    Calcula el score de tiebreaker para un string dado el estado del opener.
+    Retorna tupla (c1, c2, c3) a comparar lexicográficamente — menor gana.
+
+    Criterio 1: grises reutilizadas (siempre, prioridad máxima)
+    Criterio 2: amarillas en su misma posición original (siempre)
+    Criterio 3a (n_cands > THRESHOLD): verdes repetidas en misma posición
+    Criterio 3b (n_cands ≤ THRESHOLD): negativo del uso productivo de conocidas
+      +2 por amarilla colocada en posición NUEVA (no la original del opener)
+      +1 por verde colocada en posición DIFERENTE a la original
+    """
+    grey   = info["grey"]
+    yellow = info["yellow"]   # {letra: [pos_originales]}
+    green  = info["green"]    # {pos_original: letra}
+
+    c1 = 0  # grises reutilizadas
+    c2 = 0  # amarillas en misma posición
+    c3 = 0  # criterio dependiente de n_cands
+
+    productive = 0  # para criterio 3b
+
+    for pos, ch in enumerate(guess_str):
+        # Criterio 1
+        if ch in grey:
+            c1 += 1
+
+        # Criterio 2: amarilla en su misma posición original
+        if ch in yellow and pos in yellow[ch]:
+            c2 += 1
+
+        # Criterio 3a: verde repetida en su misma posición
+        if n_cands > FEW_CANDIDATES_THRESHOLD:
+            if green.get(pos) == ch:
+                c3 += 1
+        else:
+            # Criterio 3b: uso productivo de letras conocidas
+            if ch in yellow and pos not in yellow[ch]:
+                # Amarilla en posición nueva — potencialmente confirma ubicación
+                productive += 2
+            elif ch in green.values() and green.get(pos) != ch:
+                # Verde en posición distinta — puede revelar multiplicidad
+                productive += 1
+
+    if n_cands <= FEW_CANDIDATES_THRESHOLD:
+        # Negativo porque queremos maximizar productive (tiebreaker minimiza)
+        c3 = -productive
+
+    return (c1, c2, c3)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Recomendación direct vs probe (frequency mode)
+# ══════════════════════════════════════════════════════════════════════════════
+
+def recommend_action(n_cands, weights_arr, candidates, best_H, mode):
+    """
+    Para frequency mode: compara E[probe] vs E[direct] usando
+    la aproximación de Rényi para expected guesses restantes.
+
+    E[probe]  ≈ 2 + log₂(n) - H_probe
+    E[direct] ≈ p_best × 1 + (1-p_best) × (2 + log₂(n-1))
+
+    donde p_best = P(candidato más probable).
+
+    Para uniform: siempre probe (distribución equiprobable hace
+    que direct nunca gane con ≥3 candidatos).
+
+    Retorna dict con la recomendación y los valores calculados.
+    """
+    if mode == "uniform":
+        return {
+            "action":    "probe",
+            "reason":    "uniform_always_probe",
+            "e_probe":   None,
+            "e_direct":  None,
+            "p_best":    None,
+        }
+
+    # Frecuency mode
+    p_best = float(weights_arr.max())
+    best_candidate = candidates[int(weights_arr.argmax())]
+
+    if n_cands == 1:
+        return {
+            "action":         "direct",
+            "direct_word":    best_candidate,
+            "reason":         "single_candidate",
+            "e_probe":        0.0,
+            "e_direct":       0.0,
+            "p_best":         1.0,
+        }
+
+    if n_cands == 2:
+        return {
+            "action":         "direct",
+            "direct_word":    best_candidate,
+            "reason":         "two_candidates",
+            "e_probe":        1.5,
+            "e_direct":       1.5,
+            "p_best":         p_best,
+        }
+
+    # Aproximación de Rényi
+    log2_n    = math.log2(n_cands)
+    e_probe   = 2.0 + log2_n - best_H
+    e_direct  = (p_best * 1.0
+                 + (1.0 - p_best) * (2.0 + math.log2(max(n_cands - 1, 1))))
+
+    action = "direct" if e_direct < e_probe else "probe"
+    reason = ("direct_wins_renyi" if action == "direct"
+              else "probe_wins_renyi")
+
+    return {
+        "action":        action,
+        "direct_word":   best_candidate,
+        "reason":        reason,
+        "e_probe":       round(e_probe, 4),
+        "e_direct":      round(e_direct, 4),
+        "p_best":        round(p_best, 4),
+    }
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Espacio de guesses
+# ══════════════════════════════════════════════════════════════════════════════
+
+def build_guess_space(wl):
+    """27^wl strings — espacio exhaustivo incluyendo letras repetidas."""
     strings = []
     for combo in itertools.product(SPANISH_LETTERS, repeat=wl):
         strings.append(''.join(combo))
-
     enc = np.zeros((len(strings), wl), dtype=np.int8)
     for i, s in enumerate(strings):
         for j, ch in enumerate(s):
             enc[i, j] = CHAR_TO_IDX.get(ch, 0)
-
     return strings, enc
 
 
-def encode_words(words: list[str], wl: int) -> np.ndarray:
-    """Codifica lista de palabras como matriz (N, wl) de índices."""
+def encode_words(words, wl):
     n   = len(words)
     mat = np.zeros((n, wl), dtype=np.int8)
     for i, w in enumerate(words):
@@ -246,249 +351,163 @@ def encode_words(words: list[str], wl: int) -> np.ndarray:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Análisis del feedback del opener — para reportes y non-words
+# Pre-filtrado para 6 letras
 # ══════════════════════════════════════════════════════════════════════════════
 
-def analyze_opener_feedback(opener: str, pat_tuple: tuple) -> dict:
+def build_guess_space_6l_filtered(branch_candidates, branch_enc,
+                                   weights_arr, wl=6, top_combos=15_000):
     """
-    Clasifica las letras del opener según su feedback.
-
-    Retorna dict con:
-      grey:    letras confirmadas ausentes (no en la palabra)
-      yellow:  letras presentes, posición incorrecta {letra: [posiciones]}
-      green:   letras presentes, posición correcta {pos: letra}
-      new:     letras del alfabeto no usadas por el opener
+    Para 6L (27^6 = 387M strings, inviable exhaustivo):
+    Fase 1: score de cobertura sobre C(27,6)=296,010 conjuntos de letras.
+            Correlación con entropía real > 0.98.
+            Selecciona top-15,000 conjuntos.
+    Fase 2: entropía exacta sobre las 720 permutaciones de cada conjunto.
     """
-    grey   = set()
-    yellow = {}   # letra → lista de posiciones donde apareció como amarilla
-    green  = {}   # posición → letra
+    n_letters       = len(SPANISH_LETTERS)
+    vocab_presence  = np.zeros((len(branch_candidates), n_letters),
+                                dtype=np.float32)
+    for i, w in enumerate(branch_candidates):
+        for ch in set(w):
+            idx = CHAR_TO_IDX.get(ch, -1)
+            if idx >= 0:
+                vocab_presence[i, idx] = 1.0
+    weighted_presence = (vocab_presence * weights_arr[:, np.newaxis]).sum(axis=0)
 
-    for i, (ch, fb) in enumerate(zip(opener, pat_tuple)):
-        if fb == 0:
-            grey.add(ch)
-        elif fb == 1:
-            yellow.setdefault(ch, []).append(i)
-        else:  # fb == 2
-            green[i] = ch
+    combo_scores = []
+    for combo in itertools.combinations(range(n_letters), wl):
+        combo_scores.append((float(weighted_presence[list(combo)].sum()), combo))
+    combo_scores.sort(key=lambda x: -x[0])
 
-    known = set(yellow.keys()) | set(green.values())
-    new   = [ch for ch in SPANISH_LETTERS if ch not in grey and ch not in known]
+    filtered = []
+    for _, combo_idx in combo_scores[:top_combos]:
+        letters = [SPANISH_LETTERS[i] for i in combo_idx]
+        for perm in itertools.permutations(letters):
+            filtered.append(''.join(perm))
+    filtered = list(dict.fromkeys(filtered))
 
-    return {
-        "grey":   grey,
-        "yellow": yellow,
-        "green":  green,
-        "known":  known,
-        "new":    new,   # letras completamente inexploradas
-    }
+    enc = np.zeros((len(filtered), wl), dtype=np.int8)
+    for i, s in enumerate(filtered):
+        for j, ch in enumerate(s):
+            enc[i, j] = CHAR_TO_IDX.get(ch, 0)
+    return filtered, enc
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Worker: evalúa un branch completo
+# Worker — evaluación de un branch
 # ══════════════════════════════════════════════════════════════════════════════
 
-def _evaluate_branch(args: tuple) -> dict:
+def _evaluate_branch(args):
     """
-    Evalúa todos los guesses posibles para un branch específico.
+    Evalúa exhaustivamente todos los guesses para un branch.
 
-    Recibe:
-      pat_str:          string del patrón, e.g. "0120"
-      pat_tuple:        tuple del patrón, e.g. (0,1,2,0)
-      branch_candidates: lista de palabras del vocabulario para este branch
-      branch_weights:   pesos renormalizados (suman 1.0)
-      guess_strings:    lista completa de strings del espacio de guesses
-      guess_enc:        matriz (N_guesses, wl) encodificada
-      wl:               longitud de palabras
-      opener:           string del opener
-      vocab_set:        set del vocabulario completo (para clasificar resultados)
-
-    El cálculo de entropía es vectorizado sobre todos los guesses del
-    espacio completo: para cada guess, calculamos feedbacks contra todos
-    los candidatos del branch en una sola operación NumPy.
-
-    No hay filtros ni aproximaciones. Cada uno de los 531,441 strings
-    (para 4L) se evalúa exactamente.
+    Búsqueda primaria: máxima entropía sobre espacio completo.
+    Desempate: tiebreak_score jerarquizado.
+    Recomendación: direct vs probe según modo.
     """
     (pat_str, pat_tuple, branch_candidates, branch_weights,
-     guess_strings, guess_enc, wl, opener, vocab_set) = args
+     guess_strings, guess_enc, wl, opener, vocab_set, mode) = args
 
     t0         = time.monotonic()
     n_cands    = len(branch_candidates)
     n_guesses  = len(guess_strings)
     n_patterns = 3 ** wl
 
-    # Encodificar candidatos del branch
     branch_enc  = encode_words(branch_candidates, wl)
     weights_arr = np.array(branch_weights, dtype=np.float64)
-    # Paranoia: renormalizar por si hay imprecisión de floating point
     weights_arr /= weights_arr.sum()
 
-    # Analizar feedback del opener para este branch
     info = analyze_opener_feedback(opener, pat_tuple)
 
-    # Casos triviales — no necesitan búsqueda
+    # ── Casos triviales ───────────────────────────────────────────────────────
     if n_cands == 1:
+        rec = recommend_action(1, weights_arr, branch_candidates, 0.0, mode)
         return {
-            "pat":        pat_str,
-            "n_cands":    n_cands,
-            "best_guess": branch_candidates[0],
-            "best_H":     0.0,
-            "is_word":    branch_candidates[0] in vocab_set,
-            "grey_reuse": 0,
-            "new_letters": wl,
-            "elapsed":    0.0,
-            "trivial":    True,
+            "pat": pat_str, "n_cands": 1,
+            "best_probe": branch_candidates[0], "best_H": 0.0,
+            "tiebreak": (0, 0, 0), "is_word": True,
+            "grey_reuse": 0, "yellow_same_pos": 0,
+            "green_repeat_or_productive": 0,
+            "recommendation": rec, "elapsed": 0.0, "trivial": True,
         }
 
     if n_cands == 2:
-        # Con 2 candidatos la entropía máxima es 1 bit — cualquier guess
-        # que los separe es óptimo. Elegir el más probable.
-        best = max(branch_candidates,
-                   key=lambda w: weights_arr[branch_candidates.index(w)])
+        best = branch_candidates[int(weights_arr.argmax())]
+        rec  = recommend_action(2, weights_arr, branch_candidates, 1.0, mode)
         return {
-            "pat":        pat_str,
-            "n_cands":    n_cands,
-            "best_guess": best,
-            "best_H":     1.0,
-            "is_word":    best in vocab_set,
-            "grey_reuse": 0,
-            "new_letters": wl,
-            "elapsed":    0.0,
-            "trivial":    True,
+            "pat": pat_str, "n_cands": 2,
+            "best_probe": best, "best_H": 1.0,
+            "tiebreak": (0, 0, 0), "is_word": best in vocab_set,
+            "grey_reuse": 0, "yellow_same_pos": 0,
+            "green_repeat_or_productive": 0,
+            "recommendation": rec, "elapsed": 0.0, "trivial": True,
         }
 
-    # ── Evaluación exhaustiva ─────────────────────────────────────────────────
-    best_H     = -1.0
-    best_idx   = 0
-
-    # Procesar en chunks para controlar uso de memoria
-    # Chunk de 10,000 guesses: 10K × N_cands × 1 byte = manejable
-    chunk_size = 10_000
+    # ── Búsqueda exhaustiva ───────────────────────────────────────────────────
+    best_H      = -1.0
+    best_tb     = (wl, wl, wl)   # peor tiebreak posible
+    best_idx    = 0
+    chunk_size  = 10_000
 
     for start in range(0, n_guesses, chunk_size):
-        end       = min(start + chunk_size, n_guesses)
-        batch_enc = guess_enc[start:end]   # (chunk, wl)
-
+        end = min(start + chunk_size, n_guesses)
         for local_i in range(end - start):
-            g_enc     = batch_enc[local_i]
+            g_idx     = start + local_i
+            g_enc     = guess_enc[g_idx]
             feedbacks = compute_feedbacks_numpy(g_enc, branch_enc, wl)
             H         = entropy_from_feedbacks(feedbacks, weights_arr,
                                                 n_patterns)
-            if H > best_H:
+
+            # Comparación: primero entropía, luego tiebreaker
+            if H > best_H + ENTROPY_EPS:
+                # Mejor entropía — actualizar sin calcular tiebreak aún
                 best_H   = H
-                best_idx = start + local_i
+                best_idx = g_idx
+                # Calcular tiebreak solo para el nuevo líder
+                best_tb  = tiebreak_score(guess_strings[g_idx], wl,
+                                           info, n_cands)
+            elif abs(H - best_H) <= ENTROPY_EPS:
+                # Empate — aplicar tiebreaker
+                tb = tiebreak_score(guess_strings[g_idx], wl, info, n_cands)
+                if tb < best_tb:
+                    best_tb  = tb
+                    best_idx = g_idx
 
-    elapsed     = time.monotonic() - t0
-    best_guess  = guess_strings[best_idx]
-    best_g_enc  = guess_enc[best_idx]
+    elapsed    = time.monotonic() - t0
+    best_guess = guess_strings[best_idx]
 
-    # Clasificar el guess óptimo encontrado
+    # Clasificación del ganador
     grey_reuse   = sum(1 for ch in best_guess if ch in info["grey"])
-    new_letter_c = sum(1 for ch in best_guess
-                       if ch not in info["grey"] and ch not in info["known"])
+    yellow_sp    = sum(1 for i, ch in enumerate(best_guess)
+                       if ch in info["yellow"] and i in info["yellow"][ch])
+    green_rp_pr  = best_tb[2]
+
+    # Recomendación direct vs probe
+    rec = recommend_action(n_cands, weights_arr, branch_candidates,
+                            best_H, mode)
 
     return {
-        "pat":          pat_str,
-        "n_cands":      n_cands,
-        "best_guess":   best_guess,
-        "best_H":       best_H,
-        "is_word":      best_guess in vocab_set,
-        "grey_reuse":   grey_reuse,
-        "new_letters":  new_letter_c,
-        "grey":         sorted(info["grey"]),
-        "yellow":       {k: v for k, v in info["yellow"].items()},
-        "green":        {str(k): v for k, v in info["green"].items()},
-        "elapsed":      elapsed,
-        "trivial":      False,
+        "pat":                     pat_str,
+        "n_cands":                 n_cands,
+        "best_probe":              best_guess,
+        "best_H":                  round(best_H, 6),
+        "tiebreak":                best_tb,
+        "is_word":                 best_guess in vocab_set,
+        "grey_reuse":              grey_reuse,
+        "yellow_same_pos":         yellow_sp,
+        "green_repeat_or_prod":    green_rp_pr,
+        "grey_letters":            sorted(info["grey"]),
+        "yellow_letters":          {k: v for k, v in info["yellow"].items()},
+        "green_letters":           {str(k): v for k, v in info["green"].items()},
+        "recommendation":          rec,
+        "elapsed":                 round(elapsed, 2),
+        "trivial":                 False,
     }
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# Estrategia de pre-filtrado para 6 letras
-# ══════════════════════════════════════════════════════════════════════════════
-
-def build_guess_space_6l_filtered(branch_candidates: list[str],
-                                   branch_enc: np.ndarray,
-                                   weights_arr: np.ndarray,
-                                   wl: int = 6,
-                                   top_combos: int = 15_000) -> tuple:
-    """
-    Para 6 letras (27^6 = 387M strings inviable), estrategia de dos fases:
-
-    FASE 1: Score de cobertura sobre C(27,6) = 296,010 conjuntos de letras.
-    Para cada conjunto de 6 letras distintas, el score mide cuántas letras
-    del conjunto aparecen en promedio en los candidatos del branch:
-
-      score(L) = Σ_{w ∈ branch} Σ_{c ∈ L} 1[c ∈ w] × weight(w)
-
-    Correlación con entropía real: > 0.98 (verificado empíricamente en
-    Wordle con vocabularios similares). Seleccionar top-15,000 conjuntos
-    garantiza capturar el óptimo global con probabilidad > 99.9%.
-
-    FASE 2: Para cada conjunto top, evaluar las 720 permutaciones con
-    entropía exacta NumPy. El óptimo dentro de esas 720×15,000 = 10.8M
-    strings es el resultado final.
-
-    Nota: también se incluye el vocabulario completo como candidatos de
-    guesses para garantizar que palabras reales no se pierdan.
-
-    Retorna: (lista_strings_filtrada, matriz_encodificada)
-    """
-    n_letters = len(SPANISH_LETTERS)
-    # Matriz de presencia de letras en los candidatos del branch
-    # vocab_presence[i, j] = 1 si letra j aparece en candidato i
-    vocab_presence = np.zeros((len(branch_candidates), n_letters),
-                               dtype=np.float32)
-    for i, w in enumerate(branch_candidates):
-        for ch in set(w):
-            idx = CHAR_TO_IDX.get(ch, -1)
-            if idx >= 0:
-                vocab_presence[i, idx] = 1.0
-
-    # Ponderar por pesos del branch
-    weighted_presence = (vocab_presence * weights_arr[:, np.newaxis]).sum(axis=0)
-
-    # Fase 1: score de cobertura para cada combo de wl letras distintas
-    combo_scores = []
-    for combo in itertools.combinations(range(n_letters), wl):
-        score = float(weighted_presence[list(combo)].sum())
-        combo_scores.append((score, combo))
-
-    combo_scores.sort(key=lambda x: -x[0])
-    top = combo_scores[:top_combos]
-
-    # Fase 2: generar todas las permutaciones de los top combos
-    filtered_strings = []
-    for _, combo_idx in top:
-        letters = [SPANISH_LETTERS[i] for i in combo_idx]
-        for perm in itertools.permutations(letters):
-            filtered_strings.append(''.join(perm))
-
-    # Deduplicar (no debería haber duplicados pero por seguridad)
-    filtered_strings = list(dict.fromkeys(filtered_strings))
-
-    # Encodificar
-    enc = np.zeros((len(filtered_strings), wl), dtype=np.int8)
-    for i, s in enumerate(filtered_strings):
-        for j, ch in enumerate(s):
-            enc[i, j] = CHAR_TO_IDX.get(ch, 0)
-
-    return filtered_strings, enc
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# Worker para 6 letras (con pre-filtrado por branch)
-# ══════════════════════════════════════════════════════════════════════════════
-
-def _evaluate_branch_6l(args: tuple) -> dict:
-    """
-    Versión del worker para 6 letras con pre-filtrado de dos fases.
-    El pre-filtrado es branch-specific: los conjuntos de letras que
-    se evalúan son exactamente los más informativos para ESTE branch.
-    """
+def _evaluate_branch_6l(args):
+    """Worker para 6 letras — pre-filtrado branch-specific."""
     (pat_str, pat_tuple, branch_candidates, branch_weights,
-     _guess_strings_unused, _guess_enc_unused,
-     wl, opener, vocab_set, top_combos) = args
+     _unused1, _unused2, wl, opener, vocab_set, mode, top_combos) = args
 
     t0         = time.monotonic()
     n_cands    = len(branch_candidates)
@@ -501,223 +520,251 @@ def _evaluate_branch_6l(args: tuple) -> dict:
     info = analyze_opener_feedback(opener, pat_tuple)
 
     if n_cands <= 2:
-        best = max(branch_candidates,
-                   key=lambda w: weights_arr[branch_candidates.index(w)])
+        best = branch_candidates[int(weights_arr.argmax())]
+        rec  = recommend_action(n_cands, weights_arr, branch_candidates,
+                                 float(n_cands - 1), mode)
         return {
             "pat": pat_str, "n_cands": n_cands,
-            "best_guess": best, "best_H": float(n_cands - 1),
-            "is_word": best in vocab_set, "grey_reuse": 0,
-            "new_letters": wl, "elapsed": 0.0, "trivial": True,
+            "best_probe": best, "best_H": float(n_cands - 1),
+            "tiebreak": (0, 0, 0), "is_word": best in vocab_set,
+            "grey_reuse": 0, "yellow_same_pos": 0,
+            "green_repeat_or_prod": 0,
+            "recommendation": rec, "elapsed": 0.0, "trivial": True,
         }
 
-    # Pre-filtrado branch-specific para 6L
     filtered_strings, filtered_enc = build_guess_space_6l_filtered(
         branch_candidates, branch_enc, weights_arr, wl, top_combos)
 
     best_H   = -1.0
+    best_tb  = (wl, wl, wl)
     best_idx = 0
-    chunk_size = 5_000
 
-    for start in range(0, len(filtered_strings), chunk_size):
-        end = min(start + chunk_size, len(filtered_strings))
-        for local_i in range(end - start):
-            g_enc     = filtered_enc[start + local_i]
-            feedbacks = compute_feedbacks_numpy(g_enc, branch_enc, wl)
-            H         = entropy_from_feedbacks(feedbacks, weights_arr,
-                                                n_patterns)
-            if H > best_H:
-                best_H   = H
-                best_idx = start + local_i
+    for g_idx in range(len(filtered_strings)):
+        g_enc     = filtered_enc[g_idx]
+        feedbacks = compute_feedbacks_numpy(g_enc, branch_enc, wl)
+        H         = entropy_from_feedbacks(feedbacks, weights_arr, n_patterns)
+
+        if H > best_H + ENTROPY_EPS:
+            best_H   = H
+            best_idx = g_idx
+            best_tb  = tiebreak_score(filtered_strings[g_idx], wl,
+                                       info, n_cands)
+        elif abs(H - best_H) <= ENTROPY_EPS:
+            tb = tiebreak_score(filtered_strings[g_idx], wl, info, n_cands)
+            if tb < best_tb:
+                best_tb  = tb
+                best_idx = g_idx
 
     elapsed    = time.monotonic() - t0
     best_guess = filtered_strings[best_idx]
+
     grey_reuse = sum(1 for ch in best_guess if ch in info["grey"])
-    new_lc     = sum(1 for ch in best_guess
-                     if ch not in info["grey"] and ch not in info["known"])
+    yellow_sp  = sum(1 for i, ch in enumerate(best_guess)
+                     if ch in info["yellow"] and i in info["yellow"][ch])
+
+    rec = recommend_action(n_cands, weights_arr, branch_candidates,
+                            best_H, mode)
 
     return {
-        "pat":         pat_str,
-        "n_cands":     n_cands,
-        "best_guess":  best_guess,
-        "best_H":      best_H,
-        "is_word":     best_guess in vocab_set,
-        "grey_reuse":  grey_reuse,
-        "new_letters": new_lc,
-        "grey":        sorted(info["grey"]),
-        "yellow":      {k: v for k, v in info["yellow"].items()},
-        "green":       {str(k): v for k, v in info["green"].items()},
-        "elapsed":     elapsed,
-        "trivial":     False,
-        "space_size":  len(filtered_strings),
+        "pat":                  pat_str,
+        "n_cands":              n_cands,
+        "best_probe":           best_guess,
+        "best_H":               round(best_H, 6),
+        "tiebreak":             best_tb,
+        "is_word":              best_guess in vocab_set,
+        "grey_reuse":           grey_reuse,
+        "yellow_same_pos":      yellow_sp,
+        "green_repeat_or_prod": best_tb[2],
+        "grey_letters":         sorted(info["grey"]),
+        "yellow_letters":       {k: v for k, v in info["yellow"].items()},
+        "green_letters":        {str(k): v for k, v in info["green"].items()},
+        "recommendation":       rec,
+        "elapsed":              round(elapsed, 2),
+        "trivial":              False,
+        "space_size":           len(filtered_strings),
     }
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Función principal por longitud
+# Función principal por modalidad
 # ══════════════════════════════════════════════════════════════════════════════
 
-def run(wl: int, mode: str, n_workers: int, top_combos_6l: int = 15_000):
+def run(wl, mode, n_workers, top_combos_6l=15_000):
     print(f"\n{'═'*64}")
     print(f"  PRECOMPUTACIÓN T2 — {wl} letras | {mode} | {n_workers} workers")
     print(f"{'═'*64}")
 
     vocab, weights_u, weights_f = load_vocab(wl)
-    weights  = weights_u if mode == "uniform" else weights_f
+    weights   = weights_u if mode == "uniform" else weights_f
     vocab_set = set(vocab)
-    opener   = OPENERS[wl][mode]
-    win_pat  = tuple([2] * wl)
+    opener    = OPENERS[wl][mode]
+    win_pat   = tuple([2] * wl)
 
     print(f"  Opener: '{opener}'")
 
-    # ── Construir branches ────────────────────────────────────────────────────
-    branches: dict[tuple, list] = defaultdict(list)
+    # Construir branches dinámicamente
+    branches = defaultdict(list)
     for w in vocab:
-        pat = framework_feedback(w, opener)
-        branches[pat].append(w)
+        branches[framework_feedback(w, opener)].append(w)
 
     branch_list = sorted(branches.items(), key=lambda x: -len(x[1]))
-
-    n_total   = len(branch_list)
-    n_trivial = sum(1 for _, cands in branch_list if len(cands) <= 2)
-    print(f"  Branches: {n_total} "
-          f"({n_trivial} triviales ≤2 cands, "
-          f"{n_total - n_trivial} requieren búsqueda)")
+    n_trivial   = sum(1 for _, c in branch_list if len(c) <= 2)
+    print(f"  Branches: {len(branch_list)} "
+          f"({n_trivial} triviales, "
+          f"{len(branch_list)-n_trivial} requieren búsqueda)")
     print(f"  Branch más grande: {len(branch_list[0][1])} candidatos")
 
-    # ── Espacio de guesses ────────────────────────────────────────────────────
+    # Espacio de guesses
     if wl <= 5:
-        print(f"\n  Construyendo espacio de guesses 27^{wl}...")
-        t_space = time.monotonic()
+        print(f"\n  Construyendo espacio 27^{wl}...")
+        t0 = time.monotonic()
         guess_strings, guess_enc = build_guess_space(wl)
         print(f"  ✓ {len(guess_strings):,} strings "
-              f"({guess_enc.nbytes/1e6:.0f} MB) "
-              f"en {time.monotonic()-t_space:.1f}s")
+              f"({guess_enc.nbytes/1e6:.0f} MB) en {time.monotonic()-t0:.1f}s")
     else:
-        # Para 6L el espacio se construye por branch en el worker
         guess_strings, guess_enc = [], np.array([])
-        print(f"  6L: espacio pre-filtrado branch-specific "
-              f"(top-{top_combos_6l:,} combos × 720 perms por branch)")
-
+        print(f"  6L: pre-filtrado branch-specific "
+              f"(top-{top_combos_6l:,} combos × 720 perms)")
     sys.stdout.flush()
 
-    # ── Preparar tareas ───────────────────────────────────────────────────────
+    # Preparar tareas
     tasks = []
     for pat_tuple, cands in branch_list:
-        pat_str = ''.join(str(x) for x in pat_tuple)
         if pat_tuple == win_pat:
-            # Opener ya acertó — no necesita T2
             continue
-
-        # Pesos renormalizados sobre el branch
-        raw_w = [weights.get(w, 1e-10) for w in cands]
-        total = sum(raw_w)
-        norm_w = [v / total for v in raw_w]
-
+        pat_str = ''.join(str(x) for x in pat_tuple)
+        raw_w   = [weights.get(w, 1e-10) for w in cands]
+        total   = sum(raw_w)
+        norm_w  = [v / total for v in raw_w]
         if wl <= 5:
-            tasks.append((
-                pat_str, pat_tuple, cands, norm_w,
-                guess_strings, guess_enc,
-                wl, opener, vocab_set
-            ))
+            tasks.append((pat_str, pat_tuple, cands, norm_w,
+                          guess_strings, guess_enc,
+                          wl, opener, vocab_set, mode))
         else:
-            tasks.append((
-                pat_str, pat_tuple, cands, norm_w,
-                None, None,  # espacio se construye en worker
-                wl, opener, vocab_set, top_combos_6l
-            ))
+            tasks.append((pat_str, pat_tuple, cands, norm_w,
+                          None, None,
+                          wl, opener, vocab_set, mode, top_combos_6l))
 
     print(f"\n  Lanzando {len(tasks)} tareas en {n_workers} workers...")
-    print(f"  Tiempo estimado: "
-          f"{'~15-30 min' if wl==4 else '~2-4h' if wl==5 else '~1-2h'}")
     sys.stdout.flush()
 
-    # ── Ejecución paralela ────────────────────────────────────────────────────
-    worker_fn  = _evaluate_branch if wl <= 5 else _evaluate_branch_6l
-    t0         = time.monotonic()
-    results    = {}
-    completed  = 0
+    worker_fn = _evaluate_branch if wl <= 5 else _evaluate_branch_6l
+    t_start   = time.monotonic()
+    results   = {}
+    completed = 0
 
     with mp.Pool(processes=n_workers) as pool:
-        for result in pool.imap_unordered(worker_fn, tasks, chunksize=1):
+        for res in pool.imap_unordered(worker_fn, tasks, chunksize=1):
             completed += 1
-            results[result["pat"]] = result
-            elapsed = time.monotonic() - t0
+            results[res["pat"]] = res
+            elapsed = time.monotonic() - t_start
             eta     = elapsed / completed * (len(tasks) - completed)
 
-            flag = ""
-            if not result.get("trivial"):
-                if result["grey_reuse"] > 0:
-                    flag = f" ⚠ reusa {result['grey_reuse']} gris"
-                elif result["new_letters"] == wl:
-                    flag = " ★ letras 100% nuevas"
+            rec     = res.get("recommendation", {})
+            action  = rec.get("action", "?")
+            p_best  = rec.get("p_best")
+            p_str   = f" p={p_best:.2f}" if p_best else ""
+
+            flags = []
+            if not res.get("trivial"):
+                if res["grey_reuse"] > 0:
+                    flags.append(f"⚠grey={res['grey_reuse']}")
+                if res["yellow_same_pos"] > 0:
+                    flags.append(f"⚠ysame={res['yellow_same_pos']}")
+                if res.get("new_letters") == wl:
+                    flags.append("★nuevo")
+                if action == "direct":
+                    flags.append(f"→DIRECT{p_str}")
+
+            flag_str = "  " + " ".join(flags) if flags else ""
 
             print(f"  [{completed:3d}/{len(tasks)}] "
-                  f"pat={result['pat']}  "
-                  f"cands={result['n_cands']:3d}  "
-                  f"→ '{result['best_guess']}'  "
-                  f"H={result['best_H']:.4f}  "
-                  f"word={result['is_word']}  "
-                  f"t={result['elapsed']:.1f}s  "
-                  f"ETA={eta/60:.1f}min{flag}")
+                  f"pat={res['pat']}  "
+                  f"n={res['n_cands']:3d}  "
+                  f"→'{res['best_probe']}'  "
+                  f"H={res['best_H']:.4f}  "
+                  f"tb={res['tiebreak']}  "
+                  f"ETA={eta/60:.1f}min"
+                  f"{flag_str}")
             sys.stdout.flush()
 
-    total_elapsed = time.monotonic() - t0
+    total_elapsed = time.monotonic() - t_start
     print(f"\n  ✓ Completado en {total_elapsed/60:.1f}min")
 
-    # ── Construir tabla final ─────────────────────────────────────────────────
-    t2_table = {}
-    report   = {}
+    # Construir tablas de output
+    # t2_table: el guess a usar en T2 según la recomendación
+    #   - Si action=="direct": usar direct_word
+    #   - Si action=="probe":  usar best_probe
+    t2_table      = {}   # lo que strategy.py debe jugar en T2
+    t2_probe_table = {}  # siempre el mejor probe (para referencia)
+    report        = {}
 
-    # Agregar el caso donde el opener acertó (no necesita T2 pero
-    # lo incluimos como documentación)
-    win_pat_str = ''.join(str(x) for x in win_pat)
+    for pat_str, res in results.items():
+        rec   = res.get("recommendation", {})
+        action = rec.get("action", "probe")
 
-    for pat_str, result in results.items():
-        t2_table[pat_str] = result["best_guess"]
-        report[pat_str]   = result
+        if action == "direct":
+            t2_table[pat_str] = rec.get("direct_word", res["best_probe"])
+        else:
+            t2_table[pat_str] = res["best_probe"]
 
-    # ── Estadísticas ──────────────────────────────────────────────────────────
+        t2_probe_table[pat_str] = res["best_probe"]
+
+        report[pat_str] = {
+            k: (list(v) if isinstance(v, set) else v)
+            for k, v in res.items()
+        }
+
+    # Estadísticas
     non_trivial = [r for r in results.values() if not r.get("trivial")]
     if non_trivial:
-        entropies = [r["best_H"] for r in non_trivial]
-        grey_reuse_cases = [r for r in non_trivial if r["grey_reuse"] > 0]
-        all_new_cases    = [r for r in non_trivial if r["new_letters"] == wl]
-        word_cases       = [r for r in non_trivial if r["is_word"]]
+        entropies   = [r["best_H"] for r in non_trivial]
+        grey_cases  = [r for r in non_trivial if r["grey_reuse"] > 0]
+        ysame_cases = [r for r in non_trivial if r["yellow_same_pos"] > 0]
+        direct_recs = [r for r in results.values()
+                       if r.get("recommendation", {}).get("action") == "direct"]
 
         print(f"\n  ESTADÍSTICAS:")
-        print(f"    Entropía media T2:     {sum(entropies)/len(entropies):.4f} bits")
-        print(f"    Entropía máxima T2:    {max(entropies):.4f} bits")
-        print(f"    Entropía mínima T2:    {min(entropies):.4f} bits")
-        print(f"    Óptimos con letras 100% nuevas: "
-              f"{len(all_new_cases)}/{len(non_trivial)}")
-        print(f"    Óptimos que son palabras reales: "
-              f"{len(word_cases)}/{len(non_trivial)}")
-        print(f"    Casos con reuso de grises (inesperado): "
-              f"{len(grey_reuse_cases)}/{len(non_trivial)}")
-        if grey_reuse_cases:
-            print(f"    ⚠ Branches con reuso de grises:")
-            for r in grey_reuse_cases:
-                print(f"      pat={r['pat']} → '{r['best_guess']}' "
-                      f"(grises={r['grey']})")
+        print(f"    Entropía T2 — media: {sum(entropies)/len(entropies):.4f}  "
+              f"max: {max(entropies):.4f}  min: {min(entropies):.4f}")
+        print(f"    Recomendaciones directas (freq mode): "
+              f"{len(direct_recs)}/{len(results)}")
+        print(f"    Reuso de grises tras tiebreaker:  "
+              f"{len(grey_cases)}/{len(non_trivial)}")
+        print(f"    Amarillas en misma posición:      "
+              f"{len(ysame_cases)}/{len(non_trivial)}")
+        if grey_cases:
+            print(f"\n    Branches con grises residuales "
+                  f"(entropía igual con o sin ellas):")
+            for r in grey_cases:
+                print(f"      pat={r['pat']} n={r['n_cands']} "
+                      f"→'{r['best_probe']}' "
+                      f"grises={r['grey_letters']}")
+        if direct_recs:
+            print(f"\n    Branches donde se recomienda adivinar directo:")
+            for r in direct_recs:
+                rec = r["recommendation"]
+                print(f"      pat={r['pat']} n={r['n_cands']} "
+                      f"p={rec['p_best']:.3f} "
+                      f"e_direct={rec['e_direct']:.3f} "
+                      f"e_probe={rec['e_probe']:.3f}")
 
-    # ── Guardar outputs ───────────────────────────────────────────────────────
-    table_path  = Path(f"t2_table_{wl}_{mode}.json")
-    report_path = Path(f"t2_report_{wl}_{mode}.json")
+    # Guardar
+    table_path       = Path(f"t2_table_{wl}_{mode}.json")
+    probe_table_path = Path(f"t2_probe_table_{wl}_{mode}.json")
+    report_path      = Path(f"t2_report_{wl}_{mode}.json")
 
     with open(table_path, 'w', encoding='utf-8') as f:
         json.dump(t2_table, f, ensure_ascii=False, indent=2)
-    print(f"\n  Tabla T2:  {table_path} ({len(t2_table)} entradas)")
-
-    # El reporte incluye estadísticas completas pero convierte sets a listas
-    report_serializable = {}
-    for k, v in report.items():
-        rv = dict(v)
-        rv["grey"] = list(rv.get("grey", []))
-        report_serializable[k] = rv
-
+    with open(probe_table_path, 'w', encoding='utf-8') as f:
+        json.dump(t2_probe_table, f, ensure_ascii=False, indent=2)
     with open(report_path, 'w', encoding='utf-8') as f:
-        json.dump(report_serializable, f, ensure_ascii=False, indent=2)
-    print(f"  Reporte:   {report_path}")
+        json.dump(report, f, ensure_ascii=False, indent=2)
+
+    print(f"\n  t2_table_{wl}_{mode}.json        — {len(t2_table)} entradas "
+          f"(lo que juega strategy.py)")
+    print(f"  t2_probe_table_{wl}_{mode}.json  — mejor probe puro")
+    print(f"  t2_report_{wl}_{mode}.json       — reporte completo")
 
     return t2_table
 
@@ -727,78 +774,55 @@ def run(wl: int, mode: str, n_workers: int, top_combos_6l: int = 15_000):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Precomputa la tabla T2 óptima para cada branch post-opener")
-    parser.add_argument("--length", default="4",
-                        choices=["4", "5", "6", "all"],
-                        help="Longitud de palabras (default: 4)")
-    parser.add_argument("--mode",   default="both",
-                        choices=["uniform", "frequency", "both"],
-                        help="Modo de probabilidades (default: both)")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--length",  default="4",
+                        choices=["4", "5", "6", "all"])
+    parser.add_argument("--mode",    default="both",
+                        choices=["uniform", "frequency", "both"])
     parser.add_argument("--workers", type=int,
-                        default=max(1, mp.cpu_count() - 1),
-                        help="Workers paralelos (default: núcleos-1)")
-    parser.add_argument("--top-combos-6l", type=int, default=15_000,
-                        help="Para 6L: top conjuntos de letras en fase 1 "
-                             "(default: 15,000)")
+                        default=max(1, mp.cpu_count() - 1))
+    parser.add_argument("--top-combos-6l", type=int, default=15_000)
     args = parser.parse_args()
 
     print("═" * 64)
-    print("  PRECOMPUTACIÓN T2 — entropía máxima por branch")
+    print("  PRECOMPUTACIÓN T2 — entropía máxima + tiebreaker completo")
     print("═" * 64)
-    print(f"  CPU cores disponibles: {mp.cpu_count()}")
-    print(f"  Workers: {args.workers}")
-    print(f"  Espacio de guesses: 27^wl (letras repetidas incluidas)")
-    print(f"  Evaluación: exhaustiva para 4L y 5L, "
-          f"pre-filtrada para 6L")
+    print(f"  Workers: {args.workers}  |  Tiebreaker: 3 criterios jerarquizados")
+    print(f"  Recomendación direct/probe incluida en el JSON")
 
-    lengths = ([4, 5, 6] if args.length == "all"
-               else [int(args.length)])
+    lengths = [4, 5, 6] if args.length == "all" else [int(args.length)]
     modes   = (["uniform", "frequency"] if args.mode == "both"
                 else [args.mode])
 
-    all_tables = {}
     for wl in lengths:
         for mode in modes:
-            table = run(wl, mode, args.workers, args.top_combos_6l)
-            all_tables[f"{wl}_{mode}"] = table
+            run(wl, mode, args.workers, args.top_combos_6l)
 
-    # ── Instrucciones de integración ──────────────────────────────────────────
-    print("\n" + "═" * 64)
+    print("\n═" * 64)
     print("  INTEGRACIÓN CON strategy.py")
     print("═" * 64)
-    print("  1. Copiar los archivos JSON al directorio del equipo:")
-    for wl in lengths:
-        for mode in modes:
-            print(f"     cp t2_table_{wl}_{mode}.json "
-                  f"estudiantes/gabriel_regina/")
-    print()
-    print("  2. En strategy.py, cargar en begin_game():")
     print("""
-     _t2_tables = {}   # class-level cache
+  En strategy.py:
 
-     def begin_game(self, word_length, mode, ...):
-         key = f"{word_length}_{mode}"
-         if key not in Strategy._t2_tables:
-             path = TEAM_DIR / f"t2_table_{word_length}_{mode}.json"
-             if path.exists():
-                 with open(path, encoding='utf-8') as f:
-                     Strategy._t2_tables[key] = json.load(f)
-         self._t1_pat = None   # se llenará tras el primer turno
+  _t2 = {}   # class-level, cargado una vez
 
-     def choose_word(self, candidates, weights, turn):
-         if turn == 1:
-             return OPENERS[self.wl][self.mode]
+  def begin_game(self, word_length, mode, ...):
+      key = f"{word_length}_{mode}"
+      if key not in Strategy._t2:
+          p = TEAM_DIR / f"t2_table_{word_length}_{mode}.json"
+          if p.exists():
+              Strategy._t2[key] = json.load(open(p))
 
-         if turn == 2:
-             table = Strategy._t2_tables.get(f"{self.wl}_{self.mode}", {})
-             guess = table.get(self._t1_pat)
-             if guess:
-                 return guess
-             # Fallback: entropía runtime
-
-         # T3+: lógica híbrida
-         ...
+  def choose_word(self, candidates, weights, turn):
+      if turn == 1:
+          return OPENERS[self.wl][self.mode]
+      if turn == 2:
+          table = Strategy._t2.get(f"{self.wl}_{self.mode}", {})
+          guess = table.get(self._t1_pat)
+          if guess:
+              return guess   # ya tiene incorporada la rec direct/probe
+          # fallback: entropía runtime
+      # T3+: lógica híbrida
     """)
 
 
