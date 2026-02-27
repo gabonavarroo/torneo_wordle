@@ -47,11 +47,7 @@ except ImportError:
 WIN_PAT_4 = (2, 2, 2, 2)
 WIN_PAT_5 = (2, 2, 2, 2, 2)
 WIN_PAT_6 = (2, 2, 2, 2, 2, 2)
-OPENERS = {
-    4: {'uniform': 'aore',   'frequency': 'aore'},
-    5: {'uniform': 'sareo',  'frequency': 'sareo'},  # ← se llena cuando termina el search
-    6: {'uniform': 'xxxxxx', 'frequency': 'yyyyyy'},
-}
+OPENERS   = {4: 'aore', 5: 'careo', 6: 'carieo'}
 MAX_DEPTH = 6
 
 
@@ -104,7 +100,14 @@ def generate_non_words(vocab, wl, n=100):
             non_words = json.load(f)
         vocab_set = set(vocab)
         non_words = [w for w in non_words if w not in vocab_set]
-        print(f"  ✓ No-palabras cargadas desde {json_path}: {len(non_words)}")
+        total_available = len(non_words)
+        # Cap en 400: pool total por rama = 1,853 + 400 global + 150 branch = ~2,400
+        # Solo ~23% más lento que el pool original de 1,953, pero mejor calidad.
+        # Con 26,596 no-palabras el DP sería ~14x más lento — inviable.
+        CAP = 400
+        non_words = non_words[:CAP]
+        print(f"  ✓ No-palabras desde {json_path}: {len(non_words)} "
+              f"(cap={CAP} de {total_available} disponibles)")
         return non_words
 
     print(f"  (usando no-palabras heurísticas — corre generate_nonwords.py para mejorar)")
@@ -391,27 +394,19 @@ class BranchSolver:
 def _solve_branch(args):
     """
     Resuelve una rama completa del opener.
-    args = (pat1_str, pat1_tuple, branch_candidates, vocab, weights,
-            global_non_words, wl, opener)
-
-    Genera no-palabras branch-specific que evitan letras grises del opener.
-    Para pat=0100 (a,r,e grises), el pool no contendrá palabras con a,r,e
-    — eliminando el problema de elegir 'mana' o 'aonm'.
+    Pool = vocab + non-palabras branch-specific únicamente.
+    No usamos no-palabras globales — son ruido para ramas donde
+    las letras del opener son grises.
     """
     pat1_str, pat1_tuple, branch_candidates, vocab, weights, \
-        global_non_words, wl, opener = args
+        _global_non_words, wl, opener = args
 
     t0 = time.monotonic()
 
-    # Pool branch-specific: vocab + no-palabras que respetan lo que sabemos
-    branch_nw  = generate_branch_nonwords(opener, pat1_tuple, vocab, wl, n=150)
-    # Combinar global + branch, deduplicar
-    seen_pool  = set(vocab)
-    extra_nw   = []
-    for nw in branch_nw + global_non_words:
-        if nw not in seen_pool:
-            seen_pool.add(nw)
-            extra_nw.append(nw)
+    # Pool = vocab + branch-specific (evitan letras grises de esta rama)
+    branch_nw = generate_branch_nonwords(opener, pat1_tuple, vocab, wl, n=500)
+    seen_pool = set(vocab)
+    extra_nw  = [nw for nw in branch_nw if nw not in seen_pool]
     branch_pool = vocab + extra_nw
 
     solver = BranchSolver(vocab, weights, branch_pool, wl)
@@ -422,16 +417,16 @@ def _solve_branch(args):
     # Construir árbol explícito
     subtree = solver.build_subtree(branch_candidates, best_t2, depth=1)
 
-    elapsed = time.monotonic() - t0
     return {
-        "pat1":       pat1_str,
-        "n_cands":    len(branch_candidates),
-        "score":      score,
-        "best_t2":    best_t2,
-        "subtree":    subtree,
-        "n_states":   solver.n_states,
-        "elapsed":    elapsed,
-        "pool_size":  len(branch_pool),
+        "pat1":         pat1_str,
+        "n_cands":      len(branch_candidates),
+        "score":        score,
+        "best_t2":      best_t2,
+        "subtree":      subtree,
+        "n_states":     solver.n_states,
+        "elapsed":      elapsed,
+        "pool_size":    len(branch_pool),
+        "n_branch_nw":  len(extra_nw),
     }
 
 
@@ -446,13 +441,15 @@ def run(wl, mode, n_workers):
 
     vocab, weights_u, weights_f = load_vocab(wl)
     weights = weights_u if mode == "uniform" else weights_f
-    non_words = generate_non_words(vocab, wl, n=100)
-    opener = OPENERS[wl][mode]
+    # No-palabras globales ya no se usan en el pool — cada rama genera
+    # las suyas branch-specific. Las pasamos como lista vacía.
+    non_words = []
+    opener = OPENERS[wl]
     win_pat = tuple([2] * wl)
 
     print(f"  Opener: '{opener}'")
-    print(f"  Vocab: {len(vocab)}, no-palabras globales: {len(non_words)}")
-    print(f"  Cada rama recibirá su pool branch-specific adicional (~150 nw)")
+    print(f"  Vocab: {len(vocab)}")
+    print(f"  Cada rama genera ~500 no-palabras branch-specific propias")
 
     # Dividir vocabulario en ramas post-opener
     branches: dict[tuple, list] = defaultdict(list)
@@ -500,7 +497,7 @@ def run(wl, mode, n_workers):
             print(f"  [{completed:3d}/{len(tasks)}] "
                   f"pat={result['pat1']}  "
                   f"cands={result['n_cands']:3d}  "
-                  f"pool={result['pool_size']}  "
+                  f"pool={result['pool_size']}(+{result['n_branch_nw']}nw)  "
                   f"t2='{result['best_t2']}'  "
                   f"score={result['score']:.3f}  "
                   f"states={result['n_states']:,}  "
