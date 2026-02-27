@@ -30,4 +30,4 @@ uniform: aore
 frequency: aore
 
 uniform: sareo 
-frequency: 
+frequency: sareo

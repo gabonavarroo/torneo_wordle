@@ -49,7 +49,7 @@ WIN_PAT_5 = (2, 2, 2, 2, 2)
 WIN_PAT_6 = (2, 2, 2, 2, 2, 2)
 OPENERS = {
     4: {'uniform': 'aore',   'frequency': 'aore'},
-    5: {'uniform': 'sareo',  'frequency': 'yyyyy'},  # ← se llena cuando termina el search
+    5: {'uniform': 'sareo',  'frequency': 'sareo'},  # ← se llena cuando termina el search
     6: {'uniform': 'xxxxxx', 'frequency': 'yyyyyy'},
 }
 MAX_DEPTH = 6
