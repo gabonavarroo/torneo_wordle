@@ -75,7 +75,7 @@ CHAR_TO_IDX     = {ch: i for i, ch in enumerate(SPANISH_LETTERS)}
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
     5: {"uniform": "careo", "frequency": "careo"},
-    6: {"uniform": "carieo", "frequency": "carieo"},
+    6: {"uniform": "ceriao", "frequency": "ceriao"},
 }
 
 # Umbral n_cands para cambiar entre criterio 3a y 3b
@@ -798,7 +798,7 @@ def main():
         for mode in modes:
             run(wl, mode, args.workers, args.top_combos_6l)
 
-    print("\n═" * 64)
+    print("═" * 64)
     print("  INTEGRACIÓN CON strategy.py")
     print("═" * 64)
     print("""

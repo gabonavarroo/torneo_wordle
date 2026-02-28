@@ -1,0 +1,2011 @@
+{
+  "0101": {
+    "pat": "0101",
+    "n_cands": 85,
+    "best_probe": "lcsn",
+    "best_H": 3.540045,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "r"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "esos",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.8693,
+      "e_direct": 8.1872,
+      "p_best": 0.0278
+    },
+    "elapsed": 181.65,
+    "trivial": false
+  },
+  "1001": {
+    "pat": "1001",
+    "n_cands": 79,
+    "best_probe": "csln",
+    "best_H": 3.40953,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "esta",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.8943,
+      "e_direct": 8.1343,
+      "p_best": 0.0207
+    },
+    "elapsed": 182.87,
+    "trivial": false
+  },
+  "1200": {
+    "pat": "1200",
+    "n_cands": 99,
+    "best_probe": "clts",
+    "best_H": 3.387856,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ]
+    },
+    "green_letters": {
+      "1": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "zona",
+      "reason": "probe_wins_renyi",
+      "e_probe": 5.2415,
+      "e_direct": 8.4565,
+      "p_best": 0.0208
+    },
+    "elapsed": 192.32,
+    "trivial": false
+  },
+  "0200": {
+    "pat": "0200",
+    "n_cands": 110,
+    "best_probe": "tncm",
+    "best_H": 3.43524,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "1": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "como",
+      "reason": "probe_wins_renyi",
+      "e_probe": 5.3461,
+      "e_direct": 8.6227,
+      "p_best": 0.0187
+    },
+    "elapsed": 192.8,
+    "trivial": false
+  },
+  "1100": {
+    "pat": "1100",
+    "n_cands": 120,
+    "best_probe": "tncs",
+    "best_H": 3.147609,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "o": [
+        1
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "bajo",
+      "reason": "probe_wins_renyi",
+      "e_probe": 5.7593,
+      "e_direct": 8.7604,
+      "p_best": 0.017
+    },
+    "elapsed": 196.06,
+    "trivial": false
+  },
+  "0100": {
+    "pat": "0100",
+    "n_cands": 162,
+    "best_probe": "pils",
+    "best_H": 3.651729,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "dijo",
+      "reason": "probe_wins_renyi",
+      "e_probe": 5.6881,
+      "e_direct": 9.2247,
+      "p_best": 0.0128
+    },
+    "elapsed": 219.31,
+    "trivial": false
+  },
+  "0002": {
+    "pat": "0002",
+    "n_cands": 146,
+    "best_probe": "tedn",
+    "best_H": 3.469335,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "este",
+      "reason": "probe_wins_renyi",
+      "e_probe": 5.7205,
+      "e_direct": 9.0205,
+      "p_best": 0.0195
+    },
+    "elapsed": 219.25,
+    "trivial": false
+  },
+  "1000": {
+    "pat": "1000",
+    "n_cands": 300,
+    "best_probe": "ciln",
+    "best_H": 3.828213,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "pais",
+      "reason": "probe_wins_renyi",
+      "e_probe": 6.4006,
+      "e_direct": 10.1658,
+      "p_best": 0.0063
+    },
+    "elapsed": 260.94,
+    "trivial": false
+  },
+  "0202": {
+    "pat": "0202",
+    "n_cands": 55,
+    "best_probe": "tdcm",
+    "best_H": 3.41907,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "1": "o",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "doce",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.3623,
+      "e_direct": 7.468,
+      "p_best": 0.0425
+    },
+    "elapsed": 172.28,
+    "trivial": false
+  },
+  "1002": {
+    "pat": "1002",
+    "n_cands": 73,
+    "best_probe": "tbcl",
+    "best_H": 3.125875,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "hace",
+      "reason": "probe_wins_renyi",
+      "e_probe": 5.0639,
+      "e_direct": 7.9514,
+      "p_best": 0.0305
+    },
+    "elapsed": 180.46,
+    "trivial": false
+  },
+  "2000": {
+    "pat": "2000",
+    "n_cands": 51,
+    "best_probe": "ilun",
+    "best_H": 3.77868,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "alza",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.8937,
+      "e_direct": 7.4218,
+      "p_best": 0.0334
+    },
+    "elapsed": 170.92,
+    "trivial": false
+  },
+  "0000": {
+    "pat": "0000",
+    "n_cands": 48,
+    "best_probe": "lisc",
+    "best_H": 4.076934,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "luis",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.508,
+      "e_direct": 7.1333,
+      "p_best": 0.0643
+    },
+    "elapsed": 170.12,
+    "trivial": false
+  },
+  "0001": {
+    "pat": "0001",
+    "n_cands": 54,
+    "best_probe": "siln",
+    "best_H": 3.887719,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "seis",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.8672,
+      "e_direct": 7.4555,
+      "p_best": 0.0405
+    },
+    "elapsed": 173.02,
+    "trivial": false
+  },
+  "0110": {
+    "pat": "0110",
+    "n_cands": 34,
+    "best_probe": "fits",
+    "best_H": 3.375073,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "ruso",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.7124,
+      "e_direct": 6.5886,
+      "p_best": 0.0754
+    },
+    "elapsed": 165.44,
+    "trivial": false
+  },
+  "1010": {
+    "pat": "1010",
+    "n_cands": 48,
+    "best_probe": "rfin",
+    "best_H": 3.543521,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "tras",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.0414,
+      "e_direct": 7.3175,
+      "p_best": 0.0362
+    },
+    "elapsed": 167.15,
+    "trivial": false
+  },
+  "0012": {
+    "pat": "0012",
+    "n_cands": 26,
+    "best_probe": "irug",
+    "best_H": 3.277389,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "cree",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.4231,
+      "e_direct": 6.0204,
+      "p_best": 0.1105
+    },
+    "elapsed": 160.79,
+    "trivial": false
+  },
+  "1020": {
+    "pat": "1020",
+    "n_cands": 26,
+    "best_probe": "daip",
+    "best_H": 2.738507,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "para",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.9619,
+      "e_direct": 6.3319,
+      "p_best": 0.0553
+    },
+    "elapsed": 164.97,
+    "trivial": false
+  },
+  "2100": {
+    "pat": "2100",
+    "n_cands": 22,
+    "best_probe": "cglt",
+    "best_H": 2.827301,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ]
+    },
+    "green_letters": {
+      "0": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "alto",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.6321,
+      "e_direct": 5.8358,
+      "p_best": 0.1032
+    },
+    "elapsed": 160.69,
+    "trivial": false
+  },
+  "2010": {
+    "pat": "2010",
+    "n_cands": 18,
+    "best_probe": "msaz",
+    "best_H": 2.707384,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "0": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "arma",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.4625,
+      "e_direct": 5.3086,
+      "p_best": 0.1531
+    },
+    "elapsed": 163.94,
+    "trivial": false
+  },
+  "1110": {
+    "pat": "1110",
+    "n_cands": 18,
+    "best_probe": "osta",
+    "best_H": 2.326573,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "o": [
+        1
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "rato",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.8434,
+      "e_direct": 5.4378,
+      "p_best": 0.1277
+    },
+    "elapsed": 164.84,
+    "trivial": false
+  },
+  "0011": {
+    "pat": "0011",
+    "n_cands": 21,
+    "best_probe": "frip",
+    "best_H": 3.046399,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "tres",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.3459,
+      "e_direct": 5.8457,
+      "p_best": 0.0895
+    },
+    "elapsed": 166.69,
+    "trivial": false
+  },
+  "2002": {
+    "pat": "2002",
+    "n_cands": 17,
+    "best_probe": "dnup",
+    "best_H": 2.390281,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "a",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "ante",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.6972,
+      "e_direct": 4.7094,
+      "p_best": 0.2581
+    },
+    "elapsed": 160.43,
+    "trivial": false
+  },
+  "0010": {
+    "pat": "0010",
+    "n_cands": 16,
+    "best_probe": "iugr",
+    "best_H": 2.783344,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "a",
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "cruz",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.2167,
+      "e_direct": 5.1433,
+      "p_best": 0.1556
+    },
+    "elapsed": 159.53,
+    "trivial": false
+  },
+  "0022": {
+    "pat": "0022",
+    "n_cands": 16,
+    "best_probe": "uedm",
+    "best_H": 2.702157,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "a",
+      "o"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "dure",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.2978,
+      "e_direct": 5.2217,
+      "p_best": 0.1396
+    },
+    "elapsed": 158.24,
+    "trivial": false
+  },
+  "0120": {
+    "pat": "0120",
+    "n_cands": 16,
+    "best_probe": "gtmu",
+    "best_H": 2.759024,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "otro",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.241,
+      "e_direct": 5.452,
+      "p_best": 0.0927
+    },
+    "elapsed": 156.42,
+    "trivial": false
+  },
+  "1210": {
+    "pat": "1210",
+    "n_cands": 14,
+    "best_probe": "jmls",
+    "best_H": 2.011277,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "1": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "roma",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.7961,
+      "e_direct": 5.1155,
+      "p_best": 0.1244
+    },
+    "elapsed": 159.39,
+    "trivial": false
+  },
+  "0220": {
+    "pat": "0220",
+    "n_cands": 12,
+    "best_probe": "flmo",
+    "best_H": 2.627451,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "a",
+      "e"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "1": "o",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "york",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.9575,
+      "e_direct": 4.9212,
+      "p_best": 0.1207
+    },
+    "elapsed": 156.19,
+    "trivial": false
+  },
+  "0210": {
+    "pat": "0210",
+    "n_cands": 14,
+    "best_probe": "bjto",
+    "best_H": 2.311959,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "a",
+      "e"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "1": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "robo",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.4954,
+      "e_direct": 5.1735,
+      "p_best": 0.1121
+    },
+    "elapsed": 158.65,
+    "trivial": false
+  },
+  "0111": {
+    "pat": "0111",
+    "n_cands": 13,
+    "best_probe": "mneo",
+    "best_H": 2.4431,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ],
+      "r": [
+        2
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "creo",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.2573,
+      "e_direct": 4.7966,
+      "p_best": 0.172
+    },
+    "elapsed": 157.67,
+    "trivial": false
+  },
+  "1120": {
+    "pat": "1120",
+    "n_cands": 10,
+    "best_probe": "rbcp",
+    "best_H": 2.375382,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "o": [
+        1
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "obra",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.9465,
+      "e_direct": 4.5238,
+      "p_best": 0.1549
+    },
+    "elapsed": 156.49,
+    "trivial": false
+  },
+  "1011": {
+    "pat": "1011",
+    "n_cands": 12,
+    "best_probe": "rcta",
+    "best_H": 2.605435,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "r": [
+        2
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "real",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.9795,
+      "e_direct": 4.6896,
+      "p_best": 0.1726
+    },
+    "elapsed": 157.4,
+    "trivial": false
+  },
+  "0102": {
+    "pat": "0102",
+    "n_cands": 10,
+    "best_probe": "bcdp",
+    "best_H": 1.546194,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "r"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "once",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.7757,
+      "e_direct": 2.8636,
+      "p_best": 0.5531
+    },
+    "elapsed": 155.43,
+    "trivial": false
+  },
+  "2110": {
+    "pat": "2110",
+    "n_cands": 9,
+    "best_probe": "cmns",
+    "best_H": 2.345536,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "0": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "amor",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.8244,
+      "e_direct": 4.0114,
+      "p_best": 0.2471
+    },
+    "elapsed": 157.66,
+    "trivial": false
+  },
+  "2001": {
+    "pat": "2001",
+    "n_cands": 8,
+    "best_probe": "mnts",
+    "best_H": 1.702273,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "0": "a"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "ases",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.2977,
+      "e_direct": 3.0606,
+      "p_best": 0.4588
+    },
+    "elapsed": 155.45,
+    "trivial": false
+  },
+  "1021": {
+    "pat": "1021",
+    "n_cands": 7,
+    "best_probe": "cmsv",
+    "best_H": 2.310653,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "sera",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4967,
+      "e_direct": 3.7862,
+      "p_best": 0.2228
+    },
+    "elapsed": 151.01,
+    "trivial": false
+  },
+  "2012": {
+    "pat": "2012",
+    "n_cands": 6,
+    "best_probe": "cdmt",
+    "best_H": 1.815074,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "0": "a",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "arte",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.7699,
+      "e_direct": 3.1698,
+      "p_best": 0.3468
+    },
+    "elapsed": 153.98,
+    "trivial": false
+  },
+  "0121": {
+    "pat": "0121",
+    "n_cands": 7,
+    "best_probe": "cemp",
+    "best_H": 2.31123,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "pero",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4961,
+      "e_direct": 3.8113,
+      "p_best": 0.2158
+    },
+    "elapsed": 155.75,
+    "trivial": false
+  },
+  "1220": {
+    "pat": "1220",
+    "n_cands": 6,
+    "best_probe": "cdhm",
+    "best_H": 2.318494,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ]
+    },
+    "green_letters": {
+      "1": "o",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "hora",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.2665,
+      "e_direct": 3.6173,
+      "p_best": 0.2121
+    },
+    "elapsed": 151.43,
+    "trivial": false
+  },
+  "1012": {
+    "pat": "1012",
+    "n_cands": 6,
+    "best_probe": "japs",
+    "best_H": 0.89102,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "trae",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.6939,
+      "e_direct": 1.5366,
+      "p_best": 0.8385
+    },
+    "elapsed": 154.69,
+    "trivial": false
+  },
+  "0212": {
+    "pat": "0212",
+    "n_cands": 6,
+    "best_probe": "bcds",
+    "best_H": 1.810728,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "1": "o",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "rose",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.7742,
+      "e_direct": 2.9402,
+      "p_best": 0.4159
+    },
+    "elapsed": 151.55,
+    "trivial": false
+  },
+  "2020": {
+    "pat": "2020",
+    "n_cands": 5,
+    "best_probe": "bagi",
+    "best_H": 2.01736,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "a",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "abra",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.3046,
+      "e_direct": 3.0753,
+      "p_best": 0.3082
+    },
+    "elapsed": 150.17,
+    "trivial": false
+  },
+  "2022": {
+    "pat": "2022",
+    "n_cands": 5,
+    "best_probe": "brcd",
+    "best_H": 1.674706,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "a",
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "aire",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.6472,
+      "e_direct": 2.974,
+      "p_best": 0.342
+    },
+    "elapsed": 152.54,
+    "trivial": false
+  },
+  "2101": {
+    "pat": "2101",
+    "n_cands": 5,
+    "best_probe": "feps",
+    "best_H": 1.560954,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "r"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "0": "a"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "aseo",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.761,
+      "e_direct": 2.5646,
+      "p_best": 0.4785
+    },
+    "elapsed": 153.77,
+    "trivial": false
+  },
+  "1022": {
+    "pat": "1022",
+    "n_cands": 5,
+    "best_probe": "dhpt",
+    "best_H": 1.829272,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        0
+      ]
+    },
+    "green_letters": {
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "hare",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4927,
+      "e_direct": 2.9642,
+      "p_best": 0.3453
+    },
+    "elapsed": 151.33,
+    "trivial": false
+  },
+  "2102": {
+    "pat": "2102",
+    "n_cands": 2,
+    "best_probe": "aloe",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "aloe",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9783902734059372
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "0112": {
+    "pat": "0112",
+    "n_cands": 5,
+    "best_probe": "bcol",
+    "best_H": 0.267238,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "orbe",
+      "reason": "direct_wins_renyi",
+      "e_probe": 4.0547,
+      "e_direct": 1.1099,
+      "p_best": 0.9634
+    },
+    "elapsed": 153.13,
+    "trivial": false
+  },
+  "0020": {
+    "pat": "0020",
+    "n_cands": 2,
+    "best_probe": "buri",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "buri",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9495492113754106
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "0201": {
+    "pat": "0201",
+    "n_cands": 2,
+    "best_probe": "soez",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "soez",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9945176754831393
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "2200": {
+    "pat": "2200",
+    "n_cands": 1,
+    "best_probe": "aojo",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "aojo",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "1101": {
+    "pat": "1101",
+    "n_cands": 1,
+    "best_probe": "olea",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "olea",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "2011": {
+    "pat": "2011",
+    "n_cands": 4,
+    "best_probe": "erfa",
+    "best_H": 1.084241,
+    "tiebreak": [
+      0,
+      0,
+      -5
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -5,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "0": "a"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "ayer",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.9158,
+      "e_direct": 2.3065,
+      "p_best": 0.4946
+    },
+    "elapsed": 151.41,
+    "trivial": false
+  },
+  "0211": {
+    "pat": "0211",
+    "n_cands": 4,
+    "best_probe": "drer",
+    "best_H": 1.095191,
+    "tiebreak": [
+      0,
+      0,
+      -6
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "1": "o"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "roer",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.9048,
+      "e_direct": 2.0451,
+      "p_best": 0.5957
+    },
+    "elapsed": 148.5,
+    "trivial": false
+  },
+  "2120": {
+    "pat": "2120",
+    "n_cands": 3,
+    "best_probe": "bgoo",
+    "best_H": 0.529608,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ]
+    },
+    "green_letters": {
+      "0": "a",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "agro",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.0554,
+      "e_direct": 1.2155,
+      "p_best": 0.8923
+    },
+    "elapsed": 140.81,
+    "trivial": false
+  },
+  "0222": {
+    "pat": "0222",
+    "n_cands": 3,
+    "best_probe": "cdeo",
+    "best_H": 1.451985,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "1": "o",
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "more",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.133,
+      "e_direct": 1.9153,
+      "p_best": 0.5424
+    },
+    "elapsed": 109.91,
+    "trivial": false
+  },
+  "0021": {
+    "pat": "0021",
+    "n_cands": 3,
+    "best_probe": "eehi",
+    "best_H": 1.016822,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "a",
+      "o"
+    ],
+    "yellow_letters": {
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "peru",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.5681,
+      "e_direct": 1.5956,
+      "p_best": 0.7022
+    },
+    "elapsed": 107.39,
+    "trivial": false
+  },
+  "0122": {
+    "pat": "0122",
+    "n_cands": 3,
+    "best_probe": "bcoo",
+    "best_H": 1.035427,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "o": [
+        1
+      ]
+    },
+    "green_letters": {
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "obre",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.5495,
+      "e_direct": 1.9109,
+      "p_best": 0.5445
+    },
+    "elapsed": 108.31,
+    "trivial": false
+  }
+}
