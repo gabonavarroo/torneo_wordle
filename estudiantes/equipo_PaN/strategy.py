@@ -152,30 +152,24 @@ class MiEstrategia(Strategy):
             "cand_idx": np.arange(n, dtype=np.int32),
         }
 
-        # Parámetros exploit + performance
-        # T[L]: umbral de tamaño de candidatos para pasar a exploit.
-        # En 6-letter frequency queremos explorar un poco más (T más bajo).
-        self.stats["T"] = {4: 4, 5: 6, 6: 5}
+        # Parámetros exploit + performance (mismos valores base para 4/5/6,
+        # sin hacks específicos para un solo caso).
+        self.stats["T"] = {4: 4, 5: 6, 6: 8}
         self.stats["K"] = {4: 220, 5: 280, 6: 320}
-        # N_eval[L]: máximo de candidatos sobre los que calculamos expected remaining.
-        # Subimos ligeramente para L=6, manteniendo costo controlado.
-        self.stats["N_eval"] = {4: 900, 5: 650, 6: 650}
+        # N_eval[L]: máximo de candidatos que usamos para el cálculo de
+        # expected information (si hay más, se submuestrean dentro).
+        self.stats["N_eval"] = {4: 900, 5: 650, 6: 550}
         # K_eval[L]: tamaño del pool refinado para expected remaining.
-        # Un poco más grande en L=6 para mejorar la exploración.
-        self.stats["K_eval"] = {4: 60, 5: 55, 6: 60}
+        self.stats["K_eval"] = {4: 60, 5: 55, 6: 50}
         self.stats["p_star"] = {
             "uniform": {4: 0.60, 5: 0.60, 6: 0.60},
-            # En 6-letter frequency evitamos explotar demasiado pronto:
-            # p_star más alto => se mantiene exploración (expected remaining) más tiempo.
-            "frequency": {4: 0.18, 5: 0.12, 6: 0.18},
+            "frequency": {4: 0.18, 5: 0.12, 6: 0.10},
         }
 
         # Pesos scoring barato
         self.stats["w_pos"] = 1.00
         self.stats["w_uniq"] = 0.70
-        # En frequency favorecemos un poco más las palabras probables, pero sin
-        # matar la exploración de letras. Ligero boost en modo frequency.
-        self.stats["w_prob"] = 1.05 if self._mode == "frequency" else 0.25
+        self.stats["w_prob"] = 0.90 if self._mode == "frequency" else 0.25
         self.stats["w_rep_pen"] = 0.35
         self.stats["w_lev"] = 0.40
 
@@ -224,14 +218,16 @@ class MiEstrategia(Strategy):
 
         top_idx = self._topk_indices_by_prob(cand_idx, self.stats["K"][L])
 
-        # si ya es manejable, evalúa expected remaining
-        if cand_idx.size <= self.stats["N_eval"][L] and (time.perf_counter() - self._t0) < 4.2:
+        # Siempre que quede tiempo suficiente intentamos una pasada de expected
+        # information (approx entropy) usando un subconjunto acotado de
+        # candidatos. Si no llega o no mejora, caemos al scoring barato.
+        if (time.perf_counter() - self._t0) < 4.2:
             pool = self._build_guess_pool(top_idx, pos_freq, let_freq, history, proto)
             gbest = self._best_by_expected_remaining(cand_idx, pool)
             if gbest is not None:
                 return gbest
 
-        # si no, scoring barato
+        # Fallback estable y barato
         return self._best_by_cheap_score(cand_idx, top_idx, pos_freq, let_freq, history, proto)
 
     # ---------------- candidates (filter_candidates) ----------------
@@ -480,19 +476,42 @@ class MiEstrategia(Strategy):
         data = self.stats["data"]
         probs_all = data["probs"][cand_idx]
         s = float(probs_all.sum())
-        probs = probs_all / s if s > 0 else np.full_like(probs_all, 1.0 / max(1, probs_all.size), dtype=np.float64)
+        probs = (
+            probs_all / s
+            if s > 0
+            else np.full_like(probs_all, 1.0 / max(1, probs_all.size), dtype=np.float64)
+        )
 
-        cand_codes_arr = data["codes"][cand_idx]
+        # Para no explotar el tiempo cuando hay muchos candidatos, usamos solo
+        # un subconjunto de hasta N_eval[L] candidatos para estimar la
+        # información esperada. Se seleccionan por probabilidad (top-N), lo que
+        # funciona tanto en uniform como en frequency.
+        L = self._L
+        N_eval = self.stats["N_eval"].get(L, probs.size)
+        m = probs.size
+        if m <= N_eval:
+            eval_idx = cand_idx
+            probs_eval = probs
+        else:
+            k = N_eval
+            part = np.argpartition(-probs, k - 1)[:k]
+            eval_idx = cand_idx[part]
+            probs_eval = probs[part]
+
+        cand_codes_arr = data["codes"][eval_idx]
         cand_codes = [tuple(int(x) for x in row) for row in cand_codes_arr]
 
-        L = self._L
         n_patterns = 3 ** L
-        # En 6-letter frequency usamos una versión entropía-like que se parece más
-        # a la estrategia Entropy pura, pero ponderada por probabilidades.
-        use_entropy_like = (self._mode == "frequency" and L == 6)
 
         best_guess, best_obj = None, float("inf")
         w2i = data["word_to_idx"]
+
+        # Peso del término de “hit directo”: en frequency nos importa algo más
+        # acertar pronto que en uniform, pero sin dominar a la entropía.
+        if self._mode == "frequency":
+            alpha_hit = 0.25
+        else:
+            alpha_hit = 0.15
 
         for g in guess_pool:
             if len(g) != L:
@@ -501,33 +520,21 @@ class MiEstrategia(Strategy):
                 break
 
             gc = self._encode_word(g)
-            counts = [0] * n_patterns
             masses = [0.0] * n_patterns
 
             for i, sc in enumerate(cand_codes):
                 pc = pattern_code(sc, gc)
-                counts[pc] += 1
-                masses[pc] += float(probs[i])
+                masses[pc] += float(probs_eval[i])
 
-            if use_entropy_like:
-                # Aproximación a entropía ponderada por probabilidad:
-                # ent = -sum_k p_k * log(p_k), donde p_k = masa de probabilidad
-                # que cae en cada patrón de feedback. Buscamos maximizar entropía
-                # (reducir incertidumbre en promedio).
-                ent = 0.0
-                for pc in range(n_patterns):
-                    mk = masses[pc]
-                    if mk > 0.0:
-                        ent -= mk * math.log(mk + 1e-12)
-            else:
-                # Objetivo original: tamaño esperado de los bloques ponderado
-                # por probabilidad total de cada patrón.
-                exp_post = 0.0
-                for pc in range(n_patterns):
-                    if counts[pc]:
-                        exp_post += masses[pc] * counts[pc]
+            # Entropía aproximada de la partición inducida por g:
+            # ent = -sum_k p_k * log(p_k), con p_k masa de probabilidad en cada
+            # patrón. Esto funciona en uniform y en frequency.
+            ent = 0.0
+            for mk in masses:
+                if mk > 0.0:
+                    ent -= mk * math.log(mk + 1e-12)
 
-            # bonus por hit directo (frequency)
+            # bonus por hit directo: probabilidad de que g sea el secreto
             p_hit = 0.0
             gi = w2i.get(g)
             if gi is not None:
@@ -536,12 +543,9 @@ class MiEstrategia(Strategy):
                         p_hit = float(probs[j])
                         break
 
-            if use_entropy_like:
-                # Queremos maximizar entropía y también p_hit.
-                # Minimizar obj equivale a maximizar ent y p_hit.
-                obj = -ent - 0.20 * p_hit
-            else:
-                obj = exp_post - 1.25 * p_hit
+            # Queremos maximizar entropía y también p_hit. Minimizar obj
+            # equivale a maximizar ambos términos.
+            obj = -ent - alpha_hit * p_hit
             if obj < best_obj:
                 best_obj, best_guess = obj, g
 
