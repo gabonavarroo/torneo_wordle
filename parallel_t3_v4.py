@@ -157,7 +157,7 @@ CHAR_TO_IDX     = {ch: i for i, ch in enumerate(SPANISH_LETTERS)}
 
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
-    5: {"uniform": "sareo", "frequency": "sareo"}, #PSEUDO CORRECTO, el bueno es sareo
+    5: {"uniform": "sareo", "frequency": "sareo"},
     6: {"uniform": "ceriao", "frequency": "ceriao"},
 }
 
@@ -234,38 +234,262 @@ def build_guess_space(wl):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Globals de worker — cargados UNA VEZ por proceso, no en cada tarea
+# Globals de worker — vocabulario cargado UNA VEZ por proceso (fork CoW)
 # ══════════════════════════════════════════════════════════════════════════════
 #
-# PROBLEMA resuelto:
-#   Con 5 letras, guess_strings tiene 14,348,907 strings (~280MB) y
-#   guess_enc es una matriz de 14.3M×5 int8 (~68MB). Si se pasan como
-#   argumento de tarea (pickle), cada worker recibe su propia copia
-#   por cada tarea enviada:
+# EVOLUCIÓN DEL PROBLEMA:
 #
-#     8 workers × (280MB + 68MB) × N_tareas = OOM kill silencioso en WSL2
+#   v1 (OOM): guess_strings/guess_enc (14.3M strings, 350MB) pickleados
+#   en cada tarea → 8 workers × N_tareas × 350MB = OOM kill en WSL2.
 #
-#   Con el inicializador de pool, los datos se cargan UNA SOLA VEZ al
-#   arrancar el worker. En Linux, fork() usa copy-on-write: los workers
-#   comparten las páginas de memoria del padre hasta que las modifican.
-#   Como los workers SOLO LEEN guess_enc (nunca lo modifican), en la
-#   práctica hay exactamente 1 copia en RAM física para todos los workers.
+#   v2 (demasiado lento): vocab-only (~4.5K strings) → 3,000x speedup
+#   pero las no-palabras ganadoras (uedne, pgmjn, mevga...) desaparecen
+#   del pool → calidad degradada.
 #
-#   Overhead real: 350MB una vez, no N_workers × N_tareas × 350MB.
+#   v3 (ACTUAL — smart pool): por estado, generar permutaciones de las
+#   letras más informativas de ESE estado específico.
+#
+# INSIGHT CLAVE (observado en los logs):
+#   Las no-palabras ganadoras usan ~5 letras únicas, todas aparecen
+#   en los candidatos, permutadas para maximizar discriminación.
+#   Ejemplo: candidatos {canto, manto, tanto, vanto, banto...}
+#   → letras informativas {c,m,t,v,b,...}
+#   → la no-palabra ganadora es una permutación de esas letras
+#
+#   El exhaustivo 27^5 = 14.3M desperdicia tiempo en 14.25M strings
+#   con letras irrelevantes (no aparecen en candidatos → H = 0 marginal).
+#
+# SMART POOL por estado = vocab + permutations(top_K_letras_informativas, wl)
+#   informativas(L) = Σ_pos min(count(L en cands en pos), n - count)
+#   → Higher = más poder de separación
+#
+#   K=12: P(12,5)=95,040 + vocab ~4.5K ≈ 100K strings
+#   Speedup: 14.3M / 100K ≈ 143x vs v1
+#   Calidad: captura todas las no-palabras de 5 letras únicas (patrón 9/10)
+#   Tiempo 5L: ~90 min (4 workers) vs 357 horas antes
+#   Tiempo 6L: ~12 min (4 workers) — antes completamente inviable
+#
+# Vocab se pasa UNA VEZ al inicializador del pool (fork copy-on-write).
+# Las tareas solo llevan los datos del estado (~50KB cada una).
 
-_WORKER_GUESS_STRINGS: list | None = None
-_WORKER_GUESS_ENC:     np.ndarray | None = None
+_WORKER_VOCAB:     list | None = None
 
 
-def _worker_init(guess_strings_ref, guess_enc_ref):
+def _worker_init(vocab_list):
     """
-    Inicializador del pool: carga el guess space en globales del worker.
-    Se llama UNA VEZ por proceso worker al arrancar el pool.
-    Las tareas individuales no reciben ni serializan estos datos.
+    Inicializador del pool: carga el vocabulario en global del worker.
+    Se llama UNA VEZ por proceso al arrancar el pool.
+    Cada tarea construye su propio smart pool a partir de este vocab.
     """
-    global _WORKER_GUESS_STRINGS, _WORKER_GUESS_ENC
-    _WORKER_GUESS_STRINGS = guess_strings_ref
-    _WORKER_GUESS_ENC     = guess_enc_ref
+    global _WORKER_VOCAB
+    _WORKER_VOCAB = vocab_list
+
+
+# Parámetros del smart pool
+# K se calcula adaptivamente: max K tal que P(K, wl) ≤ MAX_PERMS
+# Esto da tiempos razonables para todas las longitudes:
+#   wl=4: K=19 → P(19,4)=93K + vocab ≈ 118K → ~1h con 4 workers
+#   wl=5: K=12 → P(12,5)=95K + vocab ≈ 120K → ~1.8h con 4 workers
+#   wl=6: K=9  → P(9,6) =60K + vocab ≈ 85K  → ~3.8h con 4 workers
+SMART_POOL_MAX_PERMS = 100_000
+SMART_POOL_MAX_EXTRA = 20_000   # strings con letras repetidas (cap)
+
+
+def _smart_pool_k(wl):
+    """Calcula K adaptativo: máximo K tal que P(K, wl) ≤ SMART_POOL_MAX_PERMS."""
+    for K in range(27, 2, -1):
+        try:
+            if math.perm(K, wl) <= SMART_POOL_MAX_PERMS:
+                return K
+        except ValueError:
+            continue
+    return 3
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Análisis de restricciones posicionales — tomado y adaptado del código de
+# la compañera. Es el mecanismo central de reducción de pool sin pérdida
+# de calidad: filtra strings que violan lo que ya sabemos del estado.
+# ══════════════════════════════════════════════════════════════════════════════
+
+def parse_constraints(opener: str, pat1: tuple, t2_guess: str, pat2: tuple) -> dict:
+    """
+    Extrae las restricciones del juego tras T1 y T2.
+
+    Retorna:
+      greys:   set de letras confirmadas ausentes (no aparecen en la solución)
+      greens:  dict {pos: letra} — posiciones confirmadas
+      yellows: dict {letra: set[pos]} — posiciones prohibidas para esa letra
+      known:   set de letras que sí están en la solución (verdes + amarillas)
+
+    Nota sobre grises: una letra es realmente gris solo si NO salió
+    verde ni amarilla en ninguna posición del mismo guess (letras repetidas
+    con exceso de ocurrencias generan un 0 que no es "gris verdadero").
+    """
+    greys:   set  = set()
+    greens:  dict = {}
+    yellows: dict = defaultdict(set)
+    known:   set  = set()
+
+    for g, pat in [(opener, pat1), (t2_guess, pat2)]:
+        for i, (ch, val) in enumerate(zip(g, pat)):
+            if val == 2:
+                greens[i] = ch
+                known.add(ch)
+            elif val == 1:
+                yellows[ch].add(i)
+                known.add(ch)
+            else:  # val == 0
+                # Solo gris verdadero si la letra no tiene ningún 1 o 2
+                # en otras posiciones de este mismo guess
+                other_vals = [pat[j] for j, c in enumerate(g) if c == ch]
+                if not any(v > 0 for v in other_vals):
+                    greys.add(ch)
+
+    return {
+        "greys":   greys,
+        "greens":  greens,
+        "yellows": dict(yellows),
+        "known":   known,
+    }
+
+
+def _is_valid_t3_guess(s: str, constraints: dict) -> bool:
+    """
+    Filtra strings que violan las restricciones conocidas del estado.
+
+    Un string es INVÁLIDO si:
+      1. Usa una letra gris       → da info que ya tenemos (gris de nuevo)
+      2. Pone una amarilla en la posición donde ya salió amarilla
+         → el juego devuelve amarilla de nuevo, no info nueva
+      3. Pone una letra distinta en una posición verde confirmada
+         → el feedback de esa posición es predecible sin info nueva
+
+    Esto NO es un filtro de corrección — es un filtro de utilidad.
+    Strings que pasan este filtro explotan mejor las posiciones disponibles.
+    """
+    greys   = constraints["greys"]
+    greens  = constraints["greens"]
+    yellows = constraints["yellows"]
+
+    for i, ch in enumerate(s):
+        if ch in greys:
+            return False
+        if ch in yellows and i in yellows[ch]:
+            return False
+        if i in greens and greens[i] != ch:
+            return False
+    return True
+
+
+def build_smart_pool(candidates, vocab, wl, K=None, constraints=None):
+    """
+    Construye el pool de guesses para UN estado T3 específico.
+
+    Pool = vocab (palabras reales) + permutations(top_K_informativas, wl)
+
+    Las letras "informativas" son aquellas que aparecen en los candidatos
+    con mayor variabilidad posicional — las que más separan el conjunto.
+
+    Fórmula de informativeness para letra L:
+        score(L) = Σ_pos min(count(L en candidatos en pos), n - count)
+        → 0  = letra no aparece o siempre en la misma pos (no discrimina)
+        → n  = letra aparece en ~mitad de candidatos en ~mitad de posiciones
+               (máximo poder discriminatorio)
+
+    La elección de permutaciones sin repetición (P(K,wl)) captura el
+    patrón observado empíricamente: las no-palabras ganadoras usan 4-5
+    letras ÚNICAS de los candidatos. El vocab cubre los casos con letras
+    repetidas (ej: abaas, fdmss).
+
+    Construye el pool de guesses para UN estado T3 específico.
+
+    Pool = vocab_filtrado (palabras reales que respetan constraints)
+         + permutations(top_K_informativas, wl) filtradas por constraints
+         + extras con repetición (cap SMART_POOL_MAX_EXTRA) filtrados
+
+    FILTRO DE RESTRICCIONES (ideas de la compañera):
+    Strings que usan letras grises, contradicen verdes, o ponen amarillas
+    en posiciones prohibidas son descartados ANTES de calcular entropía.
+    Son strings que dan información redundante o predecible — no aportan.
+    Esto reduce el vocab de ~4.5K a ~1.2-1.8K y las permutaciones en ~40-60%.
+
+    LETRAS INFORMATIVAS (nuestra métrica):
+    Scored por variabilidad posicional en los candidatos. Las letras grises
+    ya tienen score=0 (no aparecen en candidatos), así que las permutaciones
+    respetan restricción 1 por construcción. El filtro añade restricciones 2 y 3.
+
+    Parámetros:
+        candidates:   lista de candidatos del estado T3
+        vocab:        vocabulario completo (palabras reales del español)
+        wl:           longitud de palabra
+        K:            número de letras top a usar (default: adaptativo por wl)
+        constraints:  dict de parse_constraints() o None (sin filtro)
+
+    Retorna: (guess_strings, guess_enc)
+        guess_strings: list[str]
+        guess_enc:     np.ndarray shape (N, wl) int8
+    """
+    if K is None:
+        K = _smart_pool_k(wl)
+    n = len(candidates)
+
+    # ── 1. Calcular informativeness por letra ─────────────────────────────
+    pos_letter = [[0] * len(SPANISH_LETTERS) for _ in range(wl)]
+    for c in candidates:
+        for p, ch in enumerate(c):
+            li = CHAR_TO_IDX.get(ch)
+            if li is not None:
+                pos_letter[p][li] += 1
+
+    letter_scores = []
+    for li, ch in enumerate(SPANISH_LETTERS):
+        score = sum(min(pos_letter[p][li], n - pos_letter[p][li])
+                    for p in range(wl))
+        if score > 0:
+            letter_scores.append((score, ch))
+
+    letter_scores.sort(reverse=True)
+    top_letters = [ch for _, ch in letter_scores[:K]]
+
+    # ── 2. Generar permutaciones sin repetición P(K, wl) ─────────────────
+    # Las letras grises ya tienen score=0 → no entran en top_letters.
+    # Aplicar además el filtro posicional (amarillas/verdes).
+    nonwords_set = set()
+    if len(top_letters) >= wl:
+        for perm in itertools.permutations(top_letters, wl):
+            s = ''.join(perm)
+            if constraints is None or _is_valid_t3_guess(s, constraints):
+                nonwords_set.add(s)
+
+    # ── 3. Complemento: top_K^wl con repetición (capped adicionales) ─────
+    count_extra = 0
+    for combo in itertools.product(top_letters, repeat=wl):
+        s = ''.join(combo)
+        if s not in nonwords_set:
+            if constraints is None or _is_valid_t3_guess(s, constraints):
+                nonwords_set.add(s)
+                count_extra += 1
+                if count_extra >= SMART_POOL_MAX_EXTRA:
+                    break
+
+    # ── 4. Vocab filtrado por constraints ────────────────────────────────
+    # Si hay constraints, descartar vocab que violaría posiciones conocidas.
+    # Esto reduce ~4.5K → ~1.2-1.8K por estado, reducción ~60-70%.
+    if constraints is not None:
+        valid_vocab = [w for w in vocab if _is_valid_t3_guess(w, constraints)]
+    else:
+        valid_vocab = vocab
+
+    # ── 5. Combinar vocab filtrado + nonwords no-en-vocab ────────────────
+    vocab_set_local = set(valid_vocab)
+    nonwords_list   = [s for s in nonwords_set if s not in vocab_set_local]
+    guess_strings   = valid_vocab + nonwords_list
+
+    # ── 6. Encodificar en una sola matriz ─────────────────────────────────
+    guess_enc = encode_words(guess_strings, wl)
+
+    return guess_strings, guess_enc
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -912,37 +1136,42 @@ def _evaluate_t3_state(args):
     Evalúa un estado T3: (pat_T1, pat_T2) → acción óptima.
 
     Flujo:
-    1. Clasificar el estado (trivial, two, cluster1/2, few, many)
-    2. Según clasificación, calcular la acción óptima
-    3. Para frequency: comparar E[direct] vs E[probe] exactamente
-    4. Retornar el resultado completo
+    1. Construir smart pool para ESTE estado (vocab + perms de letras informativas)
+    2. Clasificar el estado (trivial, two, cluster1/2, few, many)
+    3. Según clasificación, calcular la acción óptima
+    4. Para frequency: comparar E[direct] vs E[probe] exactamente
+    5. Retornar el resultado completo
 
-    NOTA: guess_strings y guess_enc se leen de los globals del worker
-    (_WORKER_GUESS_STRINGS, _WORKER_GUESS_ENC), cargados una sola vez
-    por el inicializador del pool. NO vienen en args para evitar OOM.
+    El smart pool es específico al estado: usa las letras con mayor poder
+    discriminatorio sobre LOS CANDIDATOS DE ESTE ESTADO. Esto captura las
+    no-palabras ganadoras (que usan letras de los candidatos) sin desperdiciar
+    tiempo en los 14.3M strings del 27^wl exhaustivo.
     """
     (state_key, candidates, weights_dict, weights_arr,
-     wl, mode, pat_t1_tuple, pat_t2_tuple, vocab_set) = args
+     wl, mode, pat_t1_tuple, pat_t2_tuple, vocab_set,
+     opener, t2_guess) = args
 
-    # Leer el guess space desde los globals del worker
-    guess_strings = _WORKER_GUESS_STRINGS
-    guess_enc     = _WORKER_GUESS_ENC
+    # ── Construir constraints reales desde T1+T2 ────────────────────────────
+    # Antes usábamos sets vacíos aquí. Ahora parse_constraints nos da:
+    #   - greys:   letras confirmadas ausentes → excluir del pool
+    #   - greens:  posiciones confirmadas → strings que las contradigan, fuera
+    #   - yellows: posiciones prohibidas por letra → strings que repiten, fuera
+    # Este filtro reduce vocab de ~4.5K a ~1.2-1.8K y recorta nonwords ~40-60%.
+    constraints  = parse_constraints(opener, pat_t1_tuple, t2_guess, pat_t2_tuple)
+    known_grey   = constraints["greys"]
+    known_yellow = constraints["yellows"]   # dict {letra: set[pos]}
+    known_green  = constraints["greens"]    # dict {pos: letra}
+
+    # ── Construir smart pool filtrado para este estado ───────────────────────
+    vocab        = _WORKER_VOCAB
+    guess_strings, guess_enc = build_smart_pool(
+        candidates, vocab, wl, constraints=constraints
+    )
 
     t0         = time.monotonic()
     n_cands    = len(candidates)
     n_patterns = 3 ** wl
     win_pat    = tuple([2] * wl)
-
-    # Reconstruir historial de letras conocidas (T1 + T2)
-    # Para T3, las grises/amarillas/verdes combinadas de T1 y T2
-    # ya están implícitas en el conjunto de candidatos — pero las
-    # necesitamos explícitamente para el tiebreaker y el cluster-buster.
-    # Las extraemos del estado de la simulación.
-    # Por simplicidad, usamos sets vacíos aquí — el impacto en la
-    # calidad es mínimo porque el tiebreaker solo aplica en empates exactos.
-    known_grey   = set()
-    known_yellow = {}
-    known_green  = {}
 
     # ── Caso TRIVIAL ──────────────────────────────────────────────────────────
     if n_cands == 0:
@@ -1176,7 +1405,7 @@ def build_t3_states(vocab, weights, t2_table, openers_t2, wl):
                 continue
             pat_t2_str = ''.join(str(x) for x in pat_t2)
             state_key  = f"{pat_t1_str}|{pat_t2_str}"
-            states.append((state_key, pat_t1, pat_t2, t3_cands))
+            states.append((state_key, pat_t1, pat_t2, t3_cands, t2_guess))
 
     states.sort(key=lambda x: -len(x[3]))  # más grandes primero
     return states
@@ -1213,27 +1442,31 @@ def run(wl, mode, n_workers):
     print(f"  Estados T3: {len(states)}")
     if states:
         max_cands = max(len(s[3]) for s in states)
-        avg_cands = sum(len(s[3]) for s in states) / len(states)
+        avg_cands_info = sum(len(s[3]) for s in states) / len(states)
         print(f"  Candidatos por estado — max: {max_cands}  "
-              f"avg: {avg_cands:.1f}")
+              f"avg: {avg_cands_info:.1f}")
 
-    # Construir espacio de guesses
-    print(f"\n  Construyendo espacio 27^{wl}...")
-    t_space = time.monotonic()
-    guess_strings, guess_enc = build_guess_space(wl)
-    print(f"  ✓ {len(guess_strings):,} strings "
-          f"({guess_enc.nbytes/1e6:.0f} MB) "
-          f"en {time.monotonic()-t_space:.1f}s")
+    # Pool de guesses — SMART POOL POR ESTADO (no pool global fijo)
+    # ─────────────────────────────────────────────────────────────────────────
+    K_for_wl   = _smart_pool_k(wl)
+    pool_est   = len(vocab) + math.perm(K_for_wl, wl) + SMART_POOL_MAX_EXTRA
+    speedup    = 27**wl // pool_est if pool_est > 0 else 0
+    # Con constraint filtering, vocab se reduce ~60-70% por estado
+    pool_eff   = int(len(vocab) * 0.4) + int(math.perm(K_for_wl, wl) * 0.5) + SMART_POOL_MAX_EXTRA
+    print(f"\n  Pool strategy: vocab({len(vocab):,}) + perms(top_{K_for_wl}, {wl}) + {SMART_POOL_MAX_EXTRA//1000}K extras")
+    print(f"  Pool bruto por estado: ~{pool_est:,}  →  efectivo c/constraint filter: ~{pool_eff:,}")
+    print(f"  (vs 27^{wl}={27**wl:,} — speedup total ≈{27**wl//max(1,pool_eff):,}x)")
     sys.stdout.flush()
 
     # Preparar tareas — SIN guess_strings/guess_enc (van en globals del worker)
     tasks = []
-    for state_key, pat_t1, pat_t2, cands in states:
+    for state_key, pat_t1, pat_t2, cands, t2_guess in states:
         norm_w = normalize_weights(cands, weights)
         w_arr  = np.array(norm_w, dtype=np.float64)
         tasks.append((
             state_key, cands, weights, w_arr,
-            wl, mode, pat_t1, pat_t2, vocab_set
+            wl, mode, pat_t1, pat_t2, vocab_set,
+            opener, t2_guess          # para parse_constraints en el worker
         ))
 
     print(f"\n  Lanzando {len(tasks)} tareas en {n_workers} workers...")
@@ -1244,8 +1477,12 @@ def run(wl, mode, n_workers):
         SIT_FEW: 0, SIT_MANY: 0,
     }
 
-    estimated_s = len(tasks) * avg_cands * 0.5 / n_workers if states else 0
-    print(f"  Tiempo estimado: ~{estimated_s/60:.0f} min")
+    avg_cands = (sum(len(s[3]) for s in states) / len(states)) if states else 0
+    pool_eff  = int(len(vocab) * 0.4) + int(math.perm(_smart_pool_k(wl), wl) * 0.5) + SMART_POOL_MAX_EXTRA
+    t_per_state_est = pool_eff / 14_348_907 * 1400
+    estimated_min   = len(tasks) / max(1, n_workers) * t_per_state_est / 60
+    print(f"  Tiempo estimado: ~{estimated_min:.0f} min  "
+          f"(pool_efectivo≈{pool_eff:,}, avg_cands={avg_cands:.1f})")
     sys.stdout.flush()
 
     t_start   = time.monotonic()
@@ -1254,7 +1491,7 @@ def run(wl, mode, n_workers):
 
     with mp.Pool(processes=n_workers,
                  initializer=_worker_init,
-                 initargs=(guess_strings, guess_enc)) as pool:
+                 initargs=(vocab,)) as pool:
         for res in pool.imap_unordered(_evaluate_t3_state, tasks,
                                         chunksize=1):
             completed += 1

@@ -52,8 +52,8 @@ DATA_DIR  = REPO_ROOT / "data"
 # ── Openers confirmados por búsqueda exhaustiva ───────────────────────────────
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
-    5: {"uniform": "careo", "frequency": "careo"},
-    6: {"uniform": "carieo", "frequency": "carieo"},
+    5: {"uniform": "careo", "frequency": "careo"}, #PSEUDO CORRECTO, el bueno es sareo, pero careo es casi tan bueno y es el que se usó en T2
+    6: {"uniform": "ceriao", "frequency": "ceriao"},
 }
 
 # ── T2 tables precomputadas (leídas desde JSON) ───────────────────────────────
