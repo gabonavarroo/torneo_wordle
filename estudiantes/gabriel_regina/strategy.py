@@ -60,7 +60,7 @@ CHAR_TO_IDX     = {ch: i for i, ch in enumerate(SPANISH_LETTERS)}
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
     5: {"uniform": "sareo", "frequency": "sareo"},
-    6: {"uniform": "ceriao", "frequency": "ceriao"},
+    6: {"uniform": "ceriao", "frequency": "carieo"},
 }
 
 # Umbral de candidatos para buscar safe guess en T4
