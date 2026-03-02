@@ -157,8 +157,8 @@ CHAR_TO_IDX     = {ch: i for i, ch in enumerate(SPANISH_LETTERS)}
 
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
-    5: {"uniform": "careo", "frequency": "careo"},
-    6: {"uniform": "carieo", "frequency": "carieo"},
+    5: {"uniform": "sareo", "frequency": "sareo"},
+    6: {"uniform": "ceriao", "frequency": "ceriao"},
 }
 
 MAX_DEPTH            = 6   # intentos máximos del torneo
