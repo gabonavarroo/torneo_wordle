@@ -1,9 +1,9 @@
 {
-  "01110": {
-    "pat": "01110",
-    "n_cands": 123,
-    "best_probe": "grntr",
-    "best_H": 4.169731,
+  "01001": {
+    "pat": "01001",
+    "n_cands": 127,
+    "best_probe": "cpntl",
+    "best_H": 4.799864,
     "tiebreak": [
       0,
       0,
@@ -14,8 +14,47 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
-      "o"
+      "e",
+      "r",
+      "s"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "local",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.1888,
+      "e_direct": 8.826,
+      "p_best": 0.019
+    },
+    "elapsed": 2241.09,
+    "trivial": false
+  },
+  "01110": {
+    "pat": "01110",
+    "n_cands": 135,
+    "best_probe": "centa",
+    "best_H": 4.344542,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -31,59 +70,20 @@
     "green_letters": {},
     "recommendation": {
       "action": "probe",
-      "direct_word": "estar",
+      "direct_word": "fuera",
       "reason": "probe_wins_renyi",
-      "e_probe": 4.7728,
-      "e_direct": 8.7656,
-      "p_best": 0.0208
+      "e_probe": 4.7323,
+      "e_direct": 8.916,
+      "p_best": 0.0186
     },
-    "elapsed": 815.43,
-    "trivial": false
-  },
-  "01001": {
-    "pat": "01001",
-    "n_cands": 138,
-    "best_probe": "tlnis",
-    "best_H": 4.969128,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "total",
-      "reason": "probe_wins_renyi",
-      "e_probe": 4.1394,
-      "e_direct": 8.9516,
-      "p_best": 0.0181
-    },
-    "elapsed": 839.62,
+    "elapsed": 2288.98,
     "trivial": false
   },
   "01100": {
     "pat": "01100",
-    "n_cands": 151,
-    "best_probe": "aimag",
-    "best_H": 4.633302,
+    "n_cands": 150,
+    "best_probe": "aimta",
+    "best_H": 4.680014,
     "tiebreak": [
       0,
       0,
@@ -94,9 +94,9 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
       "e",
-      "o"
+      "o",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -111,53 +111,18 @@
       "action": "probe",
       "direct_word": "lugar",
       "reason": "probe_wins_renyi",
-      "e_probe": 4.6051,
-      "e_direct": 9.1179,
-      "p_best": 0.0135
+      "e_probe": 4.5488,
+      "e_direct": 9.1056,
+      "p_best": 0.0138
     },
-    "elapsed": 871.72,
-    "trivial": false
-  },
-  "00002": {
-    "pat": "00002",
-    "n_cands": 174,
-    "best_probe": "silnu",
-    "best_H": 5.18238,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "e",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "mundo",
-      "reason": "probe_wins_renyi",
-      "e_probe": 4.2606,
-      "e_direct": 9.346,
-      "p_best": 0.0105
-    },
-    "elapsed": 896.44,
+    "elapsed": 2400.08,
     "trivial": false
   },
   "00010": {
     "pat": "00010",
-    "n_cands": 192,
-    "best_probe": "sinut",
-    "best_H": 5.410585,
+    "n_cands": 168,
+    "best_probe": "dunli",
+    "best_H": 5.060773,
     "tiebreak": [
       0,
       0,
@@ -169,9 +134,9 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "c",
       "o",
-      "r"
+      "r",
+      "s"
     ],
     "yellow_letters": {
       "e": [
@@ -181,20 +146,20 @@
     "green_letters": {},
     "recommendation": {
       "action": "probe",
-      "direct_word": "desde",
+      "direct_word": "tiene",
       "reason": "probe_wins_renyi",
-      "e_probe": 4.1744,
-      "e_direct": 9.4791,
-      "p_best": 0.0115
+      "e_probe": 4.3315,
+      "e_direct": 9.2629,
+      "p_best": 0.0144
     },
-    "elapsed": 921.54,
+    "elapsed": 2460.09,
     "trivial": false
   },
-  "01010": {
-    "pat": "01010",
-    "n_cands": 228,
-    "best_probe": "lints",
-    "best_H": 5.054374,
+  "00002": {
+    "pat": "00002",
+    "n_cands": 203,
+    "best_probe": "cilnu",
+    "best_H": 5.348525,
     "tiebreak": [
       0,
       0,
@@ -205,9 +170,79 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
+      "a",
+      "e",
+      "r",
+      "s"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "cinco",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.3168,
+      "e_direct": 9.5771,
+      "p_best": 0.0094
+    },
+    "elapsed": 2548.3,
+    "trivial": false
+  },
+  "02000": {
+    "pat": "02000",
+    "n_cands": 210,
+    "best_probe": "ctlmn",
+    "best_H": 4.915917,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
       "o",
-      "r"
+      "r",
+      "s"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "habia",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.7983,
+      "e_direct": 9.6147,
+      "p_best": 0.0106
+    },
+    "elapsed": 2595.85,
+    "trivial": false
+  },
+  "01010": {
+    "pat": "01010",
+    "n_cands": 220,
+    "best_probe": "clitn",
+    "best_H": 4.964227,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -222,53 +257,18 @@
       "action": "probe",
       "direct_word": "nueva",
       "reason": "probe_wins_renyi",
-      "e_probe": 4.7785,
-      "e_direct": 9.7441,
-      "p_best": 0.0093
+      "e_probe": 4.8171,
+      "e_direct": 9.6869,
+      "p_best": 0.01
     },
-    "elapsed": 1004.07,
-    "trivial": false
-  },
-  "02000": {
-    "pat": "02000",
-    "n_cands": 243,
-    "best_probe": "sbltn",
-    "best_H": 5.113241,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "e",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "hasta",
-      "reason": "probe_wins_renyi",
-      "e_probe": 4.8116,
-      "e_direct": 9.8402,
-      "p_best": 0.0088
-    },
-    "elapsed": 1017.0,
+    "elapsed": 2667.96,
     "trivial": false
   },
   "01000": {
     "pat": "01000",
-    "n_cands": 264,
-    "best_probe": "milns",
-    "best_H": 5.583467,
+    "n_cands": 242,
+    "best_probe": "liucn",
+    "best_H": 5.515063,
     "tiebreak": [
       0,
       0,
@@ -279,10 +279,10 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
       "e",
       "o",
-      "r"
+      "r",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -292,20 +292,20 @@
     "green_letters": {},
     "recommendation": {
       "action": "probe",
-      "direct_word": "final",
+      "direct_word": "china",
       "reason": "probe_wins_renyi",
-      "e_probe": 4.4609,
-      "e_direct": 9.9631,
-      "p_best": 0.0084
+      "e_probe": 4.4038,
+      "e_direct": 9.8279,
+      "p_best": 0.0095
     },
-    "elapsed": 1055.28,
+    "elapsed": 2766.9,
     "trivial": false
   },
   "01101": {
     "pat": "01101",
-    "n_cands": 103,
-    "best_probe": "tdlas",
-    "best_H": 4.16087,
+    "n_cands": 98,
+    "best_probe": "tdbrr",
+    "best_H": 4.108834,
     "tiebreak": [
       0,
       0,
@@ -316,8 +316,8 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
-      "e"
+      "e",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -335,18 +335,18 @@
       "action": "probe",
       "direct_word": "ahora",
       "reason": "probe_wins_renyi",
-      "e_probe": 4.5256,
-      "e_direct": 8.5238,
-      "p_best": 0.0194
+      "e_probe": 4.5059,
+      "e_direct": 8.4404,
+      "p_best": 0.021
     },
-    "elapsed": 798.77,
+    "elapsed": 1962.23,
     "trivial": false
   },
   "00012": {
     "pat": "00012",
     "n_cands": 102,
-    "best_probe": "leidn",
-    "best_H": 4.536646,
+    "best_probe": "lindc",
+    "best_H": 4.712343,
     "tiebreak": [
       0,
       0,
@@ -358,8 +358,8 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "c",
-      "r"
+      "r",
+      "s"
     ],
     "yellow_letters": {
       "e": [
@@ -373,128 +373,18 @@
       "action": "probe",
       "direct_word": "luego",
       "reason": "probe_wins_renyi",
-      "e_probe": 4.1358,
-      "e_direct": 8.5391,
+      "e_probe": 3.9601,
+      "e_direct": 8.5388,
       "p_best": 0.0156
     },
-    "elapsed": 785.82,
-    "trivial": false
-  },
-  "00020": {
-    "pat": "00020",
-    "n_cands": 87,
-    "best_probe": "mulis",
-    "best_H": 4.706405,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "lunes",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.7365,
-      "e_direct": 8.1914,
-      "p_best": 0.0316
-    },
-    "elapsed": 745.61,
-    "trivial": false
-  },
-  "00001": {
-    "pat": "00001",
-    "n_cands": 94,
-    "best_probe": "miltn",
-    "best_H": 5.010878,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "union",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.5437,
-      "e_direct": 8.3516,
-      "p_best": 0.0249
-    },
-    "elapsed": 768.98,
-    "trivial": false
-  },
-  "02100": {
-    "pat": "02100",
-    "n_cands": 81,
-    "best_probe": "tsnal",
-    "best_H": 3.863441,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "e",
-      "o"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "ganar",
-      "reason": "probe_wins_renyi",
-      "e_probe": 4.4764,
-      "e_direct": 8.1087,
-      "p_best": 0.0291
-    },
-    "elapsed": 734.51,
+    "elapsed": 2041.83,
     "trivial": false
   },
   "02002": {
     "pat": "02002",
-    "n_cands": 81,
-    "best_probe": "sgltm",
-    "best_H": 4.501326,
+    "n_cands": 98,
+    "best_probe": "cmnlt",
+    "best_H": 4.721413,
     "tiebreak": [
       0,
       0,
@@ -505,9 +395,9 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
       "e",
-      "r"
+      "r",
+      "s"
     ],
     "yellow_letters": {},
     "green_letters": {
@@ -518,18 +408,18 @@
       "action": "probe",
       "direct_word": "tanto",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.8385,
-      "e_direct": 8.1458,
-      "p_best": 0.0241
+      "e_probe": 3.8933,
+      "e_direct": 8.4487,
+      "p_best": 0.0199
     },
-    "elapsed": 741.57,
+    "elapsed": 1975.23,
     "trivial": false
   },
-  "00011": {
-    "pat": "00011",
-    "n_cands": 79,
-    "best_probe": "dsltn",
-    "best_H": 4.546755,
+  "01002": {
+    "pat": "01002",
+    "n_cands": 88,
+    "best_probe": "clunp",
+    "best_H": 4.435242,
     "tiebreak": [
       0,
       0,
@@ -540,35 +430,34 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "a",
-      "c",
-      "r"
+      "e",
+      "r",
+      "s"
     ],
     "yellow_letters": {
-      "e": [
-        3
-      ],
-      "o": [
-        4
+      "a": [
+        1
       ]
     },
-    "green_letters": {},
+    "green_letters": {
+      "4": "o"
+    },
     "recommendation": {
       "action": "probe",
-      "direct_word": "donde",
+      "direct_word": "apoyo",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.757,
-      "e_direct": 8.0375,
-      "p_best": 0.034
+      "e_probe": 4.0242,
+      "e_direct": 8.2673,
+      "p_best": 0.0236
     },
-    "elapsed": 743.82,
+    "elapsed": 1965.6,
     "trivial": false
   },
   "02010": {
     "pat": "02010",
-    "n_cands": 75,
-    "best_probe": "tplds",
-    "best_H": 4.366085,
+    "n_cands": 79,
+    "best_probe": "cmltn",
+    "best_H": 4.451747,
     "tiebreak": [
       0,
       0,
@@ -579,9 +468,9 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
       "o",
-      "r"
+      "r",
+      "s"
     ],
     "yellow_letters": {
       "e": [
@@ -595,56 +484,18 @@
       "action": "probe",
       "direct_word": "nadie",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.8627,
-      "e_direct": 7.923,
-      "p_best": 0.0397
+      "e_probe": 3.852,
+      "e_direct": 8.0395,
+      "p_best": 0.0338
     },
-    "elapsed": 726.9,
-    "trivial": false
-  },
-  "01200": {
-    "pat": "01200",
-    "n_cands": 72,
-    "best_probe": "sidma",
-    "best_H": 4.215175,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "e",
-      "o"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ]
-    },
-    "green_letters": {
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "abril",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.9547,
-      "e_direct": 7.9515,
-      "p_best": 0.0277
-    },
-    "elapsed": 713.71,
+    "elapsed": 1890.01,
     "trivial": false
   },
   "00110": {
     "pat": "00110",
-    "n_cands": 73,
-    "best_probe": "meine",
-    "best_H": 4.372286,
+    "n_cands": 84,
+    "best_probe": "ceine",
+    "best_H": 4.371735,
     "tiebreak": [
       0,
       0,
@@ -656,8 +507,8 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "c",
-      "o"
+      "o",
+      "s"
     ],
     "yellow_letters": {
       "r": [
@@ -672,18 +523,18 @@
       "action": "probe",
       "direct_word": "entre",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.8175,
-      "e_direct": 7.9339,
-      "p_best": 0.0329
+      "e_probe": 4.0206,
+      "e_direct": 8.1673,
+      "p_best": 0.0282
     },
-    "elapsed": 722.03,
+    "elapsed": 1936.24,
     "trivial": false
   },
-  "02200": {
-    "pat": "02200",
-    "n_cands": 61,
-    "best_probe": "tdipa",
-    "best_H": 3.52045,
+  "11000": {
+    "pat": "11000",
+    "n_cands": 78,
+    "best_probe": "linms",
+    "best_H": 4.570498,
     "tiebreak": [
       0,
       0,
@@ -694,9 +545,315 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
       "e",
-      "o"
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "busca",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.7149,
+      "e_direct": 8.0804,
+      "p_best": 0.0257
+    },
+    "elapsed": 1923.32,
+    "trivial": false
+  },
+  "02100": {
+    "pat": "02100",
+    "n_cands": 78,
+    "best_probe": "nmtal",
+    "best_H": 3.732599,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o",
+      "s"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "ganar",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.5528,
+      "e_direct": 8.0374,
+      "p_best": 0.0316
+    },
+    "elapsed": 1910.05,
+    "trivial": false
+  },
+  "12000": {
+    "pat": "12000",
+    "n_cands": 77,
+    "best_probe": "ctpss",
+    "best_H": 3.972752,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ]
+    },
+    "green_letters": {
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "hasta",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.294,
+      "e_direct": 8.0468,
+      "p_best": 0.0278
+    },
+    "elapsed": 1749.33,
+    "trivial": false
+  },
+  "00102": {
+    "pat": "00102",
+    "n_cands": 77,
+    "best_probe": "tuirc",
+    "best_H": 4.594628,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e",
+      "s"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "grupo",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.6722,
+      "e_direct": 8.0711,
+      "p_best": 0.0244
+    },
+    "elapsed": 1753.0,
+    "trivial": false
+  },
+  "11010": {
+    "pat": "11010",
+    "n_cands": 63,
+    "best_probe": "tsncs",
+    "best_H": 4.311814,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "estan",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.6655,
+      "e_direct": 7.6715,
+      "p_best": 0.0407
+    },
+    "elapsed": 1695.31,
+    "trivial": false
+  },
+  "00011": {
+    "pat": "00011",
+    "n_cands": 75,
+    "best_probe": "mpnlt",
+    "best_H": 4.526199,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "r",
+      "s"
+    ],
+    "yellow_letters": {
+      "e": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "donde",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.7026,
+      "e_direct": 7.9344,
+      "p_best": 0.0381
+    },
+    "elapsed": 1775.78,
+    "trivial": false
+  },
+  "00020": {
+    "pat": "00020",
+    "n_cands": 66,
+    "best_probe": "dilmt",
+    "best_H": 4.013425,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o",
+      "r",
+      "s"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "quien",
+      "reason": "probe_wins_renyi",
+      "e_probe": 4.031,
+      "e_direct": 7.6348,
+      "p_best": 0.0552
+    },
+    "elapsed": 1740.04,
+    "trivial": false
+  },
+  "01200": {
+    "pat": "01200",
+    "n_cands": 63,
+    "best_probe": "dinma",
+    "best_H": 4.08215,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o",
+      "s"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "abril",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.8951,
+      "e_direct": 7.7425,
+      "p_best": 0.0304
+    },
+    "elapsed": 1684.06,
+    "trivial": false
+  },
+  "02200": {
+    "pat": "02200",
+    "n_cands": 63,
+    "best_probe": "tdica",
+    "best_H": 3.484389,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o",
+      "s"
     ],
     "yellow_letters": {},
     "green_letters": {
@@ -707,18 +864,18 @@
       "action": "probe",
       "direct_word": "maria",
       "reason": "probe_wins_renyi",
-      "e_probe": 4.4103,
-      "e_direct": 7.6925,
-      "p_best": 0.031
+      "e_probe": 4.4929,
+      "e_direct": 7.7503,
+      "p_best": 0.0293
     },
-    "elapsed": 702.09,
+    "elapsed": 1683.64,
     "trivial": false
   },
-  "01002": {
-    "pat": "01002",
-    "n_cands": 70,
-    "best_probe": "pnigd",
-    "best_H": 4.220806,
+  "10001": {
+    "pat": "10001",
+    "n_cands": 62,
+    "best_probe": "cimnl",
+    "best_H": 4.087785,
     "tiebreak": [
       0,
       0,
@@ -729,69 +886,70 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
+      "a",
       "e",
       "r"
     ],
     "yellow_letters": {
-      "a": [
-        1
+      "s": [
+        0
+      ],
+      "o": [
+        4
       ]
     },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "votos",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.8664,
+      "e_direct": 7.6693,
+      "p_best": 0.0377
+    },
+    "elapsed": 1704.14,
+    "trivial": false
+  },
+  "00202": {
+    "pat": "00202",
+    "n_cands": 61,
+    "best_probe": "tbciu",
+    "best_H": 3.885718,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e",
+      "s"
+    ],
+    "yellow_letters": {},
     "green_letters": {
+      "2": "r",
       "4": "o"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "apoyo",
+      "direct_word": "murio",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.9085,
-      "e_direct": 7.8735,
-      "p_best": 0.0331
+      "e_probe": 4.045,
+      "e_direct": 7.6938,
+      "p_best": 0.0309
     },
-    "elapsed": 719.32,
-    "trivial": false
-  },
-  "02020": {
-    "pat": "02020",
-    "n_cands": 65,
-    "best_probe": "sbltn",
-    "best_H": 4.475912,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "1": "a",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "papel",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.5465,
-      "e_direct": 7.6948,
-      "p_best": 0.0436
-    },
-    "elapsed": 716.64,
+    "elapsed": 1719.46,
     "trivial": false
   },
   "01201": {
     "pat": "01201",
-    "n_cands": 56,
-    "best_probe": "tdnma",
-    "best_H": 3.836644,
+    "n_cands": 60,
+    "best_probe": "tmnca",
+    "best_H": 3.855636,
     "tiebreak": [
       0,
       0,
@@ -802,8 +960,8 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
-      "e"
+      "e",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -820,18 +978,18 @@
       "action": "probe",
       "direct_word": "forma",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.9707,
-      "e_direct": 7.5024,
-      "p_best": 0.0411
+      "e_probe": 4.0513,
+      "e_direct": 7.636,
+      "p_best": 0.0358
     },
-    "elapsed": 701.08,
+    "elapsed": 1746.21,
     "trivial": false
   },
-  "00102": {
-    "pat": "00102",
-    "n_cands": 61,
-    "best_probe": "tuibg",
-    "best_H": 4.553948,
+  "02020": {
+    "pat": "02020",
+    "n_cands": 59,
+    "best_probe": "nbctl",
+    "best_H": 3.983931,
     "tiebreak": [
       0,
       0,
@@ -842,223 +1000,31 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "a",
-      "c",
-      "e"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "grupo",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.3768,
-      "e_direct": 7.6889,
-      "p_best": 0.0316
-    },
-    "elapsed": 713.61,
-    "trivial": false
-  },
-  "00202": {
-    "pat": "00202",
-    "n_cands": 56,
-    "best_probe": "tobmd",
-    "best_H": 3.865531,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "e"
+      "o",
+      "r",
+      "s"
     ],
     "yellow_letters": {},
     "green_letters": {
-      "2": "r",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "murio",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.9418,
-      "e_direct": 7.5563,
-      "p_best": 0.0332
-    },
-    "elapsed": 693.71,
-    "trivial": false
-  },
-  "10002": {
-    "pat": "10002",
-    "n_cands": 51,
-    "best_probe": "husid",
-    "best_H": 4.166783,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ]
-    },
-    "green_letters": {
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "mucho",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.5056,
-      "e_direct": 7.3597,
-      "p_best": 0.0428
-    },
-    "elapsed": 681.89,
-    "trivial": false
-  },
-  "02001": {
-    "pat": "02001",
-    "n_cands": 53,
-    "best_probe": "mglts",
-    "best_H": 4.213884,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "japon",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.514,
-      "e_direct": 7.4976,
-      "p_best": 0.0303
-    },
-    "elapsed": 688.05,
-    "trivial": false
-  },
-  "00021": {
-    "pat": "00021",
-    "n_cands": 48,
-    "best_probe": "tbnps",
-    "best_H": 4.045901,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "r"
-    ],
-    "yellow_letters": {
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
+      "1": "a",
       "3": "e"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "goles",
+      "direct_word": "papel",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.5391,
-      "e_direct": 7.1946,
-      "p_best": 0.0549
+      "e_probe": 3.8987,
+      "e_direct": 7.4287,
+      "p_best": 0.0626
     },
-    "elapsed": 678.14,
+    "elapsed": 1747.02,
     "trivial": false
   },
-  "01210": {
-    "pat": "01210",
-    "n_cands": 44,
-    "best_probe": "snpva",
-    "best_H": 3.889056,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "o"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "seran",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.5704,
-      "e_direct": 7.1429,
-      "p_best": 0.0441
-    },
-    "elapsed": 674.4,
-    "trivial": false
-  },
-  "00112": {
-    "pat": "00112",
-    "n_cands": 44,
-    "best_probe": "uetrg",
-    "best_H": 3.970677,
+  "00001": {
+    "pat": "00001",
+    "n_cands": 50,
+    "best_probe": "ticml",
+    "best_H": 4.45812,
     "tiebreak": [
       0,
       0,
@@ -1070,7 +1036,85 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "c"
+      "e",
+      "r",
+      "s"
+    ],
+    "yellow_letters": {
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "union",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.1857,
+      "e_direct": 7.3014,
+      "p_best": 0.0474
+    },
+    "elapsed": 1729.8,
+    "trivial": false
+  },
+  "11001": {
+    "pat": "11001",
+    "n_cands": 52,
+    "best_probe": "tclan",
+    "best_H": 4.186775,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "costa",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.5137,
+      "e_direct": 7.3317,
+      "p_best": 0.0511
+    },
+    "elapsed": 1757.85,
+    "trivial": false
+  },
+  "00112": {
+    "pat": "00112",
+    "n_cands": 52,
+    "best_probe": "ctgru",
+    "best_H": 4.126445,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "s"
     ],
     "yellow_letters": {
       "r": [
@@ -1087,18 +1131,18 @@
       "action": "probe",
       "direct_word": "enero",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.4888,
-      "e_direct": 7.1306,
-      "p_best": 0.046
+      "e_probe": 3.574,
+      "e_direct": 7.4291,
+      "p_best": 0.0365
     },
-    "elapsed": 686.76,
+    "elapsed": 1765.34,
     "trivial": false
   },
-  "00210": {
-    "pat": "00210",
-    "n_cands": 42,
-    "best_probe": "tilvs",
-    "best_H": 3.873123,
+  "00111": {
+    "pat": "00111",
+    "n_cands": 45,
+    "best_probe": "bolpn",
+    "best_H": 3.830551,
     "tiebreak": [
       0,
       0,
@@ -1110,8 +1154,126 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "c",
-      "o"
+      "s"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ],
+      "e": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "mejor",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.6613,
+      "e_direct": 7.1653,
+      "p_best": 0.0455
+    },
+    "elapsed": 1720.07,
+    "trivial": false
+  },
+  "10010": {
+    "pat": "10010",
+    "n_cands": 45,
+    "best_probe": "tunip",
+    "best_H": 4.391632,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "desde",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.1002,
+      "e_direct": 7.1371,
+      "p_best": 0.0499
+    },
+    "elapsed": 1737.16,
+    "trivial": false
+  },
+  "00021": {
+    "pat": "00021",
+    "n_cands": 42,
+    "best_probe": "mptvl",
+    "best_H": 4.050404,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "r",
+      "s"
+    ],
+    "yellow_letters": {
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "joven",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.3419,
+      "e_direct": 6.8873,
+      "p_best": 0.074
+    },
+    "elapsed": 1695.21,
+    "trivial": false
+  },
+  "00210": {
+    "pat": "00210",
+    "n_cands": 40,
+    "best_probe": "tilve",
+    "best_H": 3.45733,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o",
+      "s"
     ],
     "yellow_letters": {
       "e": [
@@ -1123,176 +1285,20 @@
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "serie",
+      "direct_word": "firme",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.5192,
-      "e_direct": 6.965,
-      "p_best": 0.0618
+      "e_probe": 3.8646,
+      "e_direct": 6.7442,
+      "p_best": 0.0861
     },
-    "elapsed": 677.15,
+    "elapsed": 1700.36,
     "trivial": false
   },
-  "11010": {
-    "pat": "11010",
+  "10002": {
+    "pat": "10002",
     "n_cands": 40,
-    "best_probe": "hpusa",
-    "best_H": 3.833212,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "a": [
-        1
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "fecha",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.4887,
-      "e_direct": 6.9042,
-      "p_best": 0.0607
-    },
-    "elapsed": 671.9,
-    "trivial": false
-  },
-  "00111": {
-    "pat": "00111",
-    "n_cands": 42,
-    "best_probe": "molbn",
-    "best_H": 3.879052,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ],
-      "e": [
-        3
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "sobre",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.5133,
-      "e_direct": 7.0659,
-      "p_best": 0.0459
-    },
-    "elapsed": 687.54,
-    "trivial": false
-  },
-  "11000": {
-    "pat": "11000",
-    "n_cands": 40,
-    "best_probe": "linct",
-    "best_H": 4.189608,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "e",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "a": [
-        1
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "lucha",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.1323,
-      "e_direct": 6.9721,
-      "p_best": 0.0498
-    },
-    "elapsed": 666.86,
-    "trivial": false
-  },
-  "22000": {
-    "pat": "22000",
-    "n_cands": 40,
-    "best_probe": "npsla",
-    "best_H": 4.096869,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "e",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "causa",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.2251,
-      "e_direct": 6.9766,
-      "p_best": 0.0491
-    },
-    "elapsed": 663.91,
-    "trivial": false
-  },
-  "20002": {
-    "pat": "20002",
-    "n_cands": 40,
-    "best_probe": "noilt",
-    "best_H": 4.002907,
+    "best_probe": "cimbt",
+    "best_H": 4.09275,
     "tiebreak": [
       0,
       0,
@@ -1307,219 +1313,30 @@
       "e",
       "r"
     ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "cinco",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.319,
-      "e_direct": 7.0042,
-      "p_best": 0.0447
-    },
-    "elapsed": 668.82,
-    "trivial": false
-  },
-  "21010": {
-    "pat": "21010",
-    "n_cands": 38,
-    "best_probe": "ulnis",
-    "best_H": 3.793229,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "o",
-      "r"
-    ],
     "yellow_letters": {
-      "a": [
-        1
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "0": "c"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "clave",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.4547,
-      "e_direct": 6.8219,
-      "p_best": 0.0624
-    },
-    "elapsed": 670.18,
-    "trivial": false
-  },
-  "01102": {
-    "pat": "01102",
-    "n_cands": 37,
-    "best_probe": "grdtm",
-    "best_H": 3.841637,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "e"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "trato",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.3678,
-      "e_direct": 6.8946,
-      "p_best": 0.0446
-    },
-    "elapsed": 677.29,
-    "trivial": false
-  },
-  "21001": {
-    "pat": "21001",
-    "n_cands": 36,
-    "best_probe": "mpnls",
-    "best_H": 3.790403,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "0": "c"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "costa",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.3795,
-      "e_direct": 6.6941,
-      "p_best": 0.071
-    },
-    "elapsed": 668.26,
-    "trivial": false
-  },
-  "00000": {
-    "pat": "00000",
-    "n_cands": 37,
-    "best_probe": "tusil",
-    "best_H": 4.292994,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "e",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "misil",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.9165,
-      "e_direct": 6.7674,
-      "p_best": 0.0652
-    },
-    "elapsed": 680.54,
-    "trivial": false
-  },
-  "12002": {
-    "pat": "12002",
-    "n_cands": 35,
-    "best_probe": "thnip",
-    "best_H": 3.689006,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
+      "s": [
         0
       ]
     },
     "green_letters": {
-      "1": "a",
       "4": "o"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "banco",
+      "direct_word": "mismo",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.4403,
-      "e_direct": 6.6826,
-      "p_best": 0.0665
+      "e_probe": 3.2292,
+      "e_direct": 6.9894,
+      "p_best": 0.0471
     },
-    "elapsed": 672.01,
+    "elapsed": 1707.07,
     "trivial": false
   },
   "02202": {
     "pat": "02202",
-    "n_cands": 34,
-    "best_probe": "gbdtp",
-    "best_H": 3.460214,
+    "n_cands": 37,
+    "best_probe": "dbgcp",
+    "best_H": 3.605526,
     "tiebreak": [
       0,
       0,
@@ -1530,8 +1347,8 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
-      "e"
+      "e",
+      "s"
     ],
     "yellow_letters": {},
     "green_letters": {
@@ -1543,18 +1360,18 @@
       "action": "probe",
       "direct_word": "marzo",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.6272,
-      "e_direct": 6.6417,
-      "p_best": 0.0666
+      "e_probe": 3.6039,
+      "e_direct": 6.8544,
+      "p_best": 0.0511
     },
-    "elapsed": 650.83,
+    "elapsed": 1689.6,
     "trivial": false
   },
-  "12000": {
-    "pat": "12000",
-    "n_cands": 32,
-    "best_probe": "hinma",
-    "best_H": 3.728915,
+  "01102": {
+    "pat": "01102",
+    "n_cands": 36,
+    "best_probe": "grdtm",
+    "best_H": 3.759389,
     "tiebreak": [
       0,
       0,
@@ -1566,33 +1383,75 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "e",
-      "o",
-      "r"
+      "s"
     ],
     "yellow_letters": {
-      "c": [
-        0
+      "a": [
+        1
+      ],
+      "r": [
+        2
       ]
     },
     "green_letters": {
-      "1": "a"
+      "4": "o"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "hacia",
+      "direct_word": "claro",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.2711,
-      "e_direct": 6.4676,
-      "p_best": 0.0817
+      "e_probe": 3.4105,
+      "e_direct": 6.8551,
+      "p_best": 0.0447
     },
-    "elapsed": 655.66,
+    "elapsed": 1726.3,
     "trivial": false
   },
-  "00101": {
-    "pat": "00101",
-    "n_cands": 34,
-    "best_probe": "ritus",
-    "best_H": 4.414554,
+  "01210": {
+    "pat": "01210",
+    "n_cands": 36,
+    "best_probe": "tbvca",
+    "best_H": 3.387308,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "s"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "cerca",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.7826,
+      "e_direct": 6.7198,
+      "p_best": 0.0668
+    },
+    "elapsed": 1726.72,
+    "trivial": false
+  },
+  "00120": {
+    "pat": "00120",
+    "n_cands": 36,
+    "best_probe": "betcn",
+    "best_H": 3.966694,
     "tiebreak": [
       0,
       0,
@@ -1604,8 +1463,200 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "c",
-      "e"
+      "o",
+      "s"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "lider",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.2032,
+      "e_direct": 6.8422,
+      "p_best": 0.0468
+    },
+    "elapsed": 1758.21,
+    "trivial": false
+  },
+  "02001": {
+    "pat": "02001",
+    "n_cands": 33,
+    "best_probe": "tpjbl",
+    "best_H": 3.846899,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "r",
+      "s"
+    ],
+    "yellow_letters": {
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "japon",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.1975,
+      "e_direct": 6.6694,
+      "p_best": 0.0551
+    },
+    "elapsed": 1748.04,
+    "trivial": false
+  },
+  "12001": {
+    "pat": "12001",
+    "n_cands": 29,
+    "best_probe": "ldptn",
+    "best_H": 3.605375,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "vamos",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.2526,
+      "e_direct": 6.4816,
+      "p_best": 0.0561
+    },
+    "elapsed": 1669.55,
+    "trivial": false
+  },
+  "10020": {
+    "pat": "10020",
+    "n_cands": 29,
+    "best_probe": "lenpd",
+    "best_H": 3.892006,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "lunes",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.966,
+      "e_direct": 6.4054,
+      "p_best": 0.0692
+    },
+    "elapsed": 1687.51,
+    "trivial": false
+  },
+  "02210": {
+    "pat": "02210",
+    "n_cands": 28,
+    "best_probe": "tbmrp",
+    "best_H": 3.145952,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "s"
+    ],
+    "yellow_letters": {
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "1": "a",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "parte",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.6614,
+      "e_direct": 6.0803,
+      "p_best": 0.1172
+    },
+    "elapsed": 1665.24,
+    "trivial": false
+  },
+  "00101": {
+    "pat": "00101",
+    "n_cands": 28,
+    "best_probe": "ritul",
+    "best_H": 4.079717,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e",
+      "s"
     ],
     "yellow_letters": {
       "r": [
@@ -1620,56 +1671,18 @@
       "action": "probe",
       "direct_word": "honor",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.6729,
-      "e_direct": 6.7848,
-      "p_best": 0.043
+      "e_probe": 2.7276,
+      "e_direct": 6.4551,
+      "p_best": 0.0521
     },
-    "elapsed": 663.59,
+    "elapsed": 1687.73,
     "trivial": false
   },
-  "00120": {
-    "pat": "00120",
-    "n_cands": 32,
-    "best_probe": "betmn",
-    "best_H": 4.146762,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "o"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "lider",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.8532,
-      "e_direct": 6.661,
-      "p_best": 0.0492
-    },
-    "elapsed": 654.98,
-    "trivial": false
-  },
-  "21000": {
-    "pat": "21000",
-    "n_cands": 32,
-    "best_probe": "luitn",
-    "best_H": 4.11729,
+  "22000": {
+    "pat": "22000",
+    "n_cands": 28,
+    "best_probe": "ivnla",
+    "best_H": 3.634996,
     "tiebreak": [
       0,
       0,
@@ -1684,42 +1697,39 @@
       "o",
       "r"
     ],
-    "yellow_letters": {
-      "a": [
-        1
-      ]
-    },
+    "yellow_letters": {},
     "green_letters": {
-      "0": "c"
+      "0": "s",
+      "1": "a"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "china",
+      "direct_word": "salud",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.8827,
-      "e_direct": 6.5415,
-      "p_best": 0.0693
+      "e_probe": 3.1724,
+      "e_direct": 6.3944,
+      "p_best": 0.0626
     },
-    "elapsed": 666.52,
+    "elapsed": 1679.65,
     "trivial": false
   },
   "00211": {
     "pat": "00211",
     "n_cands": 26,
-    "best_probe": "mente",
-    "best_H": 3.325777,
+    "best_probe": "coftn",
+    "best_H": 3.470369,
     "tiebreak": [
       0,
       0,
       0
     ],
-    "is_word": true,
+    "is_word": false,
     "grey_reuse": 0,
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "c"
+      "s"
     ],
     "yellow_letters": {
       "e": [
@@ -1736,176 +1746,18 @@
       "action": "probe",
       "direct_word": "norte",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.3747,
-      "e_direct": 6.1927,
-      "p_best": 0.0799
+      "e_probe": 3.2301,
+      "e_direct": 6.2568,
+      "p_best": 0.0686
     },
-    "elapsed": 652.15,
-    "trivial": false
-  },
-  "10010": {
-    "pat": "10010",
-    "n_cands": 25,
-    "best_probe": "lihud",
-    "best_H": 3.465024,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "vence",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.1788,
-      "e_direct": 5.9334,
-      "p_best": 0.1167
-    },
-    "elapsed": 659.95,
-    "trivial": false
-  },
-  "11001": {
-    "pat": "11001",
-    "n_cands": 24,
-    "best_probe": "lbstf",
-    "best_H": 3.422963,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "a": [
-        1
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "local",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.162,
-      "e_direct": 5.9476,
-      "p_best": 0.1043
-    },
-    "elapsed": 661.63,
-    "trivial": false
-  },
-  "02210": {
-    "pat": "02210",
-    "n_cands": 24,
-    "best_probe": "dmpbt",
-    "best_H": 3.165212,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "o"
-    ],
-    "yellow_letters": {
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "1": "a",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "parte",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.4198,
-      "e_direct": 5.868,
-      "p_best": 0.1187
-    },
-    "elapsed": 640.69,
-    "trivial": false
-  },
-  "02101": {
-    "pat": "02101",
-    "n_cands": 22,
-    "best_probe": "pbsmr",
-    "best_H": 3.480205,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "e"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "mayor",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.9792,
-      "e_direct": 5.9853,
-      "p_best": 0.0755
-    },
-    "elapsed": 644.75,
+    "elapsed": 1657.85,
     "trivial": false
   },
   "00212": {
     "pat": "00212",
-    "n_cands": 22,
-    "best_probe": "lbnvp",
-    "best_H": 3.262077,
+    "n_cands": 24,
+    "best_probe": "cblrm",
+    "best_H": 3.294026,
     "tiebreak": [
       0,
       0,
@@ -1917,7 +1769,7 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "c"
+      "s"
     ],
     "yellow_letters": {
       "e": [
@@ -1930,20 +1782,20 @@
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "serio",
+      "direct_word": "cerro",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.1974,
-      "e_direct": 5.9136,
-      "p_best": 0.0888
+      "e_probe": 3.2909,
+      "e_direct": 6.0976,
+      "p_best": 0.0771
     },
-    "elapsed": 640.32,
+    "elapsed": 1668.23,
     "trivial": false
   },
-  "00100": {
-    "pat": "00100",
-    "n_cands": 21,
-    "best_probe": "gunbl",
-    "best_H": 3.661187,
+  "12020": {
+    "pat": "12020",
+    "n_cands": 23,
+    "best_probe": "bcsnp",
+    "best_H": 3.479571,
     "tiebreak": [
       0,
       0,
@@ -1954,111 +1806,74 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "a",
-      "c",
-      "e",
-      "o"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "vivir",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.7311,
-      "e_direct": 5.8017,
-      "p_best": 0.0978
-    },
-    "elapsed": 648.95,
-    "trivial": false
-  },
-  "00201": {
-    "pat": "00201",
-    "n_cands": 21,
-    "best_probe": "dlmis",
-    "best_H": 3.564159,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "e"
-    ],
-    "yellow_letters": {
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "morir",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.8282,
-      "e_direct": 5.7868,
-      "p_best": 0.1005
-    },
-    "elapsed": 657.44,
-    "trivial": false
-  },
-  "10012": {
-    "pat": "10012",
-    "n_cands": 21,
-    "best_probe": "hluip",
-    "best_H": 3.656972,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
+      "o",
       "r"
     ],
     "yellow_letters": {
-      "c": [
+      "s": [
         0
+      ]
+    },
+    "green_letters": {
+      "1": "a",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "bases",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.044,
+      "e_direct": 5.9624,
+      "p_best": 0.091
+    },
+    "elapsed": 1634.92,
+    "trivial": false
+  },
+  "21010": {
+    "pat": "21010",
+    "n_cands": 23,
+    "best_probe": "cunla",
+    "best_H": 3.782999,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
       ],
       "e": [
         3
       ]
     },
     "green_letters": {
-      "4": "o"
+      "0": "s"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "hecho",
+      "direct_word": "sexta",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.7353,
-      "e_direct": 5.8345,
-      "p_best": 0.0916
+      "e_probe": 2.7406,
+      "e_direct": 6.0982,
+      "p_best": 0.0662
     },
-    "elapsed": 646.88,
+    "elapsed": 1437.46,
     "trivial": false
   },
-  "22002": {
-    "pat": "22002",
-    "n_cands": 20,
-    "best_probe": "mnslt",
-    "best_H": 3.324917,
+  "12002": {
+    "pat": "12002",
+    "n_cands": 22,
+    "best_probe": "tnpcv",
+    "best_H": 3.439135,
     "tiebreak": [
       0,
       0,
@@ -2072,144 +1887,65 @@
       "e",
       "r"
     ],
-    "yellow_letters": {},
+    "yellow_letters": {
+      "s": [
+        0
+      ]
+    },
     "green_letters": {
-      "0": "c",
       "1": "a",
       "4": "o"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "campo",
+      "direct_word": "causo",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.997,
-      "e_direct": 5.8475,
-      "p_best": 0.0763
+      "e_probe": 3.0203,
+      "e_direct": 5.9524,
+      "p_best": 0.0816
     },
-    "elapsed": 645.03,
+    "elapsed": 1405.19,
     "trivial": false
   },
-  "01011": {
-    "pat": "01011",
-    "n_cands": 19,
-    "best_probe": "agpnt",
-    "best_H": 3.355132,
+  "00000": {
+    "pat": "00000",
+    "n_cands": 22,
+    "best_probe": "fupdl",
+    "best_H": 3.713356,
     "tiebreak": [
       0,
       0,
-      -2
+      0
     ],
     "is_word": false,
     "grey_reuse": 0,
     "yellow_same_pos": 0,
-    "green_repeat_or_prod": -2,
+    "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
-      "r"
+      "a",
+      "e",
+      "o",
+      "r",
+      "s"
     ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "e": [
-        3
-      ],
-      "o": [
-        4
-      ]
-    },
+    "yellow_letters": {},
     "green_letters": {},
     "recommendation": {
       "action": "probe",
-      "direct_word": "poeta",
+      "direct_word": "civil",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.8928,
-      "e_direct": 5.6166,
-      "p_best": 0.107
+      "e_probe": 2.7461,
+      "e_direct": 5.8349,
+      "p_best": 0.1034
     },
-    "elapsed": 655.38,
-    "trivial": false
-  },
-  "11002": {
-    "pat": "11002",
-    "n_cands": 18,
-    "best_probe": "lcatu",
-    "best_H": 3.508345,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "a": [
-        1
-      ]
-    },
-    "green_letters": {
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "ataco",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.6616,
-      "e_direct": 5.5944,
-      "p_best": 0.0969
-    },
-    "elapsed": 633.21,
-    "trivial": false
-  },
-  "00022": {
-    "pat": "00022",
-    "n_cands": 18,
-    "best_probe": "sovbg",
-    "best_H": 2.983781,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "a",
-      "c",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "3": "e",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "video",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.1861,
-      "e_direct": 5.125,
-      "p_best": 0.1892
-    },
-    "elapsed": 635.55,
+    "elapsed": 1386.51,
     "trivial": false
   },
   "20010": {
     "pat": "20010",
-    "n_cands": 18,
-    "best_probe": "dilht",
-    "best_H": 3.163793,
+    "n_cands": 22,
+    "best_probe": "eeltn",
+    "best_H": 3.909936,
     "tiebreak": [
       0,
       0,
@@ -2230,24 +1966,141 @@
       ]
     },
     "green_letters": {
-      "0": "c"
+      "0": "s"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "chile",
+      "direct_word": "segun",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.0061,
-      "e_direct": 5.109,
-      "p_best": 0.1923
+      "e_probe": 2.5495,
+      "e_direct": 5.9279,
+      "p_best": 0.0861
     },
-    "elapsed": 635.66,
+    "elapsed": 1364.01,
     "trivial": false
   },
-  "01012": {
-    "pat": "01012",
-    "n_cands": 17,
-    "best_probe": "anglj",
-    "best_H": 3.350656,
+  "20002": {
+    "pat": "20002",
+    "n_cands": 22,
+    "best_probe": "cmliu",
+    "best_H": 3.7349,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "e",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "s",
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "sitio",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.7245,
+      "e_direct": 5.9735,
+      "p_best": 0.0777
+    },
+    "elapsed": 1348.31,
+    "trivial": false
+  },
+  "01011": {
+    "pat": "01011",
+    "n_cands": 21,
+    "best_probe": "apgnt",
+    "best_H": 3.49587,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "r",
+      "s"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ],
+      "e": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "epoca",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.8964,
+      "e_direct": 5.7962,
+      "p_best": 0.0988
+    },
+    "elapsed": 1340.29,
+    "trivial": false
+  },
+  "11100": {
+    "pat": "11100",
+    "n_cands": 20,
+    "best_probe": "bmiar",
+    "best_H": 3.465193,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "rusia",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.8567,
+      "e_direct": 5.7125,
+      "p_best": 0.102
+    },
+    "elapsed": 1330.93,
+    "trivial": false
+  },
+  "10000": {
+    "pat": "10000",
+    "n_cands": 20,
+    "best_probe": "lmtus",
+    "best_H": 3.20564,
     "tiebreak": [
       0,
       0,
@@ -2258,8 +2111,82 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -2,
     "grey_letters": [
-      "c",
+      "a",
+      "e",
+      "o",
       "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "misil",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.1163,
+      "e_direct": 5.389,
+      "p_best": 0.1637
+    },
+    "elapsed": 1279.71,
+    "trivial": false
+  },
+  "00100": {
+    "pat": "00100",
+    "n_cands": 20,
+    "best_probe": "gulrr",
+    "best_H": 3.543783,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "a",
+      "e",
+      "o",
+      "s"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "vivir",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.7781,
+      "e_direct": 5.6699,
+      "p_best": 0.1101
+    },
+    "elapsed": 646.52,
+    "trivial": false
+  },
+  "01012": {
+    "pat": "01012",
+    "n_cands": 19,
+    "best_probe": "anglj",
+    "best_H": 3.364308,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "r",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -2276,18 +2203,18 @@
       "action": "probe",
       "direct_word": "alejo",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.7368,
-      "e_direct": 5.4101,
-      "p_best": 0.118
+      "e_probe": 2.8836,
+      "e_direct": 5.5633,
+      "p_best": 0.1173
     },
-    "elapsed": 635.73,
+    "elapsed": 644.63,
     "trivial": false
   },
-  "20001": {
-    "pat": "20001",
-    "n_cands": 17,
-    "best_probe": "lmsip",
-    "best_H": 3.250233,
+  "10012": {
+    "pat": "10012",
+    "n_cands": 19,
+    "best_probe": "cumtn",
+    "best_H": 3.341983,
     "tiebreak": [
       0,
       0,
@@ -2299,86 +2226,10 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "a",
-      "e",
       "r"
     ],
     "yellow_letters": {
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "0": "c"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "comun",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.8372,
-      "e_direct": 5.2553,
-      "p_best": 0.1489
-    },
-    "elapsed": 647.17,
-    "trivial": false
-  },
-  "02102": {
-    "pat": "02102",
-    "n_cands": 17,
-    "best_probe": "lsgtu",
-    "best_H": 3.335827,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "e"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "1": "a",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "radio",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.7516,
-      "e_direct": 5.4575,
-      "p_best": 0.1085
-    },
-    "elapsed": 633.81,
-    "trivial": false
-  },
-  "12010": {
-    "pat": "12010",
-    "n_cands": 16,
-    "best_probe": "nbhlt",
-    "best_H": 2.879365,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
+      "s": [
         0
       ],
       "e": [
@@ -2386,24 +2237,64 @@
       ]
     },
     "green_letters": {
-      "1": "a"
+      "4": "o"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "lance",
+      "direct_word": "gesto",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.1206,
-      "e_direct": 4.8867,
-      "p_best": 0.2079
+      "e_probe": 2.9059,
+      "e_direct": 5.6581,
+      "p_best": 0.099
     },
-    "elapsed": 635.36,
+    "elapsed": 648.53,
     "trivial": false
   },
-  "00121": {
-    "pat": "00121",
-    "n_cands": 16,
-    "best_probe": "dlmpn",
-    "best_H": 3.386658,
+  "21001": {
+    "pat": "21001",
+    "n_cands": 19,
+    "best_probe": "fipls",
+    "best_H": 3.161963,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "0": "s"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "sonda",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.086,
+      "e_direct": 5.3979,
+      "p_best": 0.1493
+    },
+    "elapsed": 650.98,
+    "trivial": false
+  },
+  "02101": {
+    "pat": "02101",
+    "n_cands": 18,
+    "best_probe": "mbvlt",
+    "best_H": 3.331642,
     "tiebreak": [
       0,
       0,
@@ -2414,8 +2305,8 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "a",
-      "c"
+      "e",
+      "s"
     ],
     "yellow_letters": {
       "r": [
@@ -2426,24 +2317,24 @@
       ]
     },
     "green_letters": {
-      "3": "e"
+      "1": "a"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "poder",
+      "direct_word": "mayor",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.6133,
-      "e_direct": 5.3412,
-      "p_best": 0.1153
+      "e_probe": 2.8383,
+      "e_direct": 5.6004,
+      "p_best": 0.0957
     },
-    "elapsed": 642.04,
+    "elapsed": 641.77,
     "trivial": false
   },
-  "22010": {
-    "pat": "22010",
-    "n_cands": 16,
-    "best_probe": "mnlst",
-    "best_H": 3.154707,
+  "02110": {
+    "pat": "02110",
+    "n_cands": 18,
+    "best_probe": "bdmil",
+    "best_H": 2.445167,
     "tiebreak": [
       0,
       0,
@@ -2455,80 +2346,7 @@
     "green_repeat_or_prod": 0,
     "grey_letters": [
       "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "calle",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.8453,
-      "e_direct": 5.3,
-      "p_best": 0.1237
-    },
-    "elapsed": 623.48,
-    "trivial": false
-  },
-  "00220": {
-    "pat": "00220",
-    "n_cands": 16,
-    "best_probe": "jmnuv",
-    "best_H": 3.007776,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "c",
-      "o"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "2": "r",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "seres",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.9922,
-      "e_direct": 5.1172,
-      "p_best": 0.1609
-    },
-    "elapsed": 632.02,
-    "trivial": false
-  },
-  "02110": {
-    "pat": "02110",
-    "n_cands": 15,
-    "best_probe": "bdprs",
-    "best_H": 2.572179,
-    "tiebreak": [
-      0,
-      0,
-      -2
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -2,
-    "grey_letters": [
-      "c",
-      "o"
+      "s"
     ],
     "yellow_letters": {
       "r": [
@@ -2545,170 +2363,18 @@
       "action": "probe",
       "direct_word": "padre",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.3347,
-      "e_direct": 4.5999,
-      "p_best": 0.2512
+      "e_probe": 3.7248,
+      "e_direct": 4.6279,
+      "p_best": 0.2869
     },
-    "elapsed": 632.23,
-    "trivial": false
-  },
-  "21110": {
-    "pat": "21110",
-    "n_cands": 15,
-    "best_probe": "irnas",
-    "best_H": 2.905943,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "o"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "r": [
-        2
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "0": "c"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "crear",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.0009,
-      "e_direct": 5.1831,
-      "p_best": 0.1299
-    },
-    "elapsed": 637.6,
-    "trivial": false
-  },
-  "20202": {
-    "pat": "20202",
-    "n_cands": 15,
-    "best_probe": "istru",
-    "best_H": 3.110483,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "a",
-      "e"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "2": "r",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "corto",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.7964,
-      "e_direct": 5.2463,
-      "p_best": 0.1167
-    },
-    "elapsed": 642.22,
-    "trivial": false
-  },
-  "02220": {
-    "pat": "02220",
-    "n_cands": 15,
-    "best_probe": "mdpsa",
-    "best_H": 3.077213,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "c",
-      "o"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "1": "a",
-      "2": "r",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "tarea",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.8297,
-      "e_direct": 5.1371,
-      "p_best": 0.1394
-    },
-    "elapsed": 633.53,
-    "trivial": false
-  },
-  "10102": {
-    "pat": "10102",
-    "n_cands": 15,
-    "best_probe": "ricnu",
-    "best_H": 2.885038,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "a",
-      "e"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "lucro",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.0219,
-      "e_direct": 4.9014,
-      "p_best": 0.1885
-    },
-    "elapsed": 644.14,
+    "elapsed": 649.33,
     "trivial": false
   },
   "02120": {
     "pat": "02120",
-    "n_cands": 13,
-    "best_probe": "lbtsr",
-    "best_H": 2.556634,
+    "n_cands": 18,
+    "best_probe": "chlnr",
+    "best_H": 2.836618,
     "tiebreak": [
       0,
       0,
@@ -2719,8 +2385,8 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -2,
     "grey_letters": [
-      "c",
-      "o"
+      "o",
+      "s"
     ],
     "yellow_letters": {
       "r": [
@@ -2735,54 +2401,504 @@
       "action": "probe",
       "direct_word": "haber",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.1438,
-      "e_direct": 4.5846,
-      "p_best": 0.2182
+      "e_probe": 3.3333,
+      "e_direct": 5.0987,
+      "p_best": 0.1943
     },
-    "elapsed": 641.86,
+    "elapsed": 662.68,
     "trivial": false
   },
-  "11110": {
-    "pat": "11110",
-    "n_cands": 12,
-    "best_probe": "setca",
-    "best_H": 2.869063,
+  "10011": {
+    "pat": "10011",
+    "n_cands": 18,
+    "best_probe": "celth",
+    "best_H": 3.389991,
     "tiebreak": [
       0,
       0,
-      -6
+      -2
     ],
     "is_word": false,
     "grey_reuse": 0,
     "yellow_same_pos": 0,
-    "green_repeat_or_prod": -6,
+    "green_repeat_or_prod": -2,
     "grey_letters": [
-      "o"
+      "a",
+      "r"
     ],
     "yellow_letters": {
-      "c": [
+      "s": [
         0
-      ],
-      "a": [
-        1
-      ],
-      "r": [
-        2
       ],
       "e": [
         3
+      ],
+      "o": [
+        4
       ]
     },
     "green_letters": {},
     "recommendation": {
       "action": "probe",
-      "direct_word": "recta",
+      "direct_word": "ellos",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.7159,
-      "e_direct": 4.6493,
-      "p_best": 0.1817
+      "e_probe": 2.7799,
+      "e_direct": 5.5904,
+      "p_best": 0.0977
     },
-    "elapsed": 635.37,
+    "elapsed": 662.91,
+    "trivial": false
+  },
+  "00022": {
+    "pat": "00022",
+    "n_cands": 17,
+    "best_probe": "ioblv",
+    "best_H": 2.956988,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "a",
+      "r",
+      "s"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "3": "e",
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "video",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.1305,
+      "e_direct": 5.1281,
+      "p_best": 0.1744
+    },
+    "elapsed": 637.02,
+    "trivial": false
+  },
+  "02102": {
+    "pat": "02102",
+    "n_cands": 17,
+    "best_probe": "ldgtu",
+    "best_H": 3.449989,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "s"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "1": "a",
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "radio",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.6375,
+      "e_direct": 5.4568,
+      "p_best": 0.1086
+    },
+    "elapsed": 639.25,
+    "trivial": false
+  },
+  "10021": {
+    "pat": "10021",
+    "n_cands": 16,
+    "best_probe": "bdgpn",
+    "best_H": 2.951819,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "goles",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.0482,
+      "e_direct": 4.9147,
+      "p_best": 0.2022
+    },
+    "elapsed": 640.53,
+    "trivial": false
+  },
+  "22002": {
+    "pat": "22002",
+    "n_cands": 16,
+    "best_probe": "dgilt",
+    "best_H": 2.875023,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "s",
+      "1": "a",
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "salio",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.125,
+      "e_direct": 5.2258,
+      "p_best": 0.1388
+    },
+    "elapsed": 646.56,
+    "trivial": false
+  },
+  "21000": {
+    "pat": "21000",
+    "n_cands": 16,
+    "best_probe": "cimln",
+    "best_H": 3.42489,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ]
+    },
+    "green_letters": {
+      "0": "s"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "silva",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.5751,
+      "e_direct": 5.4059,
+      "p_best": 0.1021
+    },
+    "elapsed": 647.26,
+    "trivial": false
+  },
+  "11200": {
+    "pat": "11200",
+    "n_cands": 15,
+    "best_probe": "admit",
+    "best_H": 2.812914,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "atras",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.094,
+      "e_direct": 5.1684,
+      "p_best": 0.1329
+    },
+    "elapsed": 655.93,
+    "trivial": false
+  },
+  "00121": {
+    "pat": "00121",
+    "n_cands": 15,
+    "best_probe": "mdcln",
+    "best_H": 3.326225,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "s"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "poder",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.5807,
+      "e_direct": 5.255,
+      "p_best": 0.1149
+    },
+    "elapsed": 672.72,
+    "trivial": false
+  },
+  "22010": {
+    "pat": "22010",
+    "n_cands": 15,
+    "best_probe": "btclv",
+    "best_H": 2.93147,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "0": "s",
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "saque",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.9754,
+      "e_direct": 4.9355,
+      "p_best": 0.1814
+    },
+    "elapsed": 662.65,
+    "trivial": false
+  },
+  "00201": {
+    "pat": "00201",
+    "n_cands": 14,
+    "best_probe": "litmr",
+    "best_H": 3.188654,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "a",
+      "e",
+      "s"
+    ],
+    "yellow_letters": {
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "morir",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.6187,
+      "e_direct": 4.9745,
+      "p_best": 0.1544
+    },
+    "elapsed": 650.4,
+    "trivial": false
+  },
+  "00220": {
+    "pat": "00220",
+    "n_cands": 14,
+    "best_probe": "dmntu",
+    "best_H": 2.696549,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "a",
+      "o",
+      "s"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "jerez",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.1108,
+      "e_direct": 4.6303,
+      "p_best": 0.2277
+    },
+    "elapsed": 651.23,
+    "trivial": false
+  },
+  "12010": {
+    "pat": "12010",
+    "n_cands": 13,
+    "best_probe": "bclgu",
+    "best_H": 2.335854,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "cause",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.3646,
+      "e_direct": 4.1239,
+      "p_best": 0.3187
+    },
+    "elapsed": 652.91,
+    "trivial": false
+  },
+  "02220": {
+    "pat": "02220",
+    "n_cands": 13,
+    "best_probe": "mdnpa",
+    "best_H": 2.852341,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "o",
+      "s"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "1": "a",
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "tarea",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.8481,
+      "e_direct": 4.8341,
+      "p_best": 0.1638
+    },
+    "elapsed": 651.52,
     "trivial": false
   },
   "01111": {
@@ -2800,7 +2916,7 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -6,
     "grey_letters": [
-      "c"
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -2825,14 +2941,57 @@
       "e_direct": 3.5671,
       "p_best": 0.4243
     },
-    "elapsed": 638.44,
+    "elapsed": 652.78,
     "trivial": false
   },
-  "10110": {
-    "pat": "10110",
+  "11101": {
+    "pat": "11101",
     "n_cands": 12,
-    "best_probe": "rbitu",
-    "best_H": 2.50656,
+    "best_probe": "dpsal",
+    "best_H": 3.13632,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "r": [
+        2
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "ropas",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4486,
+      "e_direct": 4.8069,
+      "p_best": 0.1463
+    },
+    "elapsed": 657.83,
+    "trivial": false
+  },
+  "11110": {
+    "pat": "11110",
+    "n_cands": 12,
+    "best_probe": "brtcp",
+    "best_H": 2.731242,
     "tiebreak": [
       0,
       0,
@@ -2843,12 +3002,14 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -2,
     "grey_letters": [
-      "a",
       "o"
     ],
     "yellow_letters": {
-      "c": [
+      "s": [
         0
+      ],
+      "a": [
+        1
       ],
       "r": [
         2
@@ -2860,96 +3021,60 @@
     "green_letters": {},
     "recommendation": {
       "action": "probe",
-      "direct_word": "decir",
+      "direct_word": "estar",
       "reason": "probe_wins_renyi",
-      "e_probe": 3.0784,
-      "e_direct": 4.4438,
-      "p_best": 0.2277
+      "e_probe": 2.8537,
+      "e_direct": 4.7161,
+      "p_best": 0.1667
     },
-    "elapsed": 634.53,
+    "elapsed": 678.8,
     "trivial": false
   },
-  "22001": {
-    "pat": "22001",
-    "n_cands": 12,
-    "best_probe": "jñnpa",
-    "best_H": 2.861791,
+  "12100": {
+    "pat": "12100",
+    "n_cands": 11,
+    "best_probe": "bcspt",
+    "best_H": 2.270046,
     "tiebreak": [
       0,
       0,
-      -1
+      -2
     ],
     "is_word": false,
     "grey_reuse": 0,
     "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
+    "green_repeat_or_prod": -2,
     "grey_letters": [
       "e",
-      "r"
+      "o"
     ],
     "yellow_letters": {
-      "o": [
-        4
+      "s": [
+        0
+      ],
+      "r": [
+        2
       ]
     },
     "green_letters": {
-      "0": "c",
       "1": "a"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "capos",
+      "direct_word": "pasar",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.7232,
-      "e_direct": 4.7238,
-      "p_best": 0.165
+      "e_probe": 3.1894,
+      "e_direct": 4.2316,
+      "p_best": 0.2523
     },
-    "elapsed": 631.98,
+    "elapsed": 667.41,
     "trivial": false
   },
-  "12020": {
-    "pat": "12020",
-    "n_cands": 12,
-    "best_probe": "nhlsy",
-    "best_H": 2.475395,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ]
-    },
-    "green_letters": {
-      "1": "a",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "hacen",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.1096,
-      "e_direct": 4.4056,
-      "p_best": 0.2363
-    },
-    "elapsed": 629.07,
-    "trivial": false
-  },
-  "21100": {
-    "pat": "21100",
-    "n_cands": 12,
-    "best_probe": "niusa",
-    "best_H": 3.258479,
+  "10101": {
+    "pat": "10101",
+    "n_cands": 11,
+    "best_probe": "cijtr",
+    "best_H": 2.953505,
     "tiebreak": [
       0,
       0,
@@ -2960,206 +3085,15 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -2,
     "grey_letters": [
-      "e",
-      "o"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "0": "c"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "cifra",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.3265,
-      "e_direct": 4.9386,
-      "p_best": 0.1168
-    },
-    "elapsed": 647.94,
-    "trivial": false
-  },
-  "11100": {
-    "pat": "11100",
-    "n_cands": 11,
-    "best_probe": "abpas",
-    "best_H": 1.342014,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "e",
-      "o"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "a": [
-        1
-      ],
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "arcas",
-      "reason": "direct_wins_renyi",
-      "e_probe": 4.1174,
-      "e_direct": 2.8245,
-      "p_best": 0.5779
-    },
-    "elapsed": 643.14,
-    "trivial": false
-  },
-  "01120": {
-    "pat": "01120",
-    "n_cands": 11,
-    "best_probe": "agntr",
-    "best_H": 2.962035,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "c",
-      "o"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "artes",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.4974,
-      "e_direct": 4.6141,
-      "p_best": 0.1638
-    },
-    "elapsed": 643.56,
-    "trivial": false
-  },
-  "02022": {
-    "pat": "02022",
-    "n_cands": 11,
-    "best_probe": "jlmpt",
-    "best_H": 2.291082,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "c",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "1": "a",
-      "3": "e",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "paseo",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.1683,
-      "e_direct": 4.2357,
-      "p_best": 0.2513
-    },
-    "elapsed": 621.61,
-    "trivial": false
-  },
-  "22020": {
-    "pat": "22020",
-    "n_cands": 11,
-    "best_probe": "blnst",
-    "best_H": 1.978167,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "o",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "1": "a",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "caben",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.4813,
-      "e_direct": 3.6998,
-      "p_best": 0.3753
-    },
-    "elapsed": 630.31,
-    "trivial": false
-  },
-  "10011": {
-    "pat": "10011",
-    "n_cands": 10,
-    "best_probe": "bmcon",
-    "best_H": 2.405394,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
       "a",
-      "r"
+      "e"
     ],
     "yellow_letters": {
-      "c": [
+      "s": [
         0
       ],
-      "e": [
-        3
+      "r": [
+        2
       ],
       "o": [
         4
@@ -3168,98 +3102,20 @@
     "green_letters": {},
     "recommendation": {
       "action": "probe",
-      "direct_word": "noche",
+      "direct_word": "rojos",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.9165,
-      "e_direct": 4.0985,
-      "p_best": 0.2569
+      "e_probe": 2.5059,
+      "e_direct": 4.6414,
+      "p_best": 0.1575
     },
-    "elapsed": 632.28,
+    "elapsed": 651.03,
     "trivial": false
   },
-  "20110": {
-    "pat": "20110",
-    "n_cands": 10,
-    "best_probe": "beuce",
-    "best_H": 2.299021,
-    "tiebreak": [
-      0,
-      0,
-      -5
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -5,
-    "grey_letters": [
-      "a",
-      "o"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "0": "c"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "crece",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.0229,
-      "e_direct": 4.1783,
-      "p_best": 0.2378
-    },
-    "elapsed": 626.38,
-    "trivial": false
-  },
-  "20021": {
-    "pat": "20021",
-    "n_cands": 10,
-    "best_probe": "gmsnp",
-    "best_H": 1.364474,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "a",
-      "r"
-    ],
-    "yellow_letters": {
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "comen",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.9575,
-      "e_direct": 2.0694,
-      "p_best": 0.7436
-    },
-    "elapsed": 623.09,
-    "trivial": false
-  },
-  "21200": {
-    "pat": "21200",
-    "n_cands": 10,
-    "best_probe": "dsvar",
-    "best_H": 2.792721,
+  "20012": {
+    "pat": "20012",
+    "n_cands": 11,
+    "best_probe": "cesln",
+    "best_H": 2.803391,
     "tiebreak": [
       0,
       0,
@@ -3270,77 +3126,34 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -3,
     "grey_letters": [
-      "e",
-      "o"
+      "a",
+      "r"
     ],
     "yellow_letters": {
-      "a": [
-        1
+      "e": [
+        3
       ]
     },
     "green_letters": {
-      "0": "c",
-      "2": "r"
+      "0": "s",
+      "4": "o"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "curva",
+      "direct_word": "sexto",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.5292,
-      "e_direct": 4.5778,
-      "p_best": 0.142
+      "e_probe": 2.656,
+      "e_direct": 4.7608,
+      "p_best": 0.1298
     },
-    "elapsed": 636.49,
-    "trivial": false
-  },
-  "11101": {
-    "pat": "11101",
-    "n_cands": 9,
-    "best_probe": "aocbr",
-    "best_H": 2.472539,
-    "tiebreak": [
-      0,
-      0,
-      -8
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -8,
-    "grey_letters": [
-      "e"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "a": [
-        1
-      ],
-      "r": [
-        2
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "actor",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.6974,
-      "e_direct": 4.0878,
-      "p_best": 0.228
-    },
-    "elapsed": 638.73,
+    "elapsed": 647.87,
     "trivial": false
   },
   "01020": {
     "pat": "01020",
-    "n_cands": 9,
-    "best_probe": "albga",
-    "best_H": 2.911336,
+    "n_cands": 10,
+    "best_probe": "alcga",
+    "best_H": 2.819336,
     "tiebreak": [
       0,
       0,
@@ -3351,9 +3164,9 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -4,
     "grey_letters": [
-      "c",
       "o",
-      "r"
+      "r",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -3367,321 +3180,18 @@
       "action": "probe",
       "direct_word": "linea",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.2586,
-      "e_direct": 4.3976,
-      "p_best": 0.1506
+      "e_probe": 2.5026,
+      "e_direct": 4.4541,
+      "p_best": 0.1717
     },
-    "elapsed": 642.6,
+    "elapsed": 652.74,
     "trivial": false
   },
-  "22100": {
-    "pat": "22100",
-    "n_cands": 9,
-    "best_probe": "ñsvrz",
-    "best_H": 2.561915,
-    "tiebreak": [
-      0,
-      0,
-      -2
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -2,
-    "grey_letters": [
-      "e",
-      "o"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "casar",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.608,
-      "e_direct": 4.214,
-      "p_best": 0.1965
-    },
-    "elapsed": 619.01,
-    "trivial": false
-  },
-  "22200": {
-    "pat": "22200",
-    "n_cands": 9,
-    "best_probe": "gltrz",
-    "best_H": 2.38849,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "e",
-      "o"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "1": "a",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "carta",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.7814,
-      "e_direct": 4.0766,
-      "p_best": 0.2308
-    },
-    "elapsed": 624.15,
-    "trivial": false
-  },
-  "20020": {
-    "pat": "20020",
-    "n_cands": 9,
-    "best_probe": "denñs",
-    "best_H": 1.8219,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "a",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "cesen",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.348,
-      "e_direct": 3.2113,
-      "p_best": 0.4472
-    },
-    "elapsed": 622.22,
-    "trivial": false
-  },
-  "20012": {
-    "pat": "20012",
-    "n_cands": 9,
-    "best_probe": "deiln",
-    "best_H": 2.982625,
-    "tiebreak": [
-      0,
-      0,
-      -2
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -2,
-    "grey_letters": [
-      "a",
-      "r"
-    ],
-    "yellow_letters": {
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "cedio",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.1873,
-      "e_direct": 4.4026,
-      "p_best": 0.1493
-    },
-    "elapsed": 623.6,
-    "trivial": false
-  },
-  "20102": {
-    "pat": "20102",
-    "n_cands": 9,
-    "best_probe": "doorm",
-    "best_H": 2.78974,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "a",
-      "e"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "crudo",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.3802,
-      "e_direct": 4.3852,
-      "p_best": 0.1537
-    },
-    "elapsed": 624.83,
-    "trivial": false
-  },
-  "20011": {
-    "pat": "20011",
-    "n_cands": 9,
-    "best_probe": "incmt",
-    "best_H": 2.51668,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "a",
-      "r"
-    ],
-    "yellow_letters": {
-      "e": [
-        3
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "0": "c"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "coche",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.6532,
-      "e_direct": 4.0817,
-      "p_best": 0.2296
-    },
-    "elapsed": 639.14,
-    "trivial": false
-  },
-  "21201": {
-    "pat": "21201",
-    "n_cands": 9,
-    "best_probe": "lntrv",
-    "best_H": 2.399746,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "e"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "corta",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.7702,
-      "e_direct": 4.1739,
-      "p_best": 0.2065
-    },
-    "elapsed": 630.69,
-    "trivial": false
-  },
-  "10001": {
-    "pat": "10001",
-    "n_cands": 9,
-    "best_probe": "floon",
-    "best_H": 2.678035,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "a",
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "stock",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.4919,
-      "e_direct": 4.2118,
-      "p_best": 0.197
-    },
-    "elapsed": 645.32,
-    "trivial": false
-  },
-  "02201": {
-    "pat": "02201",
-    "n_cands": 8,
-    "best_probe": "bfmnp",
-    "best_H": 2.654513,
+  "02022": {
+    "pat": "02022",
+    "n_cands": 10,
+    "best_probe": "cjlmp",
+    "best_H": 2.289351,
     "tiebreak": [
       0,
       0,
@@ -3692,226 +3202,31 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": 0,
     "grey_letters": [
-      "c",
-      "e"
+      "r",
+      "s"
     ],
-    "yellow_letters": {
-      "o": [
-        4
-      ]
-    },
+    "yellow_letters": {},
     "green_letters": {
       "1": "a",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "paros",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.3455,
-      "e_direct": 4.0733,
-      "p_best": 0.1928
-    },
-    "elapsed": 613.3,
-    "trivial": false
-  },
-  "20210": {
-    "pat": "20210",
-    "n_cands": 8,
-    "best_probe": "istru",
-    "best_H": 1.953473,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "a",
-      "o"
-    ],
-    "yellow_letters": {
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "curie",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.0465,
-      "e_direct": 3.4438,
-      "p_best": 0.3581
-    },
-    "elapsed": 619.25,
-    "trivial": false
-  },
-  "21002": {
-    "pat": "21002",
-    "n_cands": 8,
-    "best_probe": "hjpcv",
-    "best_H": 2.759653,
-    "tiebreak": [
-      0,
-      0,
-      -1
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -1,
-    "grey_letters": [
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ]
-    },
-    "green_letters": {
-      "0": "c",
+      "3": "e",
       "4": "o"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "chaco",
+      "direct_word": "mateo",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.2403,
-      "e_direct": 4.1604,
-      "p_best": 0.1699
+      "e_probe": 3.0326,
+      "e_direct": 4.0757,
+      "p_best": 0.2624
     },
-    "elapsed": 616.73,
+    "elapsed": 651.7,
     "trivial": false
   },
-  "20120": {
-    "pat": "20120",
-    "n_cands": 7,
-    "best_probe": "dnerr",
-    "best_H": 2.521778,
-    "tiebreak": [
-      0,
-      0,
-      -5
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -5,
-    "grey_letters": [
-      "a",
-      "o"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "creen",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.2856,
-      "e_direct": 3.836,
-      "p_best": 0.2089
-    },
-    "elapsed": 617.45,
-    "trivial": false
-  },
-  "20112": {
-    "pat": "20112",
-    "n_cands": 7,
-    "best_probe": "delrm",
-    "best_H": 2.594318,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "a"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "cetro",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.213,
-      "e_direct": 3.9548,
-      "p_best": 0.1758
-    },
-    "elapsed": 620.05,
-    "trivial": false
-  },
-  "10020": {
-    "pat": "10020",
-    "n_cands": 7,
-    "best_probe": "dccmu",
-    "best_H": 1.676731,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "a",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ]
-    },
-    "green_letters": {
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "dicen",
-      "reason": "probe_wins_renyi",
-      "e_probe": 3.1306,
-      "e_direct": 3.2451,
-      "p_best": 0.3737
-    },
-    "elapsed": 635.22,
-    "trivial": false
-  },
-  "00200": {
-    "pat": "00200",
-    "n_cands": 6,
-    "best_probe": "brgrs",
-    "best_H": 1.578923,
+  "10201": {
+    "pat": "10201",
+    "n_cands": 10,
+    "best_probe": "coilp",
+    "best_H": 2.902589,
     "tiebreak": [
       0,
       0,
@@ -3923,70 +3238,35 @@
     "green_repeat_or_prod": -2,
     "grey_letters": [
       "a",
-      "c",
-      "e",
-      "o"
+      "e"
     ],
-    "yellow_letters": {},
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "o": [
+        4
+      ]
+    },
     "green_letters": {
       "2": "r"
     },
     "recommendation": {
-      "action": "direct",
-      "direct_word": "virus",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.006,
-      "e_direct": 2.8773,
-      "p_best": 0.4349
+      "action": "probe",
+      "direct_word": "duros",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4193,
+      "e_direct": 4.4797,
+      "p_best": 0.1655
     },
-    "elapsed": 627.87,
+    "elapsed": 645.71,
     "trivial": false
   },
-  "12120": {
-    "pat": "12120",
-    "n_cands": 6,
-    "best_probe": "fhjnp",
-    "best_H": 1.3507,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": 0,
-    "grey_letters": [
-      "o"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "r": [
-        2
-      ]
-    },
-    "green_letters": {
-      "1": "a",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "hacer",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.2343,
-      "e_direct": 2.7534,
-      "p_best": 0.4722
-    },
-    "elapsed": 625.97,
-    "trivial": false
-  },
-  "11011": {
-    "pat": "11011",
-    "n_cands": 5,
-    "best_probe": "acacd",
-    "best_H": 0.114366,
+  "10110": {
+    "pat": "10110",
+    "n_cands": 9,
+    "best_probe": "eeefs",
+    "best_H": 1.922618,
     "tiebreak": [
       0,
       0,
@@ -3997,126 +3277,11 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -8,
     "grey_letters": [
-      "r"
+      "a",
+      "o"
     ],
     "yellow_letters": {
-      "c": [
-        0
-      ],
-      "a": [
-        1
-      ],
-      "e": [
-        3
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "epoca",
-      "reason": "direct_wins_renyi",
-      "e_probe": 4.2076,
-      "e_direct": 1.0365,
-      "p_best": 0.9878
-    },
-    "elapsed": 614.94,
-    "trivial": false
-  },
-  "12202": {
-    "pat": "12202",
-    "n_cands": 5,
-    "best_probe": "bcmpt",
-    "best_H": 1.955856,
-    "tiebreak": [
-      0,
-      0,
-      -2
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -2,
-    "grey_letters": [
-      "e"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ]
-    },
-    "green_letters": {
-      "1": "a",
-      "2": "r",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "marco",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.3661,
-      "e_direct": 3.0466,
-      "p_best": 0.3178
-    },
-    "elapsed": 609.88,
-    "trivial": false
-  },
-  "22202": {
-    "pat": "22202",
-    "n_cands": 5,
-    "best_probe": "adgri",
-    "best_H": 1.877335,
-    "tiebreak": [
-      0,
-      0,
-      -2
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -2,
-    "grey_letters": [
-      "e"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "1": "a",
-      "2": "r",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "cargo",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.4446,
-      "e_direct": 2.8929,
-      "p_best": 0.369
-    },
-    "elapsed": 610.76,
-    "trivial": false
-  },
-  "10112": {
-    "pat": "10112",
-    "n_cands": 5,
-    "best_probe": "bceci",
-    "best_H": 1.881966,
-    "tiebreak": [
-      0,
-      0,
-      -6
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -6,
-    "grey_letters": [
-      "a"
-    ],
-    "yellow_letters": {
-      "c": [
+      "s": [
         0
       ],
       "r": [
@@ -4126,25 +3291,103 @@
         3
       ]
     },
+    "green_letters": {},
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "regis",
+      "reason": "probe_wins_renyi",
+      "e_probe": 3.2473,
+      "e_direct": 3.4639,
+      "p_best": 0.384
+    },
+    "elapsed": 653.79,
+    "trivial": false
+  },
+  "01120": {
+    "pat": "01120",
+    "n_cands": 8,
+    "best_probe": "acgnr",
+    "best_H": 2.48356,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "o",
+      "s"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "argel",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.5164,
+      "e_direct": 3.9547,
+      "p_best": 0.224
+    },
+    "elapsed": 651.11,
+    "trivial": false
+  },
+  "11002": {
+    "pat": "11002",
+    "n_cands": 8,
+    "best_probe": "oiasa",
+    "best_H": 2.296983,
+    "tiebreak": [
+      0,
+      0,
+      -7
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -7,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ]
+    },
     "green_letters": {
       "4": "o"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "greco",
+      "direct_word": "aviso",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.44,
-      "e_direct": 3.0651,
-      "p_best": 0.3116
+      "e_probe": 2.703,
+      "e_direct": 3.8625,
+      "p_best": 0.2482
     },
-    "elapsed": 619.32,
+    "elapsed": 663.13,
     "trivial": false
   },
-  "20212": {
-    "pat": "20212",
-    "n_cands": 5,
-    "best_probe": "dccri",
-    "best_H": 1.672975,
+  "20020": {
+    "pat": "20020",
+    "n_cands": 8,
+    "best_probe": "deems",
+    "best_H": 2.183553,
     "tiebreak": [
       0,
       0,
@@ -4155,7 +3398,43 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -3,
     "grey_letters": [
-      "a"
+      "a",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "s",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "seles",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.8164,
+      "e_direct": 3.8446,
+      "p_best": 0.2529
+    },
+    "elapsed": 632.23,
+    "trivial": false
+  },
+  "20210": {
+    "pat": "20210",
+    "n_cands": 8,
+    "best_probe": "deeit",
+    "best_H": 2.414768,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "a",
+      "o"
     ],
     "yellow_letters": {
       "e": [
@@ -4163,26 +3442,63 @@
       ]
     },
     "green_letters": {
-      "0": "c",
-      "2": "r",
-      "4": "o"
+      "0": "s",
+      "2": "r"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "cerro",
+      "direct_word": "serie",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.649,
-      "e_direct": 3.008,
-      "p_best": 0.3307
+      "e_probe": 2.5852,
+      "e_direct": 3.9702,
+      "p_best": 0.2199
     },
-    "elapsed": 610.36,
+    "elapsed": 630.95,
     "trivial": false
   },
-  "21101": {
-    "pat": "21101",
-    "n_cands": 5,
-    "best_probe": "aloap",
-    "best_H": 1.606151,
+  "20001": {
+    "pat": "20001",
+    "n_cands": 8,
+    "best_probe": "fosmt",
+    "best_H": 2.34214,
+    "tiebreak": [
+      0,
+      0,
+      -3
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -3,
+    "grey_letters": [
+      "a",
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "0": "s"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "somos",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.6579,
+      "e_direct": 3.933,
+      "p_best": 0.2297
+    },
+    "elapsed": 643.02,
+    "trivial": false
+  },
+  "10102": {
+    "pat": "10102",
+    "n_cands": 7,
+    "best_probe": "ioosr",
+    "best_H": 2.105896,
     "tiebreak": [
       0,
       0,
@@ -4192,6 +3508,159 @@
     "grey_reuse": 0,
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "a",
+      "e"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "druso",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.7015,
+      "e_direct": 3.3274,
+      "p_best": 0.3508
+    },
+    "elapsed": 634.41,
+    "trivial": false
+  },
+  "20202": {
+    "pat": "20202",
+    "n_cands": 8,
+    "best_probe": "bocgi",
+    "best_H": 2.3611,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "a",
+      "e"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "s",
+      "2": "r",
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "sirio",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.6389,
+      "e_direct": 3.88,
+      "p_best": 0.2436
+    },
+    "elapsed": 642.2,
+    "trivial": false
+  },
+  "22001": {
+    "pat": "22001",
+    "n_cands": 7,
+    "best_probe": "jlnya",
+    "best_H": 2.388231,
+    "tiebreak": [
+      0,
+      0,
+      -1
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -1,
+    "grey_letters": [
+      "e",
+      "r"
+    ],
+    "yellow_letters": {
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "0": "s",
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "salon",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4191,
+      "e_direct": 3.8338,
+      "p_best": 0.2095
+    },
+    "elapsed": 637.62,
+    "trivial": false
+  },
+  "21210": {
+    "pat": "21210",
+    "n_cands": 7,
+    "best_probe": "binra",
+    "best_H": 2.571251,
+    "tiebreak": [
+      0,
+      0,
+      -3
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -3,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "0": "s",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "seran",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.2361,
+      "e_direct": 3.9387,
+      "p_best": 0.1803
+    },
+    "elapsed": 647.45,
+    "trivial": false
+  },
+  "21101": {
+    "pat": "21101",
+    "n_cands": 7,
+    "best_probe": "blnañ",
+    "best_H": 2.014421,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
     "grey_letters": [
       "e"
     ],
@@ -4207,24 +3676,97 @@
       ]
     },
     "green_letters": {
-      "0": "c"
+      "0": "s"
     },
     "recommendation": {
       "action": "probe",
-      "direct_word": "cobra",
+      "direct_word": "solar",
       "reason": "probe_wins_renyi",
-      "e_probe": 2.7158,
-      "e_direct": 2.7298,
-      "p_best": 0.4234
+      "e_probe": 2.7929,
+      "e_direct": 3.6733,
+      "p_best": 0.2543
     },
-    "elapsed": 632.12,
+    "elapsed": 658.53,
+    "trivial": false
+  },
+  "02201": {
+    "pat": "02201",
+    "n_cands": 6,
+    "best_probe": "bcfmp",
+    "best_H": 2.408524,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": 0,
+    "grey_letters": [
+      "e",
+      "s"
+    ],
+    "yellow_letters": {
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "1": "a",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "baron",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.1764,
+      "e_direct": 3.532,
+      "p_best": 0.2378
+    },
+    "elapsed": 619.73,
+    "trivial": false
+  },
+  "00200": {
+    "pat": "00200",
+    "n_cands": 6,
+    "best_probe": "ribrr",
+    "best_H": 1.56353,
+    "tiebreak": [
+      0,
+      0,
+      -3
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -3,
+    "grey_letters": [
+      "a",
+      "e",
+      "o",
+      "s"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "curul",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.0214,
+      "e_direct": 2.9769,
+      "p_best": 0.4049
+    },
+    "elapsed": 622.13,
     "trivial": false
   },
   "00221": {
     "pat": "00221",
-    "n_cands": 5,
-    "best_probe": "doloe",
-    "best_H": 1.465808,
+    "n_cands": 6,
+    "best_probe": "codoe",
+    "best_H": 1.417714,
     "tiebreak": [
       0,
       0,
@@ -4236,7 +3778,7 @@
     "green_repeat_or_prod": -5,
     "grey_letters": [
       "a",
-      "c"
+      "s"
     ],
     "yellow_letters": {
       "o": [
@@ -4249,57 +3791,20 @@
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "lores",
+      "direct_word": "moren",
       "reason": "direct_wins_renyi",
-      "e_probe": 2.8561,
-      "e_direct": 2.1737,
-      "p_best": 0.6088
+      "e_probe": 3.1672,
+      "e_direct": 2.2248,
+      "p_best": 0.6313
     },
-    "elapsed": 624.91,
+    "elapsed": 629.31,
     "trivial": false
   },
-  "10000": {
-    "pat": "10000",
-    "n_cands": 5,
-    "best_probe": "dccuc",
-    "best_H": 0.946928,
-    "tiebreak": [
-      0,
-      0,
-      -6
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -6,
-    "grey_letters": [
-      "a",
-      "e",
-      "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "lucid",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.375,
-      "e_direct": 1.7158,
-      "p_best": 0.7614
-    },
-    "elapsed": 634.82,
-    "trivial": false
-  },
-  "12100": {
-    "pat": "12100",
-    "n_cands": 5,
-    "best_probe": "mcnst",
-    "best_H": 0.920397,
+  "12200": {
+    "pat": "12200",
+    "n_cands": 6,
+    "best_probe": "dhpst",
+    "best_H": 2.272323,
     "tiebreak": [
       0,
       0,
@@ -4314,7 +3819,278 @@
       "o"
     ],
     "yellow_letters": {
-      "c": [
+      "s": [
+        0
+      ]
+    },
+    "green_letters": {
+      "1": "a",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "farsa",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.3126,
+      "e_direct": 3.4433,
+      "p_best": 0.2645
+    },
+    "elapsed": 626.64,
+    "trivial": false
+  },
+  "22020": {
+    "pat": "22020",
+    "n_cands": 6,
+    "best_probe": "abnle",
+    "best_H": 1.788305,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "o",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "s",
+      "1": "a",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "saben",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.7967,
+      "e_direct": 2.9854,
+      "p_best": 0.4023
+    },
+    "elapsed": 630.64,
+    "trivial": false
+  },
+  "22100": {
+    "pat": "22100",
+    "n_cands": 6,
+    "best_probe": "cjlar",
+    "best_H": 2.332542,
+    "tiebreak": [
+      0,
+      0,
+      -3
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -3,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "0": "s",
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "salir",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.2524,
+      "e_direct": 3.6194,
+      "p_best": 0.2115
+    },
+    "elapsed": 631.72,
+    "trivial": false
+  },
+  "11102": {
+    "pat": "11102",
+    "n_cands": 5,
+    "best_probe": "acaap",
+    "best_H": 1.406447,
+    "tiebreak": [
+      0,
+      0,
+      -6
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "astro",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.9155,
+      "e_direct": 2.1407,
+      "p_best": 0.6198
+    },
+    "elapsed": 637.27,
+    "trivial": false
+  },
+  "12220": {
+    "pat": "12220",
+    "n_cands": 5,
+    "best_probe": "cdmns",
+    "best_H": 1.442873,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ]
+    },
+    "green_letters": {
+      "1": "a",
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "pares",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.8791,
+      "e_direct": 2.6239,
+      "p_best": 0.4587
+    },
+    "elapsed": 637.35,
+    "trivial": false
+  },
+  "11201": {
+    "pat": "11201",
+    "n_cands": 5,
+    "best_probe": "aocdf",
+    "best_H": 1.035727,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "obras",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.2862,
+      "e_direct": 1.9839,
+      "p_best": 0.672
+    },
+    "elapsed": 613.17,
+    "trivial": false
+  },
+  "10202": {
+    "pat": "10202",
+    "n_cands": 5,
+    "best_probe": "codss",
+    "best_H": 2.285849,
+    "tiebreak": [
+      0,
+      0,
+      -5
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -5,
+    "grey_letters": [
+      "a",
+      "e"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ]
+    },
+    "green_letters": {
+      "2": "r",
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "curso",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.0361,
+      "e_direct": 3.2485,
+      "p_best": 0.2505
+    },
+    "elapsed": 616.7,
+    "trivial": false
+  },
+  "10120": {
+    "pat": "10120",
+    "n_cands": 5,
+    "best_probe": "mrstr",
+    "best_H": 2.265163,
+    "tiebreak": [
+      0,
+      0,
+      -6
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "a",
+      "o"
+    ],
+    "yellow_letters": {
+      "s": [
         0
       ],
       "r": [
@@ -4322,17 +4098,172 @@
       ]
     },
     "green_letters": {
-      "1": "a"
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "reves",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.0568,
+      "e_direct": 3.203,
+      "p_best": 0.2657
+    },
+    "elapsed": 626.52,
+    "trivial": false
+  },
+  "11210": {
+    "pat": "11210",
+    "n_cands": 5,
+    "best_probe": "aemap",
+    "best_H": 2.305881,
+    "tiebreak": [
+      0,
+      0,
+      -6
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "o"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "veras",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.016,
+      "e_direct": 3.2682,
+      "p_best": 0.2439
+    },
+    "elapsed": 617.81,
+    "trivial": false
+  },
+  "22202": {
+    "pat": "22202",
+    "n_cands": 5,
+    "best_probe": "adarg",
+    "best_H": 1.147792,
+    "tiebreak": [
+      0,
+      0,
+      -3
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -3,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "s",
+      "1": "a",
+      "2": "r",
+      "4": "o"
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "sacar",
+      "direct_word": "sardo",
       "reason": "direct_wins_renyi",
-      "e_probe": 3.4015,
-      "e_direct": 1.5575,
-      "p_best": 0.8142
+      "e_probe": 3.1741,
+      "e_direct": 1.7929,
+      "p_best": 0.7357
     },
-    "elapsed": 606.26,
+    "elapsed": 623.72,
+    "trivial": false
+  },
+  "20011": {
+    "pat": "20011",
+    "n_cands": 5,
+    "best_probe": "ceele",
+    "best_H": 0.979711,
+    "tiebreak": [
+      0,
+      0,
+      -6
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "a",
+      "r"
+    ],
+    "yellow_letters": {
+      "e": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "0": "s"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "secos",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.3422,
+      "e_direct": 1.6371,
+      "p_best": 0.7876
+    },
+    "elapsed": 629.18,
+    "trivial": false
+  },
+  "21200": {
+    "pat": "21200",
+    "n_cands": 5,
+    "best_probe": "aciaj",
+    "best_H": 2.065286,
+    "tiebreak": [
+      0,
+      0,
+      -4
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -4,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ]
+    },
+    "green_letters": {
+      "0": "s",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "siria",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.2566,
+      "e_direct": 2.9555,
+      "p_best": 0.3482
+    },
+    "elapsed": 634.31,
     "trivial": false
   },
   "01220": {
@@ -4350,8 +4281,8 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -7,
     "grey_letters": [
-      "c",
-      "o"
+      "o",
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -4370,289 +4301,56 @@
       "e_direct": 2.2948,
       "p_best": 0.4991
     },
-    "elapsed": 609.14,
+    "elapsed": 635.54,
     "trivial": false
   },
-  "22210": {
-    "pat": "22210",
+  "01112": {
+    "pat": "01112",
     "n_cands": 4,
-    "best_probe": "deein",
-    "best_H": 0.499663,
+    "best_probe": "acarj",
+    "best_H": 1.022653,
     "tiebreak": [
       0,
       0,
-      -4
+      -6
     ],
     "is_word": false,
     "grey_reuse": 0,
     "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
+    "green_repeat_or_prod": -6,
     "grey_letters": [
-      "o"
+      "s"
     ],
     "yellow_letters": {
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "1": "a",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "carne",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.5003,
-      "e_direct": 1.193,
-      "p_best": 0.9254
-    },
-    "elapsed": 603.7,
-    "trivial": false
-  },
-  "20211": {
-    "pat": "20211",
-    "n_cands": 4,
-    "best_probe": "eeers",
-    "best_H": 1.949793,
-    "tiebreak": [
-      0,
-      0,
-      -7
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -7,
-    "grey_letters": [
-      "a"
-    ],
-    "yellow_letters": {
-      "e": [
-        3
+      "a": [
+        1
       ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "corte",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.0502,
-      "e_direct": 2.8224,
-      "p_best": 0.295
-    },
-    "elapsed": 610.37,
-    "trivial": false
-  },
-  "20111": {
-    "pat": "20111",
-    "n_cands": 4,
-    "best_probe": "beore",
-    "best_H": 1.228626,
-    "tiebreak": [
-      0,
-      0,
-      -8
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -8,
-    "grey_letters": [
-      "a"
-    ],
-    "yellow_letters": {
       "r": [
         2
       ],
       "e": [
         3
-      ],
-      "o": [
-        4
       ]
     },
     "green_letters": {
-      "0": "c"
+      "4": "o"
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "cobre",
+      "direct_word": "acero",
       "reason": "direct_wins_renyi",
-      "e_probe": 2.7714,
-      "e_direct": 2.2159,
-      "p_best": 0.5296
+      "e_probe": 2.9773,
+      "e_direct": 2.2899,
+      "p_best": 0.501
     },
-    "elapsed": 618.72,
+    "elapsed": 604.82,
     "trivial": false
   },
-  "20101": {
-    "pat": "20101",
+  "11120": {
+    "pat": "11120",
     "n_cands": 4,
-    "best_probe": "ooorr",
-    "best_H": 1.568395,
-    "tiebreak": [
-      0,
-      0,
-      -10
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -10,
-    "grey_letters": [
-      "a",
-      "e"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "0": "c"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "color",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.4316,
-      "e_direct": 2.463,
-      "p_best": 0.4341
-    },
-    "elapsed": 632.91,
-    "trivial": false
-  },
-  "20121": {
-    "pat": "20121",
-    "n_cands": 4,
-    "best_probe": "gmcor",
-    "best_H": 1.783098,
-    "tiebreak": [
-      0,
-      0,
-      -5
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -5,
-    "grey_letters": [
-      "a"
-    ],
-    "yellow_letters": {
-      "r": [
-        2
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "0": "c",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "comer",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.2169,
-      "e_direct": 2.572,
-      "p_best": 0.3919
-    },
-    "elapsed": 619.19,
-    "trivial": false
-  },
-  "20200": {
-    "pat": "20200",
-    "n_cands": 4,
-    "best_probe": "iccrs",
-    "best_H": 1.547087,
-    "tiebreak": [
-      0,
-      0,
-      -3
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -3,
-    "grey_letters": [
-      "a",
-      "e",
-      "o"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "curul",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.4529,
-      "e_direct": 2.5463,
-      "p_best": 0.4018
-    },
-    "elapsed": 629.15,
-    "trivial": false
-  },
-  "12001": {
-    "pat": "12001",
-    "n_cands": 4,
-    "best_probe": "fccln",
-    "best_H": 1.106845,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "e",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "sacos",
-      "reason": "direct_wins_renyi",
-      "e_probe": 2.8932,
-      "e_direct": 2.0822,
-      "p_best": 0.5814
-    },
-    "elapsed": 604.0,
-    "trivial": false
-  },
-  "12110": {
-    "pat": "12110",
-    "n_cands": 4,
-    "best_probe": "eclrn",
-    "best_H": 0.930099,
+    "best_probe": "aianr",
+    "best_H": 1.528277,
     "tiebreak": [
       0,
       0,
@@ -4666,95 +4364,14 @@
       "o"
     ],
     "yellow_letters": {
-      "c": [
+      "s": [
         0
       ],
-      "r": [
-        2
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "1": "a"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "sacre",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.0699,
-      "e_direct": 1.4952,
-      "p_best": 0.8084
-    },
-    "elapsed": 613.33,
-    "trivial": false
-  },
-  "10101": {
-    "pat": "10101",
-    "n_cands": 4,
-    "best_probe": "lccor",
-    "best_H": 1.17091,
-    "tiebreak": [
-      0,
-      0,
-      -8
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -8,
-    "grey_letters": [
-      "a",
-      "e"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "r": [
-        2
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "ricos",
-      "reason": "direct_wins_renyi",
-      "e_probe": 2.8291,
-      "e_direct": 2.3154,
-      "p_best": 0.4911
-    },
-    "elapsed": 615.77,
-    "trivial": false
-  },
-  "01021": {
-    "pat": "01021",
-    "n_cands": 4,
-    "best_probe": "aosaa",
-    "best_H": 1.291833,
-    "tiebreak": [
-      0,
-      0,
-      -8
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -8,
-    "grey_letters": [
-      "c",
-      "r"
-    ],
-    "yellow_letters": {
       "a": [
         1
       ],
-      "o": [
-        4
+      "r": [
+        2
       ]
     },
     "green_letters": {
@@ -4762,20 +4379,20 @@
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "volea",
+      "direct_word": "artes",
       "reason": "direct_wins_renyi",
-      "e_probe": 2.7082,
-      "e_direct": 2.3191,
-      "p_best": 0.4897
+      "e_probe": 2.4717,
+      "e_direct": 2.1978,
+      "p_best": 0.5366
     },
-    "elapsed": 619.52,
+    "elapsed": 613.22,
     "trivial": false
   },
-  "00122": {
-    "pat": "00122",
+  "12201": {
+    "pat": "12201",
     "n_cands": 4,
-    "best_probe": "dlmrr",
-    "best_H": 1.026851,
+    "best_probe": "bcjos",
+    "best_H": 1.58711,
     "tiebreak": [
       0,
       0,
@@ -4786,27 +4403,311 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -4,
     "grey_letters": [
-      "a",
-      "c"
+      "e"
     ],
     "yellow_letters": {
+      "s": [
+        0
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "1": "a",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "paros",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4129,
+      "e_direct": 2.6762,
+      "p_best": 0.3516
+    },
+    "elapsed": 614.62,
+    "trivial": false
+  },
+  "10211": {
+    "pat": "10211",
+    "n_cands": 4,
+    "best_probe": "ceeoe",
+    "best_H": 1.571831,
+    "tiebreak": [
+      0,
+      0,
+      -8
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -8,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "e": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "ceros",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4282,
+      "e_direct": 2.5105,
+      "p_best": 0.4157
+    },
+    "elapsed": 618.74,
+    "trivial": false
+  },
+  "10121": {
+    "pat": "10121",
+    "n_cands": 4,
+    "best_probe": "cosor",
+    "best_H": 1.555372,
+    "tiebreak": [
+      0,
+      0,
+      -8
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -8,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "r": [
+        2
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "coser",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.4446,
+      "e_direct": 2.4526,
+      "p_best": 0.4381
+    },
+    "elapsed": 627.06,
+    "trivial": false
+  },
+  "12101": {
+    "pat": "12101",
+    "n_cands": 4,
+    "best_probe": "bmoss",
+    "best_H": 1.854936,
+    "tiebreak": [
+      0,
+      0,
+      -6
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "r": [
+        2
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "1": "a"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "ramos",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.1451,
+      "e_direct": 2.6658,
+      "p_best": 0.3556
+    },
+    "elapsed": 623.99,
+    "trivial": false
+  },
+  "22200": {
+    "pat": "22200",
+    "n_cands": 4,
+    "best_probe": "agant",
+    "best_H": 1.014009,
+    "tiebreak": [
+      0,
+      0,
+      -2
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -2,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "s",
+      "1": "a",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sarna",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.986,
+      "e_direct": 2.0753,
+      "p_best": 0.584
+    },
+    "elapsed": 632.45,
+    "trivial": false
+  },
+  "21100": {
+    "pat": "21100",
+    "n_cands": 4,
+    "best_probe": "adsaa",
+    "best_H": 1.493302,
+    "tiebreak": [
+      0,
+      0,
+      -7
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -7,
+    "grey_letters": [
+      "e",
+      "o"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ],
       "r": [
         2
       ]
     },
     "green_letters": {
-      "3": "e",
-      "4": "o"
+      "0": "s"
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "romeo",
+      "direct_word": "sumar",
       "reason": "direct_wins_renyi",
-      "e_probe": 2.9731,
-      "e_direct": 2.2905,
-      "p_best": 0.5008
+      "e_probe": 2.5067,
+      "e_direct": 2.4527,
+      "p_best": 0.438
     },
-    "elapsed": 614.64,
+    "elapsed": 649.22,
+    "trivial": false
+  },
+  "01202": {
+    "pat": "01202",
+    "n_cands": 3,
+    "best_probe": "abaag",
+    "best_H": 1.576359,
+    "tiebreak": [
+      0,
+      0,
+      -6
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "e",
+      "s"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ]
+    },
+    "green_letters": {
+      "2": "r",
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "probe",
+      "direct_word": "abrio",
+      "reason": "probe_wins_renyi",
+      "e_probe": 2.0086,
+      "e_direct": 2.268,
+      "p_best": 0.366
+    },
+    "elapsed": 609.11,
+    "trivial": false
+  },
+  "11011": {
+    "pat": "11011",
+    "n_cands": 3,
+    "best_probe": "aeasa",
+    "best_H": 0.190559,
+    "tiebreak": [
+      0,
+      0,
+      -10
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -10,
+    "grey_letters": [
+      "r"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "a": [
+        1
+      ],
+      "e": [
+        3
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {},
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "asome",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.3944,
+      "e_direct": 1.0504,
+      "p_best": 0.9748
+    },
+    "elapsed": 625.76,
     "trivial": false
   },
   "01222": {
@@ -4824,7 +4725,7 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -7,
     "grey_letters": [
-      "c"
+      "s"
     ],
     "yellow_letters": {
       "a": [
@@ -4844,625 +4745,14 @@
       "e_direct": 1.3901,
       "p_best": 0.8049
     },
-    "elapsed": 619.84,
+    "elapsed": 620.02,
     "trivial": false
-  },
-  "01202": {
-    "pat": "01202",
-    "n_cands": 3,
-    "best_probe": "abaag",
-    "best_H": 1.576359,
-    "tiebreak": [
-      0,
-      0,
-      -6
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -6,
-    "grey_letters": [
-      "c",
-      "e"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ]
-    },
-    "green_letters": {
-      "2": "r",
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "abrio",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.0086,
-      "e_direct": 2.268,
-      "p_best": 0.366
-    },
-    "elapsed": 626.12,
-    "trivial": false
-  },
-  "01112": {
-    "pat": "01112",
-    "n_cands": 3,
-    "best_probe": "aearj",
-    "best_H": 0.045402,
-    "tiebreak": [
-      0,
-      0,
-      -8
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -8,
-    "grey_letters": [
-      "c"
-    ],
-    "yellow_letters": {
-      "a": [
-        1
-      ],
-      "r": [
-        2
-      ],
-      "e": [
-        3
-      ]
-    },
-    "green_letters": {
-      "4": "o"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "alero",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.5396,
-      "e_direct": 1.009,
-      "p_best": 0.9955
-    },
-    "elapsed": 633.47,
-    "trivial": false
-  },
-  "11020": {
-    "pat": "11020",
-    "n_cands": 3,
-    "best_probe": "acana",
-    "best_H": 1.035616,
-    "tiebreak": [
-      0,
-      0,
-      -8
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -8,
-    "grey_letters": [
-      "o",
-      "r"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "a": [
-        1
-      ]
-    },
-    "green_letters": {
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "alcen",
-      "reason": "direct_wins_renyi",
-      "e_probe": 2.5493,
-      "e_direct": 1.9887,
-      "p_best": 0.5057
-    },
-    "elapsed": 606.91,
-    "trivial": false
-  },
-  "12200": {
-    "pat": "12200",
-    "n_cands": 3,
-    "best_probe": "bcccm",
-    "best_H": 1.352837,
-    "tiebreak": [
-      0,
-      0,
-      -6
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -6,
-    "grey_letters": [
-      "e",
-      "o"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ]
-    },
-    "green_letters": {
-      "1": "a",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "marca",
-      "reason": "direct_wins_renyi",
-      "e_probe": 2.2321,
-      "e_direct": 2.0911,
-      "p_best": 0.4544
-    },
-    "elapsed": 611.65,
-    "trivial": false
-  },
-  "10111": {
-    "pat": "10111",
-    "n_cands": 3,
-    "best_probe": "eccch",
-    "best_H": 0.68896,
-    "tiebreak": [
-      0,
-      0,
-      -8
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -8,
-    "grey_letters": [
-      "a"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "r": [
-        2
-      ],
-      "e": [
-        3
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {},
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "roche",
-      "reason": "direct_wins_renyi",
-      "e_probe": 2.896,
-      "e_direct": 1.3379,
-      "p_best": 0.8311
-    },
-    "elapsed": 619.12,
-    "trivial": false
-  },
-  "11102": {
-    "pat": "11102",
-    "n_cands": 2,
-    "best_probe": "acaro",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "acaro",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.7072937194144326
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "22220": {
-    "pat": "22220",
-    "n_cands": 3,
-    "best_probe": "acaas",
-    "best_H": 0.575573,
-    "tiebreak": [
-      0,
-      0,
-      -4
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -4,
-    "grey_letters": [
-      "o"
-    ],
-    "yellow_letters": {},
-    "green_letters": {
-      "0": "c",
-      "1": "a",
-      "2": "r",
-      "3": "e"
-    },
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "carey",
-      "reason": "direct_wins_renyi",
-      "e_probe": 3.0094,
-      "e_direct": 1.2625,
-      "p_best": 0.8688
-    },
-    "elapsed": 611.41,
-    "trivial": false
-  },
-  "11012": {
-    "pat": "11012",
-    "n_cands": 2,
-    "best_probe": "acedo",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "acedo",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.8694655324492456
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "10021": {
-    "pat": "10021",
-    "n_cands": 2,
-    "best_probe": "bocel",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "bocel",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.7970618996496658
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "10022": {
-    "pat": "10022",
-    "n_cands": 2,
-    "best_probe": "liceo",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "liceo",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.5039895193857975
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "22120": {
-    "pat": "22120",
-    "n_cands": 2,
-    "best_probe": "caber",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "caber",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.9882959523186743
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "22110": {
-    "pat": "22110",
-    "n_cands": 2,
-    "best_probe": "catre",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "catre",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.9253875029538502
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "22201": {
-    "pat": "22201",
-    "n_cands": 2,
-    "best_probe": "caros",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "caros",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.5323758217274333
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "21210": {
-    "pat": "21210",
-    "n_cands": 2,
-    "best_probe": "cerca",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "cerca",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.7108055683061693
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "21102": {
-    "pat": "21102",
-    "n_cands": 2,
-    "best_probe": "claro",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "claro",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.7852305789587134
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "20221": {
-    "pat": "20221",
-    "n_cands": 2,
-    "best_probe": "coree",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "coree",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.5437604101095858
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "20220": {
-    "pat": "20220",
-    "n_cands": 2,
-    "best_probe": "curen",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "curen",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.9637334917289776
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "10120": {
-    "pat": "10120",
-    "n_cands": 2,
-    "best_probe": "mecer",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "mecer",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.9397907282693592
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "10100": {
-    "pat": "10100",
-    "n_cands": 2,
-    "best_probe": "lucir",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "lucir",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.9985159293719722
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "12210": {
-    "pat": "12210",
-    "n_cands": 2,
-    "best_probe": "parce",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "parce",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.7056004347991983
-    },
-    "elapsed": 0.0,
-    "trivial": true
   },
   "02222": {
     "pat": "02222",
-    "n_cands": 2,
-    "best_probe": "mareo",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "mareo",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.7937407234745693
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "20000": {
-    "pat": "20000",
     "n_cands": 3,
-    "best_probe": "bcccl",
-    "best_H": 0.525395,
+    "best_probe": "acaam",
+    "best_H": 1.369434,
     "tiebreak": [
       0,
       0,
@@ -5473,30 +4763,565 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -3,
     "grey_letters": [
-      "a",
-      "e",
-      "o",
-      "r"
+      "s"
     ],
     "yellow_letters": {},
     "green_letters": {
-      "0": "c"
+      "1": "a",
+      "2": "r",
+      "3": "e",
+      "4": "o"
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "civil",
+      "direct_word": "careo",
       "reason": "direct_wins_renyi",
-      "e_probe": 3.0596,
-      "e_direct": 1.2009,
-      "p_best": 0.8995
+      "e_probe": 2.2155,
+      "e_direct": 2.0063,
+      "p_best": 0.4968
     },
-    "elapsed": 625.43,
+    "elapsed": 617.61,
     "trivial": false
+  },
+  "10220": {
+    "pat": "10220",
+    "n_cands": 3,
+    "best_probe": "cesss",
+    "best_H": 0.191903,
+    "tiebreak": [
+      0,
+      0,
+      -7
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -7,
+    "grey_letters": [
+      "a",
+      "o"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ]
+    },
+    "green_letters": {
+      "2": "r",
+      "3": "e"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "veres",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.3931,
+      "e_direct": 1.0534,
+      "p_best": 0.9733
+    },
+    "elapsed": 628.49,
+    "trivial": false
+  },
+  "10210": {
+    "pat": "10210",
+    "n_cands": 3,
+    "best_probe": "eeese",
+    "best_H": 0.938263,
+    "tiebreak": [
+      0,
+      0,
+      -10
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -10,
+    "grey_letters": [
+      "a",
+      "o"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "verse",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.6467,
+      "e_direct": 1.6889,
+      "p_best": 0.6556
+    },
+    "elapsed": 638.08,
+    "trivial": false
+  },
+  "10112": {
+    "pat": "10112",
+    "n_cands": 3,
+    "best_probe": "eeere",
+    "best_H": 1.035409,
+    "tiebreak": [
+      0,
+      0,
+      -10
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -10,
+    "grey_letters": [
+      "a"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "r": [
+        2
+      ],
+      "e": [
+        3
+      ]
+    },
+    "green_letters": {
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "resto",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.5496,
+      "e_direct": 2.0035,
+      "p_best": 0.4982
+    },
+    "elapsed": 644.09,
+    "trivial": false
+  },
+  "12102": {
+    "pat": "12102",
+    "n_cands": 3,
+    "best_probe": "cgsrr",
+    "best_H": 0.9119,
+    "tiebreak": [
+      0,
+      0,
+      -6
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -6,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "s": [
+        0
+      ],
+      "r": [
+        2
+      ]
+    },
+    "green_letters": {
+      "1": "a",
+      "4": "o"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "rasgo",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.6731,
+      "e_direct": 1.4011,
+      "p_best": 0.7994
+    },
+    "elapsed": 643.5,
+    "trivial": false
+  },
+  "11020": {
+    "pat": "11020",
+    "n_cands": 2,
+    "best_probe": "alpes",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "alpes",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.8594287223669215
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "10200": {
+    "pat": "10200",
+    "n_cands": 2,
+    "best_probe": "virus",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "virus",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.6888232576756474
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "10100": {
+    "pat": "10100",
+    "n_cands": 2,
+    "best_probe": "grisu",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "grisu",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9511932788890639
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "12120": {
+    "pat": "12120",
+    "n_cands": 2,
+    "best_probe": "laser",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "laser",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9977910961291813
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "12202": {
+    "pat": "12202",
+    "n_cands": 2,
+    "best_probe": "tarso",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "tarso",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9697481645251722
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "10022": {
+    "pat": "10022",
+    "n_cands": 2,
+    "best_probe": "museo",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "museo",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.7097330336254207
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "01021": {
+    "pat": "01021",
+    "n_cands": 2,
+    "best_probe": "volea",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "volea",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9058537279739539
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "10111": {
+    "pat": "10111",
+    "n_cands": 2,
+    "best_probe": "remos",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "remos",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9984247213621714
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "22110": {
+    "pat": "22110",
+    "n_cands": 2,
+    "best_probe": "sabre",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sabre",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.7896083617736915
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20110": {
+    "pat": "20110",
+    "n_cands": 2,
+    "best_probe": "sufre",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sufre",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9211780738168927
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20022": {
+    "pat": "20022",
+    "n_cands": 2,
+    "best_probe": "soleo",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "soleo",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9578645756056121
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20111": {
+    "pat": "20111",
+    "n_cands": 2,
+    "best_probe": "sobre",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sobre",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.5001622949855458
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20021": {
+    "pat": "20021",
+    "n_cands": 2,
+    "best_probe": "soles",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "soles",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9927228177066483
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20100": {
+    "pat": "20100",
+    "n_cands": 2,
+    "best_probe": "subir",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "subir",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.5609613574344966
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20200": {
+    "pat": "20200",
+    "n_cands": 2,
+    "best_probe": "surgi",
+    "best_H": 1.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "surgi",
+      "reason": "two_candidates",
+      "e_probe": 1.5,
+      "e_direct": 1.5,
+      "p_best": 0.9819793250667346
+    },
+    "elapsed": 0.0,
+    "trivial": true
   },
   "10212": {
     "pat": "10212",
     "n_cands": 2,
-    "best_probe": "terco",
+    "best_probe": "verso",
     "best_H": 1.0,
     "tiebreak": [
       0,
@@ -5509,61 +5334,11 @@
     "green_repeat_or_productive": 0,
     "recommendation": {
       "action": "direct",
-      "direct_word": "terco",
+      "direct_word": "verso",
       "reason": "two_candidates",
       "e_probe": 1.5,
       "e_direct": 1.5,
-      "p_best": 0.9449752609157281
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "11210": {
-    "pat": "11210",
-    "n_cands": 2,
-    "best_probe": "terca",
-    "best_H": 1.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "terca",
-      "reason": "two_candidates",
-      "e_probe": 1.5,
-      "e_direct": 1.5,
-      "p_best": 0.7669084577472738
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "11112": {
-    "pat": "11112",
-    "n_cands": 1,
-    "best_probe": "acero",
-    "best_H": 0.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "acero",
-      "reason": "single_candidate",
-      "e_probe": 0.0,
-      "e_direct": 0.0,
-      "p_best": 1.0
+      "p_best": 0.9323464556362796
     },
     "elapsed": 0.0,
     "trivial": true
@@ -5593,133 +5368,8 @@
     "elapsed": 0.0,
     "trivial": true
   },
-  "11120": {
-    "pat": "11120",
-    "n_cands": 1,
-    "best_probe": "arcen",
-    "best_H": 0.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "arcen",
-      "reason": "single_candidate",
-      "e_probe": 0.0,
-      "e_direct": 0.0,
-      "p_best": 1.0
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "22101": {
-    "pat": "22101",
-    "n_cands": 1,
-    "best_probe": "calor",
-    "best_H": 0.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "calor",
-      "reason": "single_candidate",
-      "e_probe": 0.0,
-      "e_direct": 0.0,
-      "p_best": 1.0
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "22022": {
-    "pat": "22022",
-    "n_cands": 1,
-    "best_probe": "cateo",
-    "best_H": 0.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "cateo",
-      "reason": "single_candidate",
-      "e_probe": 0.0,
-      "e_direct": 0.0,
-      "p_best": 1.0
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "22102": {
-    "pat": "22102",
-    "n_cands": 1,
-    "best_probe": "cauro",
-    "best_H": 0.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "cauro",
-      "reason": "single_candidate",
-      "e_probe": 0.0,
-      "e_direct": 0.0,
-      "p_best": 1.0
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "20022": {
-    "pat": "20022",
-    "n_cands": 1,
-    "best_probe": "coceo",
-    "best_H": 0.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "coceo",
-      "reason": "single_candidate",
-      "e_probe": 0.0,
-      "e_direct": 0.0,
-      "p_best": 1.0
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "21221": {
-    "pat": "21221",
+  "01221": {
+    "pat": "01221",
     "n_cands": 1,
     "best_probe": "corea",
     "best_H": 0.0,
@@ -5743,10 +5393,10 @@
     "elapsed": 0.0,
     "trivial": true
   },
-  "20100": {
-    "pat": "20100",
+  "12210": {
+    "pat": "12210",
     "n_cands": 1,
-    "best_probe": "cubri",
+    "best_probe": "darse",
     "best_H": 0.0,
     "tiebreak": [
       0,
@@ -5759,7 +5409,7 @@
     "green_repeat_or_productive": 0,
     "recommendation": {
       "action": "direct",
-      "direct_word": "cubri",
+      "direct_word": "darse",
       "reason": "single_candidate",
       "e_probe": 0.0,
       "e_direct": 0.0,
@@ -5793,10 +5443,10 @@
     "elapsed": 0.0,
     "trivial": true
   },
-  "11200": {
-    "pat": "11200",
+  "10221": {
+    "pat": "10221",
     "n_cands": 1,
-    "best_probe": "surca",
+    "best_probe": "lores",
     "best_H": 0.0,
     "tiebreak": [
       0,
@@ -5809,7 +5459,7 @@
     "green_repeat_or_productive": 0,
     "recommendation": {
       "action": "direct",
-      "direct_word": "surca",
+      "direct_word": "lores",
       "reason": "single_candidate",
       "e_probe": 0.0,
       "e_direct": 0.0,
@@ -5818,10 +5468,10 @@
     "elapsed": 0.0,
     "trivial": true
   },
-  "10201": {
-    "pat": "10201",
+  "12022": {
+    "pat": "12022",
     "n_cands": 1,
-    "best_probe": "torci",
+    "best_probe": "paseo",
     "best_H": 0.0,
     "tiebreak": [
       0,
@@ -5834,7 +5484,357 @@
     "green_repeat_or_productive": 0,
     "recommendation": {
       "action": "direct",
-      "direct_word": "torci",
+      "direct_word": "paseo",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "11021": {
+    "pat": "11021",
+    "n_cands": 1,
+    "best_probe": "posea",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "posea",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "12110": {
+    "pat": "12110",
+    "n_cands": 1,
+    "best_probe": "raspe",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "raspe",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "10122": {
+    "pat": "10122",
+    "n_cands": 1,
+    "best_probe": "roseo",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "roseo",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "22022": {
+    "pat": "22022",
+    "n_cands": 1,
+    "best_probe": "sabeo",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sabeo",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "22120": {
+    "pat": "22120",
+    "n_cands": 1,
+    "best_probe": "saber",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "saber",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "22101": {
+    "pat": "22101",
+    "n_cands": 1,
+    "best_probe": "sabor",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sabor",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "22102": {
+    "pat": "22102",
+    "n_cands": 1,
+    "best_probe": "sacro",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sacro",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "22210": {
+    "pat": "22210",
+    "n_cands": 1,
+    "best_probe": "sarde",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sarde",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20220": {
+    "pat": "20220",
+    "n_cands": 1,
+    "best_probe": "seres",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "seres",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20102": {
+    "pat": "20102",
+    "n_cands": 1,
+    "best_probe": "sobro",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sobro",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "21021": {
+    "pat": "21021",
+    "n_cands": 1,
+    "best_probe": "solea",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "solea",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20121": {
+    "pat": "20121",
+    "n_cands": 1,
+    "best_probe": "soler",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "soler",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20201": {
+    "pat": "20201",
+    "n_cands": 1,
+    "best_probe": "sorbi",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sorbi",
+      "reason": "single_candidate",
+      "e_probe": 0.0,
+      "e_direct": 0.0,
+      "p_best": 1.0
+    },
+    "elapsed": 0.0,
+    "trivial": true
+  },
+  "20112": {
+    "pat": "20112",
+    "n_cands": 1,
+    "best_probe": "suero",
+    "best_H": 0.0,
+    "tiebreak": [
+      0,
+      0,
+      0
+    ],
+    "is_word": true,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_productive": 0,
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "suero",
       "reason": "single_candidate",
       "e_probe": 0.0,
       "e_direct": 0.0,
@@ -5868,116 +5868,49 @@
     "elapsed": 0.0,
     "trivial": true
   },
-  "10210": {
-    "pat": "10210",
-    "n_cands": 1,
-    "best_probe": "zurce",
-    "best_H": 0.0,
-    "tiebreak": [
-      0,
-      0,
-      0
-    ],
-    "is_word": true,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_productive": 0,
-    "recommendation": {
-      "action": "direct",
-      "direct_word": "zurce",
-      "reason": "single_candidate",
-      "e_probe": 0.0,
-      "e_direct": 0.0,
-      "p_best": 1.0
-    },
-    "elapsed": 0.0,
-    "trivial": true
-  },
-  "20201": {
-    "pat": "20201",
+  "00122": {
+    "pat": "00122",
     "n_cands": 3,
-    "best_probe": "ooooi",
-    "best_H": 1.580313,
+    "best_probe": "drlrr",
+    "best_H": 1.007826,
     "tiebreak": [
       0,
       0,
-      -8
+      -6
     ],
     "is_word": false,
     "grey_reuse": 0,
     "yellow_same_pos": 0,
-    "green_repeat_or_prod": -8,
+    "green_repeat_or_prod": -6,
     "grey_letters": [
       "a",
-      "e"
+      "s"
     ],
     "yellow_letters": {
-      "o": [
-        4
+      "r": [
+        2
       ]
     },
     "green_letters": {
-      "0": "c",
-      "2": "r"
-    },
-    "recommendation": {
-      "action": "probe",
-      "direct_word": "coros",
-      "reason": "probe_wins_renyi",
-      "e_probe": 2.0046,
-      "e_direct": 2.2872,
-      "p_best": 0.3564
-    },
-    "elapsed": 617.62,
-    "trivial": false
-  },
-  "10211": {
-    "pat": "10211",
-    "n_cands": 3,
-    "best_probe": "eccfs",
-    "best_H": 0.06999,
-    "tiebreak": [
-      0,
-      0,
-      -6
-    ],
-    "is_word": false,
-    "grey_reuse": 0,
-    "yellow_same_pos": 0,
-    "green_repeat_or_prod": -6,
-    "grey_letters": [
-      "a"
-    ],
-    "yellow_letters": {
-      "c": [
-        0
-      ],
-      "e": [
-        3
-      ],
-      "o": [
-        4
-      ]
-    },
-    "green_letters": {
-      "2": "r"
+      "3": "e",
+      "4": "o"
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "force",
+      "direct_word": "romeo",
       "reason": "direct_wins_renyi",
-      "e_probe": 3.515,
-      "e_direct": 1.0153,
-      "p_best": 0.9924
+      "e_probe": 2.5771,
+      "e_direct": 1.9964,
+      "p_best": 0.5018
     },
-    "elapsed": 617.13,
+    "elapsed": 621.8,
     "trivial": false
   },
-  "11201": {
-    "pat": "11201",
+  "21110": {
+    "pat": "21110",
     "n_cands": 3,
-    "best_probe": "acahm",
-    "best_H": 0.161615,
+    "best_probe": "acaad",
+    "best_H": 1.475733,
     "tiebreak": [
       0,
       0,
@@ -5988,38 +5921,38 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -6,
     "grey_letters": [
-      "e"
+      "o"
     ],
     "yellow_letters": {
-      "c": [
-        0
-      ],
       "a": [
         1
       ],
-      "o": [
-        4
+      "r": [
+        2
+      ],
+      "e": [
+        3
       ]
     },
     "green_letters": {
-      "2": "r"
+      "0": "s"
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "horca",
+      "direct_word": "secar",
       "reason": "direct_wins_renyi",
-      "e_probe": 3.4233,
-      "e_direct": 1.0445,
-      "p_best": 0.9777
+      "e_probe": 2.1092,
+      "e_direct": 1.9955,
+      "p_best": 0.5023
     },
-    "elapsed": 598.5,
+    "elapsed": 621.97,
     "trivial": false
   },
-  "10202": {
-    "pat": "10202",
+  "20212": {
+    "pat": "20212",
     "n_cands": 3,
-    "best_probe": "soccc",
-    "best_H": 1.008163,
+    "best_probe": "eeeri",
+    "best_H": 0.175642,
     "tiebreak": [
       0,
       0,
@@ -6030,34 +5963,34 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -7,
     "grey_letters": [
-      "a",
-      "e"
+      "a"
     ],
     "yellow_letters": {
-      "c": [
-        0
+      "e": [
+        3
       ]
     },
     "green_letters": {
+      "0": "s",
       "2": "r",
       "4": "o"
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "turco",
+      "direct_word": "serio",
       "reason": "direct_wins_renyi",
-      "e_probe": 2.5768,
-      "e_direct": 1.8962,
-      "p_best": 0.5519
+      "e_probe": 3.4093,
+      "e_direct": 1.0455,
+      "p_best": 0.9772
     },
-    "elapsed": 483.61,
+    "elapsed": 610.81,
     "trivial": false
   },
-  "12102": {
-    "pat": "12102",
+  "20211": {
+    "pat": "20211",
     "n_cands": 3,
-    "best_probe": "mcccc",
-    "best_H": 1.20042,
+    "best_probe": "beeoe",
+    "best_H": 0.692345,
     "tiebreak": [
       0,
       0,
@@ -6068,29 +6001,144 @@
     "yellow_same_pos": 0,
     "green_repeat_or_prod": -8,
     "grey_letters": [
-      "e"
+      "a"
     ],
     "yellow_letters": {
-      "c": [
-        0
+      "e": [
+        3
       ],
-      "r": [
-        2
+      "o": [
+        4
       ]
     },
     "green_letters": {
-      "1": "a",
-      "4": "o"
+      "0": "s",
+      "2": "r"
     },
     "recommendation": {
       "action": "direct",
-      "direct_word": "macro",
+      "direct_word": "sorbe",
       "reason": "direct_wins_renyi",
-      "e_probe": 2.3845,
-      "e_direct": 1.9148,
-      "p_best": 0.5426
+      "e_probe": 2.8926,
+      "e_direct": 1.2671,
+      "p_best": 0.8664
     },
-    "elapsed": 463.57,
+    "elapsed": 610.87,
+    "trivial": false
+  },
+  "20000": {
+    "pat": "20000",
+    "n_cands": 3,
+    "best_probe": "bisss",
+    "best_H": 0.922856,
+    "tiebreak": [
+      0,
+      0,
+      -3
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -3,
+    "grey_letters": [
+      "a",
+      "e",
+      "o",
+      "r"
+    ],
+    "yellow_letters": {},
+    "green_letters": {
+      "0": "s"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sutil",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.6621,
+      "e_direct": 1.6566,
+      "p_best": 0.6717
+    },
+    "elapsed": 604.72,
+    "trivial": false
+  },
+  "20101": {
+    "pat": "20101",
+    "n_cands": 3,
+    "best_probe": "oooor",
+    "best_H": 1.317846,
+    "tiebreak": [
+      0,
+      0,
+      -10
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -10,
+    "grey_letters": [
+      "a",
+      "e"
+    ],
+    "yellow_letters": {
+      "r": [
+        2
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "0": "s"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sport",
+      "reason": "direct_wins_renyi",
+      "e_probe": 2.2671,
+      "e_direct": 2.0352,
+      "p_best": 0.4824
+    },
+    "elapsed": 594.52,
+    "trivial": false
+  },
+  "21201": {
+    "pat": "21201",
+    "n_cands": 3,
+    "best_probe": "abara",
+    "best_H": 0.08761,
+    "tiebreak": [
+      0,
+      0,
+      -7
+    ],
+    "is_word": false,
+    "grey_reuse": 0,
+    "yellow_same_pos": 0,
+    "green_repeat_or_prod": -7,
+    "grey_letters": [
+      "e"
+    ],
+    "yellow_letters": {
+      "a": [
+        1
+      ],
+      "o": [
+        4
+      ]
+    },
+    "green_letters": {
+      "0": "s",
+      "2": "r"
+    },
+    "recommendation": {
+      "action": "direct",
+      "direct_word": "sorda",
+      "reason": "direct_wins_renyi",
+      "e_probe": 3.4974,
+      "e_direct": 1.0192,
+      "p_best": 0.9904
+    },
+    "elapsed": 552.42,
     "trivial": false
   }
 }

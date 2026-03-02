@@ -52,7 +52,7 @@ DATA_DIR  = REPO_ROOT / "data"
 # ── Openers confirmados por búsqueda exhaustiva ───────────────────────────────
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
-    5: {"uniform": "careo", "frequency": "careo"},
+    5: {"uniform": "sareo", "frequency": "sareo"},
     6: {"uniform": "ceriao", "frequency": "ceriao"},
 }
 
