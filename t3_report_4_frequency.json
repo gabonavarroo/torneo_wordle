@@ -1,0 +1,8564 @@
+{
+  "0100|0200": {
+    "key": "0100|0200",
+    "situation": "cluster_2",
+    "n_cands": 41,
+    "action": "probe",
+    "guess": "tino",
+    "H": 2.301463,
+    "e_direct": 7.029545,
+    "e_probe": null,
+    "p_best": 0.046249,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "c",
+          "d",
+          "f",
+          "g",
+          "h",
+          "j",
+          "m",
+          "n",
+          "t",
+          "v"
+        ],
+        "2": [
+          "b",
+          "c",
+          "d",
+          "f",
+          "g",
+          "j",
+          "m",
+          "n",
+          "t",
+          "v",
+          "z",
+          "ñ"
+        ]
+      },
+      "cluster_size": 41,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.017
+  },
+  "1000|0200": {
+    "key": "1000|0200",
+    "situation": "many_cands",
+    "n_cands": 42,
+    "action": "probe",
+    "guess": "sida",
+    "H": 2.321902,
+    "e_direct": 7.028022,
+    "e_probe": null,
+    "p_best": 0.051833,
+    "is_word": true,
+    "elapsed": 0.007
+  },
+  "1200|0000": {
+    "key": "1200|0000",
+    "situation": "cluster_2",
+    "n_cands": 31,
+    "action": "probe",
+    "guess": "dhbf",
+    "H": 2.44599,
+    "e_direct": 6.491991,
+    "e_probe": 4.195253,
+    "p_best": 0.07024,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "d",
+          "f",
+          "h",
+          "j",
+          "m",
+          "n",
+          "p",
+          "z",
+          "ñ"
+        ],
+        "2": [
+          "b",
+          "d",
+          "f",
+          "g",
+          "j",
+          "m",
+          "n",
+          "p",
+          "v",
+          "x",
+          "y",
+          "z",
+          "ñ"
+        ]
+      },
+      "cluster_size": 31,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.021
+  },
+  "0002|0200": {
+    "key": "0002|0200",
+    "situation": "cluster_2",
+    "n_cands": 26,
+    "action": "probe",
+    "guess": "pele",
+    "H": 2.06883,
+    "e_direct": 5.938642,
+    "e_probe": 4.252383,
+    "p_best": 0.124953,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "c",
+          "h",
+          "j",
+          "l",
+          "m",
+          "p",
+          "s",
+          "v"
+        ],
+        "2": [
+          "b",
+          "c",
+          "f",
+          "j",
+          "l",
+          "m",
+          "p",
+          "s",
+          "v",
+          "ñ"
+        ]
+      },
+      "cluster_size": 26,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.018
+  },
+  "1002|0000": {
+    "key": "1002|0000",
+    "situation": "cluster_2",
+    "n_cands": 30,
+    "action": "probe",
+    "guess": "dfjg",
+    "H": 2.446498,
+    "e_direct": 6.244378,
+    "e_probe": 3.89291,
+    "p_best": 0.104747,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "d",
+          "f",
+          "g",
+          "j",
+          "m",
+          "n",
+          "p",
+          "s",
+          "v",
+          "y",
+          "z",
+          "ñ"
+        ],
+        "2": [
+          "d",
+          "f",
+          "h",
+          "j",
+          "m",
+          "n",
+          "p",
+          "s",
+          "v",
+          "y",
+          "ñ"
+        ]
+      },
+      "cluster_size": 30,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.047
+  },
+  "0200|0000": {
+    "key": "0200|0000",
+    "situation": "many_cands",
+    "n_cands": 40,
+    "action": "probe",
+    "guess": "lops",
+    "H": 2.991089,
+    "e_direct": 6.880893,
+    "e_probe": null,
+    "p_best": 0.064357,
+    "is_word": false,
+    "elapsed": 0.449
+  },
+  "0202|0000": {
+    "key": "0202|0000",
+    "situation": "cluster_2",
+    "n_cands": 18,
+    "action": "probe",
+    "guess": "pose",
+    "H": 2.317256,
+    "e_direct": 5.172172,
+    "e_probe": 2.9214,
+    "p_best": 0.179911,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "f",
+          "h",
+          "j",
+          "l",
+          "n",
+          "p",
+          "s",
+          "v"
+        ],
+        "2": [
+          "b",
+          "f",
+          "j",
+          "l",
+          "n",
+          "p",
+          "s",
+          "v",
+          "y",
+          "ñ"
+        ]
+      },
+      "cluster_size": 18,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.013
+  },
+  "0002|0100": {
+    "key": "0002|0100",
+    "situation": "many_cands",
+    "n_cands": 44,
+    "action": "probe",
+    "guess": "sice",
+    "H": 2.980576,
+    "e_direct": 6.88816,
+    "e_probe": null,
+    "p_best": 0.083735,
+    "is_word": false,
+    "elapsed": 0.757
+  },
+  "1000|2000": {
+    "key": "1000|2000",
+    "situation": "few_cands",
+    "n_cands": 16,
+    "action": "probe",
+    "guess": "caña",
+    "H": 1.693597,
+    "e_direct": 5.481706,
+    "e_probe": 4.128687,
+    "p_best": 0.086651,
+    "is_word": true,
+    "elapsed": 0.005
+  },
+  "0200|0001": {
+    "key": "0200|0001",
+    "situation": "few_cands",
+    "n_cands": 16,
+    "action": "probe",
+    "guess": "doml",
+    "H": 2.094345,
+    "e_direct": 4.646897,
+    "e_probe": 3.471887,
+    "p_best": 0.25678,
+    "is_word": false,
+    "elapsed": 0.384
+  },
+  "1000|0020": {
+    "key": "1000|0020",
+    "situation": "few_cands",
+    "n_cands": 15,
+    "action": "probe",
+    "guess": "muls",
+    "H": 2.068595,
+    "e_direct": 5.324061,
+    "e_probe": 3.558079,
+    "p_best": 0.100532,
+    "is_word": false,
+    "elapsed": 0.31
+  },
+  "0110|0000": {
+    "key": "0110|0000",
+    "situation": "few_cands",
+    "n_cands": 14,
+    "action": "probe",
+    "guess": "cudl",
+    "H": 1.372738,
+    "e_direct": 3.193334,
+    "e_probe": 2.042353,
+    "p_best": 0.533377,
+    "is_word": false,
+    "elapsed": 2.754
+  },
+  "0101|0000": {
+    "key": "0101|0000",
+    "situation": "few_cands",
+    "n_cands": 21,
+    "action": "probe",
+    "guess": "dpmb",
+    "H": 2.809732,
+    "e_direct": 5.682377,
+    "e_probe": 2.914766,
+    "p_best": 0.120173,
+    "is_word": false,
+    "elapsed": 5.141
+  },
+  "1000|0001": {
+    "key": "1000|0001",
+    "situation": "few_cands",
+    "n_cands": 18,
+    "action": "probe",
+    "guess": "vpng",
+    "H": 2.572358,
+    "e_direct": 5.541912,
+    "e_probe": 3.379767,
+    "p_best": 0.107234,
+    "is_word": false,
+    "elapsed": 5.176
+  },
+  "1000|0010": {
+    "key": "1000|0010",
+    "situation": "few_cands",
+    "n_cands": 17,
+    "action": "probe",
+    "guess": "pudm",
+    "H": 3.11313,
+    "e_direct": 5.444703,
+    "e_probe": 2.6113,
+    "p_best": 0.111059,
+    "is_word": false,
+    "elapsed": 5.3
+  },
+  "1200|0100": {
+    "key": "1200|0100",
+    "situation": "few_cands",
+    "n_cands": 12,
+    "action": "probe",
+    "guess": "mola",
+    "H": 2.109712,
+    "e_direct": 4.687318,
+    "e_probe": 3.076185,
+    "p_best": 0.173142,
+    "is_word": true,
+    "elapsed": 0.026
+  },
+  "1200|0001": {
+    "key": "1200|0001",
+    "situation": "cluster_2",
+    "n_cands": 12,
+    "action": "probe",
+    "guess": "fjsp",
+    "H": 2.46589,
+    "e_direct": 4.71545,
+    "e_probe": 2.848424,
+    "p_best": 0.166833,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "f",
+          "j",
+          "p",
+          "s"
+        ],
+        "2": [
+          "b",
+          "d",
+          "f",
+          "g",
+          "j",
+          "m",
+          "n",
+          "p",
+          "s",
+          "ñ"
+        ]
+      },
+      "cluster_size": 12,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.031
+  },
+  "0001|0100": {
+    "key": "0001|0100",
+    "situation": "few_cands",
+    "n_cands": 13,
+    "action": "probe",
+    "guess": "dctm",
+    "H": 2.45137,
+    "e_direct": 4.012184,
+    "e_probe": 2.000361,
+    "p_best": 0.34303,
+    "is_word": false,
+    "elapsed": 1.296
+  },
+  "2100|0000": {
+    "key": "2100|0000",
+    "situation": "few_cands",
+    "n_cands": 11,
+    "action": "probe",
+    "guess": "ando",
+    "H": 1.835133,
+    "e_direct": 3.256289,
+    "e_probe": 1.927256,
+    "p_best": 0.477944,
+    "is_word": true,
+    "elapsed": 0.009
+  },
+  "0002|0101": {
+    "key": "0002|0101",
+    "situation": "few_cands",
+    "n_cands": 11,
+    "action": "probe",
+    "guess": "buce",
+    "H": 1.996884,
+    "e_direct": 4.404009,
+    "e_probe": 2.727793,
+    "p_best": 0.212386,
+    "is_word": true,
+    "elapsed": 0.013
+  },
+  "2000|0000": {
+    "key": "2000|0000",
+    "situation": "few_cands",
+    "n_cands": 11,
+    "action": "probe",
+    "guess": "amas",
+    "H": 2.575675,
+    "e_direct": 4.531568,
+    "e_probe": 2.055371,
+    "p_best": 0.182872,
+    "is_word": true,
+    "elapsed": 0.104
+  },
+  "0200|0100": {
+    "key": "0200|0100",
+    "situation": "few_cands",
+    "n_cands": 11,
+    "action": "probe",
+    "guess": "gond",
+    "H": 2.313711,
+    "e_direct": 4.714338,
+    "e_probe": 2.81155,
+    "p_best": 0.140583,
+    "is_word": false,
+    "elapsed": 0.271
+  },
+  "0002|1100": {
+    "key": "0002|1100",
+    "situation": "cluster_2",
+    "n_cands": 11,
+    "action": "probe",
+    "guess": "scle",
+    "H": 1.923226,
+    "e_direct": 3.793871,
+    "e_probe": 2.393989,
+    "p_best": 0.353559,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "c",
+          "e",
+          "h",
+          "j",
+          "l",
+          "m",
+          "p",
+          "s",
+          "v",
+          "y"
+        ],
+        "1": [
+          "i",
+          "s",
+          "u"
+        ]
+      },
+      "cluster_size": 11,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.315
+  },
+  "1010|2000": {
+    "key": "1010|2000",
+    "situation": "few_cands",
+    "n_cands": 11,
+    "action": "probe",
+    "guess": "rmzy",
+    "H": 1.754702,
+    "e_direct": 4.626525,
+    "e_probe": 3.568525,
+    "p_best": 0.160901,
+    "is_word": false,
+    "elapsed": 0.31
+  },
+  "1000|0210": {
+    "key": "1000|0210",
+    "situation": "few_cands",
+    "n_cands": 10,
+    "action": "probe",
+    "guess": "siga",
+    "H": 1.934647,
+    "e_direct": 4.35008,
+    "e_probe": 3.129522,
+    "p_best": 0.196609,
+    "is_word": true,
+    "elapsed": 0.014
+  },
+  "0100|0001": {
+    "key": "0100|0001",
+    "situation": "few_cands",
+    "n_cands": 12,
+    "action": "probe",
+    "guess": "mhyd",
+    "H": 2.365162,
+    "e_direct": 4.338678,
+    "e_probe": 2.067267,
+    "p_best": 0.251322,
+    "is_word": false,
+    "elapsed": 1.932
+  },
+  "1100|0001": {
+    "key": "1100|0001",
+    "situation": "cluster_2",
+    "n_cands": 10,
+    "action": "probe",
+    "guess": "pblf",
+    "H": 2.588526,
+    "e_direct": 4.404003,
+    "e_probe": 2.483942,
+    "p_best": 0.183678,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "f",
+          "j",
+          "l",
+          "m",
+          "p",
+          "s",
+          "v"
+        ],
+        "2": [
+          "l",
+          "p",
+          "s",
+          "y"
+        ]
+      },
+      "cluster_size": 10,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 1.016
+  },
+  "1002|0001": {
+    "key": "1002|0001",
+    "situation": "cluster_2",
+    "n_cands": 10,
+    "action": "probe",
+    "guess": "hdlj",
+    "H": 1.608577,
+    "e_direct": 4.332648,
+    "e_probe": 3.068434,
+    "p_best": 0.20079,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "d",
+          "h",
+          "j",
+          "l",
+          "s",
+          "v",
+          "y"
+        ],
+        "2": [
+          "l",
+          "m",
+          "v",
+          "x",
+          "y"
+        ]
+      },
+      "cluster_size": 10,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.033
+  },
+  "0101|0010": {
+    "key": "0101|0010",
+    "situation": "few_cands",
+    "n_cands": 10,
+    "action": "probe",
+    "guess": "xsts",
+    "H": 2.39511,
+    "e_direct": 4.146313,
+    "e_probe": 2.20944,
+    "p_best": 0.245475,
+    "is_word": false,
+    "elapsed": 0.805
+  },
+  "1001|0000": {
+    "key": "1001|0000",
+    "situation": "few_cands",
+    "n_cands": 27,
+    "action": "probe",
+    "guess": "tdmj",
+    "H": 3.283891,
+    "e_direct": 6.353704,
+    "e_probe": 3.056549,
+    "p_best": 0.060826,
+    "is_word": false,
+    "elapsed": 9.144
+  },
+  "1100|1000": {
+    "key": "1100|1000",
+    "situation": "few_cands",
+    "n_cands": 10,
+    "action": "probe",
+    "guess": "gpmd",
+    "H": 2.583339,
+    "e_direct": 4.440793,
+    "e_probe": 2.390141,
+    "p_best": 0.174855,
+    "is_word": false,
+    "elapsed": 1.948
+  },
+  "0002|0120": {
+    "key": "0002|0120",
+    "situation": "cluster_2",
+    "n_cands": 9,
+    "action": "probe",
+    "guess": "pide",
+    "H": 1.919963,
+    "e_direct": 4.089168,
+    "e_probe": 2.706516,
+    "p_best": 0.227708,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "d",
+          "l",
+          "m",
+          "p",
+          "s",
+          "w"
+        ],
+        "1": [
+          "i",
+          "u"
+        ]
+      },
+      "cluster_size": 9,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.007
+  },
+  "1000|1000": {
+    "key": "1000|1000",
+    "situation": "cluster_2",
+    "n_cands": 10,
+    "action": "probe",
+    "guess": "stvb",
+    "H": 2.273237,
+    "e_direct": 4.410392,
+    "e_probe": 2.797065,
+    "p_best": 0.182145,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "d",
+          "f",
+          "j",
+          "m",
+          "p",
+          "s",
+          "t",
+          "v",
+          "y"
+        ],
+        "1": [
+          "a",
+          "u"
+        ]
+      },
+      "cluster_size": 10,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 2.971
+  },
+  "1200|0010": {
+    "key": "1200|0010",
+    "situation": "cluster_2",
+    "n_cands": 9,
+    "action": "probe",
+    "guess": "doma",
+    "H": 1.597032,
+    "e_direct": 3.412,
+    "e_probe": 2.452101,
+    "p_best": 0.397,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        2,
+        3
+      ],
+      "variable_letters": {
+        "2": [
+          "a",
+          "b",
+          "d",
+          "g",
+          "m",
+          "n",
+          "v",
+          "z"
+        ],
+        "3": [
+          "a",
+          "d",
+          "n"
+        ]
+      },
+      "cluster_size": 9,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.028
+  },
+  "1100|0000": {
+    "key": "1100|0000",
+    "situation": "many_cands",
+    "n_cands": 54,
+    "action": "probe",
+    "guess": "gmdl",
+    "H": 3.387272,
+    "e_direct": 7.435495,
+    "e_probe": null,
+    "p_best": 0.043464,
+    "is_word": false,
+    "elapsed": 9.5
+  },
+  "1210|0000": {
+    "key": "1210|0000",
+    "situation": "cluster_2",
+    "n_cands": 9,
+    "action": "probe",
+    "guess": "cdga",
+    "H": 1.646238,
+    "e_direct": 4.014928,
+    "e_probe": 3.257148,
+    "p_best": 0.246268,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        2,
+        3
+      ],
+      "variable_letters": {
+        "2": [
+          "a",
+          "c",
+          "d",
+          "g",
+          "i",
+          "p",
+          "t",
+          "y",
+          "ñ"
+        ],
+        "3": [
+          "a",
+          "n"
+        ]
+      },
+      "cluster_size": 9,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.034
+  },
+  "2002|0000": {
+    "key": "2002|0000",
+    "situation": "cluster_2",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "alce",
+    "H": 0.733739,
+    "e_direct": 1.561941,
+    "e_probe": 1.422641,
+    "p_best": 0.852407,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        2
+      ],
+      "variable_letters": {
+        "1": [
+          "c",
+          "f",
+          "l",
+          "s",
+          "v",
+          "y"
+        ],
+        "2": [
+          "c",
+          "e",
+          "f",
+          "i",
+          "l",
+          "m"
+        ]
+      },
+      "cluster_size": 8,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.008
+  },
+  "1000|0201": {
+    "key": "1000|0201",
+    "situation": "cluster_2",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "bdfm",
+    "H": 1.869429,
+    "e_direct": 4.110741,
+    "e_probe": 2.914568,
+    "p_best": 0.182965,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "d",
+          "f",
+          "m",
+          "n",
+          "p",
+          "t"
+        ],
+        "2": [
+          "n",
+          "p",
+          "ñ"
+        ]
+      },
+      "cluster_size": 8,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.018
+  },
+  "0200|0010": {
+    "key": "0200|0010",
+    "situation": "cluster_2",
+    "n_cands": 9,
+    "action": "probe",
+    "guess": "dolo",
+    "H": 1.973392,
+    "e_direct": 4.14396,
+    "e_probe": 2.680757,
+    "p_best": 0.21401,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        2,
+        3
+      ],
+      "variable_letters": {
+        "2": [
+          "d",
+          "g",
+          "j",
+          "l",
+          "o",
+          "p",
+          "s",
+          "ñ"
+        ],
+        "3": [
+          "i",
+          "k",
+          "o"
+        ]
+      },
+      "cluster_size": 9,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.175
+  },
+  "1001|0020": {
+    "key": "1001|0020",
+    "situation": "cluster_2",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "lvlt",
+    "H": 2.020663,
+    "e_direct": 3.859364,
+    "e_probe": 2.515684,
+    "p_best": 0.248989,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "d",
+          "e",
+          "h",
+          "l",
+          "m",
+          "p",
+          "t",
+          "v"
+        ],
+        "1": [
+          "e",
+          "l"
+        ]
+      },
+      "cluster_size": 8,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.099
+  },
+  "0002|0201": {
+    "key": "0002|0201",
+    "situation": "cluster_2",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "nclm",
+    "H": 1.338962,
+    "e_direct": 3.450656,
+    "e_probe": 2.466935,
+    "p_best": 0.356336,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "l",
+          "m",
+          "n",
+          "p",
+          "s"
+        ],
+        "2": [
+          "m",
+          "n",
+          "v"
+        ]
+      },
+      "cluster_size": 8,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.015
+  },
+  "0100|0000": {
+    "key": "0100|0000",
+    "situation": "many_cands",
+    "n_cands": 38,
+    "action": "probe",
+    "guess": "mcbt",
+    "H": 3.25694,
+    "e_direct": 6.802782,
+    "e_probe": null,
+    "p_best": 0.065492,
+    "is_word": false,
+    "elapsed": 9.851
+  },
+  "0101|0100": {
+    "key": "0101|0100",
+    "situation": "cluster_2",
+    "n_cands": 9,
+    "action": "probe",
+    "guess": "cñbp",
+    "H": 2.573567,
+    "e_direct": 3.903771,
+    "e_probe": 2.127784,
+    "p_best": 0.274057,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "c",
+          "m",
+          "p",
+          "y"
+        ],
+        "2": [
+          "b",
+          "c",
+          "d",
+          "j",
+          "p",
+          "ñ"
+        ]
+      },
+      "cluster_size": 9,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.623
+  },
+  "1001|0001": {
+    "key": "1001|0001",
+    "situation": "few_cands",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "vtnp",
+    "H": 2.543441,
+    "e_direct": 4.033971,
+    "e_probe": 2.014493,
+    "p_best": 0.203129,
+    "is_word": false,
+    "elapsed": 0.324
+  },
+  "1200|0020": {
+    "key": "1200|0020",
+    "situation": "cluster_1",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "bgji",
+    "H": 1.514175,
+    "e_direct": 4.032168,
+    "e_probe": 3.206999,
+    "p_best": 0.203603,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "g",
+          "i",
+          "j",
+          "m",
+          "n",
+          "p",
+          "v"
+        ]
+      },
+      "cluster_size": 8,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.008
+  },
+  "1200|2000": {
+    "key": "1200|2000",
+    "situation": "cluster_1",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "bdcf",
+    "H": 1.210968,
+    "e_direct": 3.629699,
+    "e_probe": 3.280375,
+    "p_best": 0.309311,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "b",
+          "c",
+          "d",
+          "f",
+          "j",
+          "m",
+          "p",
+          "ñ"
+        ]
+      },
+      "cluster_size": 8,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.009
+  },
+  "0200|2000": {
+    "key": "0200|2000",
+    "situation": "cluster_2",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "dfgj",
+    "H": 1.880437,
+    "e_direct": 3.575282,
+    "e_probe": 2.541988,
+    "p_best": 0.323603,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        2,
+        3
+      ],
+      "variable_letters": {
+        "2": [
+          "d",
+          "f",
+          "g",
+          "j",
+          "p",
+          "s",
+          "z"
+        ],
+        "3": [
+          "i",
+          "o"
+        ]
+      },
+      "cluster_size": 8,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.008
+  },
+  "1100|0100": {
+    "key": "1100|0100",
+    "situation": "few_cands",
+    "n_cands": 9,
+    "action": "probe",
+    "guess": "gmnv",
+    "H": 2.571753,
+    "e_direct": 4.28691,
+    "e_probe": 2.147413,
+    "p_best": 0.178273,
+    "is_word": false,
+    "elapsed": 1.201
+  },
+  "1100|0010": {
+    "key": "1100|0010",
+    "situation": "few_cands",
+    "n_cands": 9,
+    "action": "probe",
+    "guess": "pbñy",
+    "H": 2.31883,
+    "e_direct": 4.204096,
+    "e_probe": 2.51866,
+    "p_best": 0.198976,
+    "is_word": false,
+    "elapsed": 1.845
+  },
+  "0101|0001": {
+    "key": "0101|0001",
+    "situation": "cluster_2",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "hxtg",
+    "H": 2.1319,
+    "e_direct": 3.706335,
+    "e_probe": 2.165929,
+    "p_best": 0.289182,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "h",
+          "m",
+          "n",
+          "p"
+        ],
+        "2": [
+          "g",
+          "j",
+          "n",
+          "t",
+          "v",
+          "x"
+        ]
+      },
+      "cluster_size": 8,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.984
+  },
+  "1001|0010": {
+    "key": "1001|0010",
+    "situation": "few_cands",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "vida",
+    "H": 2.033407,
+    "e_direct": 3.298547,
+    "e_probe": 2.211596,
+    "p_best": 0.358837,
+    "is_word": true,
+    "elapsed": 0.563
+  },
+  "1001|0100": {
+    "key": "1001|0100",
+    "situation": "cluster_2",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "pdmñ",
+    "H": 2.374821,
+    "e_direct": 3.761967,
+    "e_probe": 2.021111,
+    "p_best": 0.229569,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "m",
+          "p",
+          "s",
+          "t"
+        ],
+        "2": [
+          "d",
+          "g",
+          "p",
+          "s",
+          "ñ"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.402
+  },
+  "0002|2200": {
+    "key": "0002|2200",
+    "situation": "cluster_1",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "fjml",
+    "H": 1.666687,
+    "e_direct": 2.956642,
+    "e_probe": 2.161741,
+    "p_best": 0.454209,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "f",
+          "j",
+          "l",
+          "m",
+          "p",
+          "s",
+          "t"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.007
+  },
+  "0002|2100": {
+    "key": "0002|2100",
+    "situation": "cluster_2",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "iump",
+    "H": 1.562576,
+    "e_direct": 3.209885,
+    "e_probe": 2.558804,
+    "p_best": 0.383568,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        2
+      ],
+      "variable_letters": {
+        "1": [
+          "i",
+          "u"
+        ],
+        "2": [
+          "b",
+          "m",
+          "p",
+          "t",
+          "v",
+          "ñ"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.004
+  },
+  "0101|0020": {
+    "key": "0101|0020",
+    "situation": "cluster_1",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "pbsy",
+    "H": 1.674763,
+    "e_direct": 3.281,
+    "e_probe": 2.035743,
+    "p_best": 0.363731,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "d",
+          "m",
+          "p",
+          "s",
+          "t",
+          "y"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.078
+  },
+  "0100|0201": {
+    "key": "0100|0201",
+    "situation": "cluster_2",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "mvsd",
+    "H": 1.570733,
+    "e_direct": 3.652393,
+    "e_probe": 2.91522,
+    "p_best": 0.260134,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "m",
+          "s",
+          "v"
+        ],
+        "2": [
+          "d",
+          "g",
+          "n",
+          "s",
+          "t"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.015
+  },
+  "0100|0100": {
+    "key": "0100|0100",
+    "situation": "few_cands",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "uhdn",
+    "H": 2.126237,
+    "e_direct": 3.698581,
+    "e_probe": 2.0,
+    "p_best": 0.291219,
+    "is_word": false,
+    "elapsed": 1.3
+  },
+  "0100|2200": {
+    "key": "0100|2200",
+    "situation": "cluster_2",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "cdjn",
+    "H": 2.023893,
+    "e_direct": 3.665095,
+    "e_probe": 2.118906,
+    "p_best": 0.256591,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        2,
+        3
+      ],
+      "variable_letters": {
+        "2": [
+          "c",
+          "d",
+          "j",
+          "n",
+          "o",
+          "p",
+          "t"
+        ],
+        "3": [
+          "n",
+          "o"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.008
+  },
+  "0202|1000": {
+    "key": "0202|1000",
+    "situation": "cluster_1",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "bjln",
+    "H": 1.927838,
+    "e_direct": 3.75786,
+    "e_probe": 2.610915,
+    "p_best": 0.230714,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "j",
+          "l",
+          "n",
+          "p",
+          "s",
+          "v"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.01
+  },
+  "1020|0200": {
+    "key": "1020|0200",
+    "situation": "cluster_1",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "chjm",
+    "H": 2.196685,
+    "e_direct": 4.0246,
+    "e_probe": 2.603878,
+    "p_best": 0.156309,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "h",
+          "j",
+          "m",
+          "r",
+          "t",
+          "v"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.007
+  },
+  "0210|0002": {
+    "key": "0210|0002",
+    "situation": "cluster_1",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "dglm",
+    "H": 2.007517,
+    "e_direct": 3.731829,
+    "e_probe": 2.58329,
+    "p_best": 0.237975,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "d",
+          "g",
+          "l",
+          "m",
+          "s",
+          "y",
+          "z"
+        ]
+      },
+      "cluster_size": 7,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.017
+  },
+  "0200|1000": {
+    "key": "0200|1000",
+    "situation": "few_cands",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "fovs",
+    "H": 1.995514,
+    "e_direct": 3.752748,
+    "e_probe": 2.570502,
+    "p_best": 0.23214,
+    "is_word": false,
+    "elapsed": 0.086
+  },
+  "2010|0020": {
+    "key": "2010|0020",
+    "situation": "cluster_2",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "atar",
+    "H": 1.477122,
+    "e_direct": 2.89939,
+    "e_probe": 2.033702,
+    "p_best": 0.428227,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        3
+      ],
+      "variable_letters": {
+        "1": [
+          "j",
+          "l",
+          "r",
+          "t"
+        ],
+        "3": [
+          "d",
+          "n",
+          "r"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.009
+  },
+  "1000|0220": {
+    "key": "1000|0220",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "ldfh",
+    "H": 1.979782,
+    "e_direct": 3.284439,
+    "e_probe": 2.151884,
+    "p_best": 0.312315,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "d",
+          "f",
+          "h",
+          "l",
+          "p",
+          "t"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.007
+  },
+  "2000|1000": {
+    "key": "2000|1000",
+    "situation": "cluster_2",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "asia",
+    "H": 1.62607,
+    "e_direct": 3.18691,
+    "e_probe": 1.984564,
+    "p_best": 0.341675,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        3
+      ],
+      "variable_letters": {
+        "1": [
+          "m",
+          "s",
+          "v",
+          "x"
+        ],
+        "3": [
+          "a",
+          "d",
+          "s"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.052
+  },
+  "1002|0020": {
+    "key": "1002|0020",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "cnhm",
+    "H": 1.994451,
+    "e_direct": 3.518001,
+    "e_probe": 2.186836,
+    "p_best": 0.242006,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "h",
+          "m",
+          "n",
+          "p",
+          "y"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.007
+  },
+  "1100|2000": {
+    "key": "1100|2000",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "tptj",
+    "H": 1.65147,
+    "e_direct": 3.117307,
+    "e_probe": 2.017556,
+    "p_best": 0.362627,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "j",
+          "l",
+          "m",
+          "p",
+          "t",
+          "ñ"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.055
+  },
+  "0101|2000": {
+    "key": "0101|2000",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "lgyd",
+    "H": 1.709279,
+    "e_direct": 2.987824,
+    "e_probe": 2.047921,
+    "p_best": 0.401605,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "d",
+          "g",
+          "l",
+          "v",
+          "y",
+          "ñ"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.057
+  },
+  "0101|1000": {
+    "key": "0101|1000",
+    "situation": "few_cands",
+    "n_cands": 7,
+    "action": "probe",
+    "guess": "emlp",
+    "H": 2.322478,
+    "e_direct": 3.829048,
+    "e_probe": 2.106369,
+    "p_best": 0.210857,
+    "is_word": false,
+    "elapsed": 0.48
+  },
+  "0100|0220": {
+    "key": "0100|0220",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "dfhk",
+    "H": 2.071932,
+    "e_direct": 3.485546,
+    "e_probe": 2.123522,
+    "p_best": 0.251776,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "d",
+          "f",
+          "h",
+          "k",
+          "t",
+          "v"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.007
+  },
+  "0100|0210": {
+    "key": "0100|0210",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "gjmn",
+    "H": 2.048041,
+    "e_direct": 3.100421,
+    "e_probe": 2.054693,
+    "p_best": 0.36771,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "g",
+          "j",
+          "m",
+          "n",
+          "t",
+          "z"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.017
+  },
+  "0200|0020": {
+    "key": "0200|0020",
+    "situation": "cluster_2",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "cflp",
+    "H": 2.065302,
+    "e_direct": 3.486588,
+    "e_probe": 2.121121,
+    "p_best": 0.251462,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        3
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "f",
+          "l",
+          "p",
+          "z"
+        ],
+        "3": [
+          "i",
+          "o"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.014
+  },
+  "0202|0100": {
+    "key": "0202|0100",
+    "situation": "cluster_2",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "dole",
+    "H": 1.537654,
+    "e_direct": 2.828283,
+    "e_probe": 2.158839,
+    "p_best": 0.449632,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "d",
+          "j",
+          "p"
+        ],
+        "2": [
+          "d",
+          "l",
+          "n",
+          "p"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.01
+  },
+  "0202|0001": {
+    "key": "0202|0001",
+    "situation": "cluster_2",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "home",
+    "H": 1.131104,
+    "e_direct": 2.18989,
+    "e_probe": 1.988389,
+    "p_best": 0.641808,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "f",
+          "h",
+          "m"
+        ],
+        "2": [
+          "f",
+          "j",
+          "l",
+          "m",
+          "v"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.007
+  },
+  "1110|1001": {
+    "key": "1110|1001",
+    "situation": "few_cands",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "ypbm",
+    "H": 1.763911,
+    "e_direct": 3.506402,
+    "e_probe": 2.03764,
+    "p_best": 0.341695,
+    "is_word": false,
+    "elapsed": 1.226
+  },
+  "0220|0002": {
+    "key": "0220|0002",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "dcpb",
+    "H": 1.627507,
+    "e_direct": 3.137682,
+    "e_probe": 2.252374,
+    "p_best": 0.356494,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "c",
+          "d",
+          "p",
+          "s",
+          "t"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.007
+  },
+  "0012|0100": {
+    "key": "0012|0100",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "rene",
+    "H": 0.898434,
+    "e_direct": 2.045144,
+    "e_probe": 2.045144,
+    "p_best": 0.68538,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "d",
+          "m",
+          "n",
+          "t",
+          "v",
+          "y"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.018
+  },
+  "0012|1100": {
+    "key": "0012|1100",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "rice",
+    "H": 0.468167,
+    "e_direct": 1.331325,
+    "e_probe": 1.331325,
+    "p_best": 0.900261,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "c",
+          "f",
+          "l",
+          "m",
+          "t",
+          "ñ"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.029
+  },
+  "1020|0100": {
+    "key": "1020|0100",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "chjm",
+    "H": 1.537502,
+    "e_direct": 2.797333,
+    "e_probe": 2.0496,
+    "p_best": 0.458949,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "h",
+          "j",
+          "m",
+          "t",
+          "z"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.006
+  },
+  "1020|0110": {
+    "key": "1020|0110",
+    "situation": "cluster_1",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "gjml",
+    "H": 2.020861,
+    "e_direct": 3.468223,
+    "e_probe": 2.123437,
+    "p_best": 0.256991,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "g",
+          "j",
+          "l",
+          "m",
+          "t",
+          "v"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.008
+  },
+  "1010|1000": {
+    "key": "1010|1000",
+    "situation": "few_cands",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "urcs",
+    "H": 2.247229,
+    "e_direct": 3.897461,
+    "e_probe": 2.0,
+    "p_best": 0.238983,
+    "is_word": false,
+    "elapsed": 1.761
+  },
+  "0102|2002": {
+    "key": "0102|2002",
+    "situation": "cluster_2",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "opte",
+    "H": 0.566232,
+    "e_direct": 1.442583,
+    "e_probe": 1.442583,
+    "p_best": 0.866769,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        2
+      ],
+      "variable_letters": {
+        "1": [
+          "b",
+          "d",
+          "i",
+          "p",
+          "q",
+          "s"
+        ],
+        "2": [
+          "e",
+          "i",
+          "m",
+          "o",
+          "t",
+          "u"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.026
+  },
+  "0000|0110": {
+    "key": "0000|0110",
+    "situation": "few_cands",
+    "n_cands": 8,
+    "action": "probe",
+    "guess": "huif",
+    "H": 1.876625,
+    "e_direct": 2.877757,
+    "e_probe": 2.004981,
+    "p_best": 0.506808,
+    "is_word": false,
+    "elapsed": 2.006
+  },
+  "2000|0002": {
+    "key": "2000|0002",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "dfms",
+    "H": 1.990548,
+    "e_direct": 3.078003,
+    "e_probe": 2.0,
+    "p_best": 0.307332,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        1
+      ],
+      "variable_letters": {
+        "1": [
+          "d",
+          "f",
+          "m",
+          "s",
+          "t"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.006
+  },
+  "2000|0001": {
+    "key": "2000|0001",
+    "situation": "cluster_2",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "nscd",
+    "H": 1.712694,
+    "e_direct": 2.749173,
+    "e_probe": 2.0,
+    "p_best": 0.416942,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        2
+      ],
+      "variable_letters": {
+        "1": [
+          "n",
+          "s"
+        ],
+        "2": [
+          "c",
+          "d",
+          "n",
+          "s",
+          "t"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.004
+  },
+  "1000|2200": {
+    "key": "1000|2200",
+    "situation": "cluster_2",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "cita",
+    "H": 1.117431,
+    "e_direct": 2.547712,
+    "e_probe": 1.773856,
+    "p_best": 0.484096,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        2,
+        3
+      ],
+      "variable_letters": {
+        "2": [
+          "a",
+          "m",
+          "t",
+          "ñ"
+        ],
+        "3": [
+          "a",
+          "d",
+          "s"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.009
+  },
+  "1002|1000": {
+    "key": "1002|1000",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "dmpv",
+    "H": 2.138328,
+    "e_direct": 3.145366,
+    "e_probe": 2.0,
+    "p_best": 0.284878,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "d",
+          "m",
+          "p",
+          "v",
+          "y"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.027
+  },
+  "1002|2000": {
+    "key": "1002|2000",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "tate",
+    "H": 0.536447,
+    "e_direct": 1.367439,
+    "e_probe": 1.367439,
+    "p_best": 0.87752,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "j",
+          "p",
+          "s",
+          "t",
+          "ñ"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.008
+  },
+  "2010|0010": {
+    "key": "2010|0010",
+    "situation": "few_cands",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "arca",
+    "H": 0.649281,
+    "e_direct": 1.434437,
+    "e_probe": 1.358443,
+    "p_best": 0.855188,
+    "is_word": true,
+    "elapsed": 0.054
+  },
+  "1120|1000": {
+    "key": "1120|1000",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "jmft",
+    "H": 1.741694,
+    "e_direct": 2.793394,
+    "e_probe": 2.0,
+    "p_best": 0.402202,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "f",
+          "j",
+          "m",
+          "t",
+          "v"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.012
+  },
+  "0002|0220": {
+    "key": "0002|0220",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "chjs",
+    "H": 1.139647,
+    "e_direct": 2.494912,
+    "e_probe": 2.0,
+    "p_best": 0.501696,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "h",
+          "j",
+          "s",
+          "v"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.007
+  },
+  "1001|2000": {
+    "key": "1001|2000",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "bdcj",
+    "H": 1.987211,
+    "e_direct": 3.024327,
+    "e_probe": 2.0,
+    "p_best": 0.325224,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "b",
+          "c",
+          "d",
+          "j",
+          "p"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.033
+  },
+  "0002|0110": {
+    "key": "0002|0110",
+    "situation": "few_cands",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "cjme",
+    "H": 1.851865,
+    "e_direct": 2.922299,
+    "e_probe": 2.055896,
+    "p_best": 0.359234,
+    "is_word": false,
+    "elapsed": 0.054
+  },
+  "0101|0002": {
+    "key": "0101|0002",
+    "situation": "few_cands",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "open",
+    "H": 1.463543,
+    "e_direct": 2.546214,
+    "e_probe": 1.584083,
+    "p_best": 0.484595,
+    "is_word": true,
+    "elapsed": 0.036
+  },
+  "0100|0020": {
+    "key": "0100|0020",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "jmcb",
+    "H": 1.423034,
+    "e_direct": 2.095272,
+    "e_probe": 2.0,
+    "p_best": 0.634909,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "c",
+          "j",
+          "m",
+          "n"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.006
+  },
+  "0011|0100": {
+    "key": "0011|0100",
+    "situation": "cluster_2",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "lems",
+    "H": 1.436095,
+    "e_direct": 2.399565,
+    "e_probe": 2.0,
+    "p_best": 0.578689,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "e",
+          "l",
+          "m",
+          "s",
+          "v"
+        ],
+        "1": [
+          "e",
+          "s",
+          "t",
+          "u"
+        ]
+      },
+      "cluster_size": 6,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.358
+  },
+  "0100|2000": {
+    "key": "0100|2000",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "ndjt",
+    "H": 1.825515,
+    "e_direct": 3.020739,
+    "e_probe": 2.0,
+    "p_best": 0.32642,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "d",
+          "j",
+          "n",
+          "t",
+          "ñ"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.006
+  },
+  "1010|2010": {
+    "key": "1010|2010",
+    "situation": "few_cands",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "rica",
+    "H": 1.075476,
+    "e_direct": 3.019831,
+    "e_probe": 2.697433,
+    "p_best": 0.326723,
+    "is_word": true,
+    "elapsed": 0.003
+  },
+  "1200|1000": {
+    "key": "1200|1000",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "bfnp",
+    "H": 1.55731,
+    "e_direct": 2.827436,
+    "e_probe": 2.0,
+    "p_best": 0.390855,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "f",
+          "n",
+          "p",
+          "z"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.021
+  },
+  "0022|0100": {
+    "key": "0022|0100",
+    "situation": "cluster_2",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "epgt",
+    "H": 1.517889,
+    "e_direct": 2.409085,
+    "e_probe": 2.0,
+    "p_best": 0.530305,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "e",
+          "g",
+          "p",
+          "t",
+          "v"
+        ],
+        "1": [
+          "i",
+          "r"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.012
+  },
+  "0120|0001": {
+    "key": "0120|0001",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "cdfj",
+    "H": 1.930392,
+    "e_direct": 3.092919,
+    "e_probe": 2.0,
+    "p_best": 0.30236,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "d",
+          "f",
+          "j",
+          "p"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.008
+  },
+  "2000|0200": {
+    "key": "2000|0200",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "mblz",
+    "H": 1.999991,
+    "e_direct": 2.93636,
+    "e_probe": 2.0,
+    "p_best": 0.250914,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "b",
+          "l",
+          "m",
+          "z"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.005
+  },
+  "2100|0010": {
+    "key": "2100|0010",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "alzo",
+    "H": 1.407144,
+    "e_direct": 2.283562,
+    "e_probe": 1.681369,
+    "p_best": 0.50345,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        2,
+        3
+      ],
+      "variable_letters": {
+        "2": [
+          "b",
+          "m",
+          "o",
+          "z"
+        ],
+        "3": [
+          "n",
+          "o"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.014
+  },
+  "1012|0112": {
+    "key": "1012|0112",
+    "situation": "cluster_1",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "fjps",
+    "H": 1.685541,
+    "e_direct": 2.188806,
+    "e_probe": 2.0,
+    "p_best": 0.603731,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "f",
+          "j",
+          "p",
+          "s",
+          "y"
+        ]
+      },
+      "cluster_size": 5,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.04
+  },
+  "2001|2020": {
+    "key": "2001|2020",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "amen",
+    "H": 0.825482,
+    "e_direct": 1.600209,
+    "e_probe": 1.344952,
+    "p_best": 0.767807,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        3
+      ],
+      "variable_letters": {
+        "1": [
+          "f",
+          "m",
+          "t",
+          "v"
+        ],
+        "3": [
+          "a",
+          "n"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.006
+  },
+  "1000|2100": {
+    "key": "1000|2100",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "casi",
+    "H": 1.086081,
+    "e_direct": 2.293448,
+    "e_probe": 1.500374,
+    "p_best": 0.499626,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        2,
+        3
+      ],
+      "variable_letters": {
+        "2": [
+          "d",
+          "i",
+          "s"
+        ],
+        "3": [
+          "a",
+          "i",
+          "s"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.007
+  },
+  "2110|0000": {
+    "key": "2110|0000",
+    "situation": "few_cands",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "ario",
+    "H": 1.417495,
+    "e_direct": 2.117603,
+    "e_probe": 1.548189,
+    "p_best": 0.567652,
+    "is_word": true,
+    "elapsed": 0.008
+  },
+  "1000|0202": {
+    "key": "1000|0202",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "mian",
+    "H": 0.945316,
+    "e_direct": 1.938887,
+    "e_probe": 1.938887,
+    "p_best": 0.636789,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "f",
+          "m",
+          "p",
+          "s"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.005
+  },
+  "1000|0120": {
+    "key": "1000|0120",
+    "situation": "few_cands",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "isla",
+    "H": 1.578049,
+    "e_direct": 2.772462,
+    "e_probe": 1.875531,
+    "p_best": 0.314318,
+    "is_word": true,
+    "elapsed": 0.004
+  },
+  "1002|0100": {
+    "key": "1002|0100",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "base",
+    "H": 1.584107,
+    "e_direct": 2.701967,
+    "e_probe": 1.816996,
+    "p_best": 0.341589,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "s"
+        ],
+        "2": [
+          "b",
+          "j",
+          "s",
+          "ñ"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.018
+  },
+  "1100|0002": {
+    "key": "1100|0002",
+    "situation": "few_cands",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "laos",
+    "H": 0.940672,
+    "e_direct": 1.639227,
+    "e_probe": 1.262619,
+    "p_best": 0.752713,
+    "is_word": true,
+    "elapsed": 0.042
+  },
+  "1002|0010": {
+    "key": "1002|0010",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "fvps",
+    "H": 1.752706,
+    "e_direct": 2.604716,
+    "e_probe": 2.0,
+    "p_best": 0.379211,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "f",
+          "p",
+          "s",
+          "v"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.022
+  },
+  "0002|1200": {
+    "key": "0002|1200",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "jmpv",
+    "H": 1.585259,
+    "e_direct": 2.629356,
+    "e_probe": 2.0,
+    "p_best": 0.369679,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "j",
+          "m",
+          "p",
+          "v"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.009
+  },
+  "0002|0210": {
+    "key": "0002|0210",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "bjms",
+    "H": 1.650127,
+    "e_direct": 2.622018,
+    "e_probe": 2.0,
+    "p_best": 0.372518,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "b",
+          "j",
+          "m",
+          "s"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.011
+  },
+  "0001|0202": {
+    "key": "0001|0202",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "bcfm",
+    "H": 1.051499,
+    "e_direct": 2.298525,
+    "e_probe": 2.0,
+    "p_best": 0.497662,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "c",
+          "f",
+          "m"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.005
+  },
+  "0001|0002": {
+    "key": "0001|0002",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "buen",
+    "H": 1.580146,
+    "e_direct": 2.665699,
+    "e_probe": 1.792073,
+    "p_best": 0.355619,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "e",
+          "p",
+          "u"
+        ],
+        "1": [
+          "d",
+          "e",
+          "n",
+          "u"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.046
+  },
+  "0100|0010": {
+    "key": "0100|0010",
+    "situation": "few_cands",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "cjud",
+    "H": 1.935826,
+    "e_direct": 3.250059,
+    "e_probe": 2.0,
+    "p_best": 0.322665,
+    "is_word": false,
+    "elapsed": 0.874
+  },
+  "0001|0210": {
+    "key": "0001|0210",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "hfmp",
+    "H": 1.661254,
+    "e_direct": 2.722406,
+    "e_probe": 2.0,
+    "p_best": 0.333682,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "f",
+          "h",
+          "m",
+          "p"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.007
+  },
+  "1010|1010": {
+    "key": "1010|1010",
+    "situation": "few_cands",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "ilsz",
+    "H": 2.033248,
+    "e_direct": 3.164831,
+    "e_probe": 2.013524,
+    "p_best": 0.348321,
+    "is_word": false,
+    "elapsed": 0.535
+  },
+  "0000|0200": {
+    "key": "0000|0200",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "dfpv",
+    "H": 1.214272,
+    "e_direct": 2.27506,
+    "e_probe": 2.0,
+    "p_best": 0.506739,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        2
+      ],
+      "variable_letters": {
+        "0": [
+          "d",
+          "f",
+          "p",
+          "v"
+        ],
+        "2": [
+          "j",
+          "m",
+          "p",
+          "v"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.006
+  },
+  "0202|2000": {
+    "key": "0202|2000",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "tope",
+    "H": 0.467612,
+    "e_direct": 1.257369,
+    "e_probe": 1.257369,
+    "p_best": 0.900436,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "l",
+          "n",
+          "p",
+          "s"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.006
+  },
+  "0202|0010": {
+    "key": "0202|0010",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "glps",
+    "H": 1.317068,
+    "e_direct": 2.196784,
+    "e_probe": 2.0,
+    "p_best": 0.537021,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "g",
+          "l",
+          "p",
+          "s"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.008
+  },
+  "0011|0200": {
+    "key": "0011|0200",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "tren",
+    "H": 1.602051,
+    "e_direct": 2.609975,
+    "e_probe": 1.623311,
+    "p_best": 0.377176,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        3
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "g",
+          "t"
+        ],
+        "3": [
+          "n",
+          "s",
+          "y"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.005
+  },
+  "0111|0022": {
+    "key": "0111|0022",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "creo",
+    "H": 0.159771,
+    "e_direct": 1.060317,
+    "e_probe": 1.060317,
+    "p_best": 0.976666,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "b",
+          "c",
+          "f",
+          "t"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.007
+  },
+  "0000|0100": {
+    "key": "0000|0100",
+    "situation": "few_cands",
+    "n_cands": 6,
+    "action": "probe",
+    "guess": "quin",
+    "H": 1.669265,
+    "e_direct": 2.691352,
+    "e_probe": 1.509148,
+    "p_best": 0.490852,
+    "is_word": true,
+    "elapsed": 0.942
+  },
+  "0111|0012": {
+    "key": "0111|0012",
+    "situation": "few_cands",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "rezo",
+    "H": 0.137432,
+    "e_direct": 1.042558,
+    "e_probe": 1.020155,
+    "p_best": 0.983536,
+    "is_word": true,
+    "elapsed": 0.033
+  },
+  "0010|1202": {
+    "key": "0010|1202",
+    "situation": "cluster_1",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "huir",
+    "H": 0.363371,
+    "e_direct": 1.179182,
+    "e_probe": 1.179182,
+    "p_best": 0.930683,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "f",
+          "h",
+          "l",
+          "m"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.006
+  },
+  "0120|0000": {
+    "key": "0120|0000",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "siro",
+    "H": 1.509535,
+    "e_direct": 2.407716,
+    "e_probe": 1.717674,
+    "p_best": 0.455421,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "o",
+          "p",
+          "s",
+          "v"
+        ],
+        "1": [
+          "b",
+          "i"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.006
+  },
+  "2000|0020": {
+    "key": "2000|0020",
+    "situation": "cluster_2",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "agua",
+    "H": 0.68324,
+    "e_direct": 1.266678,
+    "e_probe": 1.177785,
+    "p_best": 0.822215,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        3
+      ],
+      "variable_letters": {
+        "1": [
+          "g",
+          "z"
+        ],
+        "3": [
+          "a",
+          "d"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.002
+  },
+  "2101|2022": {
+    "key": "2101|2022",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "ateo",
+    "H": 0.947906,
+    "e_direct": 1.549673,
+    "e_probe": 1.549673,
+    "p_best": 0.633552,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        1
+      ],
+      "variable_letters": {
+        "1": [
+          "f",
+          "p",
+          "t"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.005
+  },
+  "1000|0100": {
+    "key": "1000|0100",
+    "situation": "few_cands",
+    "n_cands": 12,
+    "action": "probe",
+    "guess": "hptm",
+    "H": 2.407319,
+    "e_direct": 4.430964,
+    "e_probe": 2.204859,
+    "p_best": 0.230627,
+    "is_word": false,
+    "elapsed": 7.081
+  },
+  "1000|0102": {
+    "key": "1000|0102",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "iban",
+    "H": 1.31134,
+    "e_direct": 1.797935,
+    "e_probe": 1.531957,
+    "p_best": 0.468043,
+    "is_word": true,
+    "elapsed": 0.002
+  },
+  "1000|2010": {
+    "key": "1000|2010",
+    "situation": "cluster_2",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "cual",
+    "H": 0.820356,
+    "e_direct": 1.271427,
+    "e_probe": 1.180951,
+    "p_best": 0.819049,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        3
+      ],
+      "variable_letters": {
+        "1": [
+          "h",
+          "l",
+          "u"
+        ],
+        "3": [
+          "c",
+          "l"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.014
+  },
+  "1000|0002": {
+    "key": "1000|0002",
+    "situation": "cluster_2",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "usan",
+    "H": 1.584563,
+    "e_direct": 1.988878,
+    "e_probe": 1.663257,
+    "p_best": 0.340748,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        1
+      ],
+      "variable_letters": {
+        "0": [
+          "j",
+          "u"
+        ],
+        "1": [
+          "n",
+          "s",
+          "u"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.013
+  },
+  "1100|0020": {
+    "key": "1100|0020",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "vaco",
+    "H": 0.934029,
+    "e_direct": 1.524935,
+    "e_probe": 1.524935,
+    "p_best": 0.650043,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "j",
+          "v"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.013
+  },
+  "0100|1000": {
+    "key": "0100|1000",
+    "situation": "few_cands",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "opto",
+    "H": 1.12928,
+    "e_direct": 2.316391,
+    "e_probe": 1.50925,
+    "p_best": 0.49075,
+    "is_word": true,
+    "elapsed": 0.16
+  },
+  "0110|0100": {
+    "key": "0110|0100",
+    "situation": "few_cands",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "crio",
+    "H": 1.270897,
+    "e_direct": 1.960083,
+    "e_probe": 1.371411,
+    "p_best": 0.628589,
+    "is_word": true,
+    "elapsed": 0.155
+  },
+  "1001|0002": {
+    "key": "1001|0002",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "vean",
+    "H": 1.193346,
+    "e_direct": 1.702554,
+    "e_probe": 1.46837,
+    "p_best": 0.53163,
+    "is_word": true,
+    "elapsed": 0.003
+  },
+  "1100|0101": {
+    "key": "1100|0101",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "sano",
+    "H": 1.021048,
+    "e_direct": 1.352849,
+    "e_probe": 1.235232,
+    "p_best": 0.764768,
+    "is_word": true,
+    "elapsed": 0.087
+  },
+  "0001|1000": {
+    "key": "0001|1000",
+    "situation": "few_cands",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "uqep",
+    "H": 1.154744,
+    "e_direct": 2.305508,
+    "e_probe": 2.0,
+    "p_best": 0.494961,
+    "is_word": false,
+    "elapsed": 0.311
+  },
+  "1000|0101": {
+    "key": "1000|0101",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "unia",
+    "H": 1.443577,
+    "e_direct": 1.761581,
+    "e_probe": 1.641617,
+    "p_best": 0.492279,
+    "is_word": true,
+    "elapsed": 0.159
+  },
+  "1001|1000": {
+    "key": "1001|1000",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "beca",
+    "H": 1.196216,
+    "e_direct": 1.763914,
+    "e_probe": 1.509276,
+    "p_best": 0.490724,
+    "is_word": true,
+    "elapsed": 0.102
+  },
+  "0000|1200": {
+    "key": "0000|1200",
+    "situation": "cluster_2",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "film",
+    "H": 0.581594,
+    "e_direct": 1.164725,
+    "e_probe": 1.109817,
+    "p_best": 0.890183,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        3
+      ],
+      "variable_letters": {
+        "0": [
+          "f",
+          "g",
+          "m"
+        ],
+        "3": [
+          "i",
+          "m"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.014
+  },
+  "0010|1001": {
+    "key": "0010|1001",
+    "situation": "cluster_2",
+    "n_cands": 4,
+    "action": "probe",
+    "guess": "cdtn",
+    "H": 1.375053,
+    "e_direct": 2.246168,
+    "e_probe": 2.0,
+    "p_best": 0.517917,
+    "is_word": false,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        0,
+        3
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "d",
+          "t"
+        ],
+        "3": [
+          "c",
+          "l",
+          "n",
+          "s"
+        ]
+      },
+      "cluster_size": 4,
+      "buster_origin": "buster_won"
+    },
+    "elapsed": 0.228
+  },
+  "0100|1200": {
+    "key": "0100|1200",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "tipo",
+    "H": 0.757108,
+    "e_direct": 1.327497,
+    "e_probe": 1.327497,
+    "p_best": 0.781669,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "h",
+          "t"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.013
+  },
+  "0012|1200": {
+    "key": "0012|1200",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "crie",
+    "H": 0.971242,
+    "e_direct": 1.600748,
+    "e_probe": 1.600748,
+    "p_best": 0.599501,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "f",
+          "t"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.005
+  },
+  "0110|0200": {
+    "key": "0110|0200",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "rico",
+    "H": 0.945053,
+    "e_direct": 1.955671,
+    "e_probe": 1.955671,
+    "p_best": 0.362886,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "c",
+          "j",
+          "z"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.013
+  },
+  "1021|0000": {
+    "key": "1021|0000",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "pera",
+    "H": 0.103581,
+    "e_direct": 1.020344,
+    "e_probe": 1.020344,
+    "p_best": 0.986437,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "j",
+          "l",
+          "p"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.008
+  },
+  "0110|0010": {
+    "key": "0110|0010",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "troy",
+    "H": 0.023432,
+    "e_direct": 1.003443,
+    "e_probe": 1.003443,
+    "p_best": 0.997705,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        3
+      ],
+      "variable_letters": {
+        "3": [
+          "j",
+          "l",
+          "y"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.033
+  },
+  "0121|0200": {
+    "key": "0121|0200",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "vero",
+    "H": 0.92777,
+    "e_direct": 1.514675,
+    "e_probe": 1.514675,
+    "p_best": 0.656884,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "t",
+          "v",
+          "y"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.007
+  },
+  "1011|1001": {
+    "key": "1011|1001",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "mear",
+    "H": 1.086308,
+    "e_direct": 1.586822,
+    "e_probe": 1.391214,
+    "p_best": 0.608786,
+    "is_word": true,
+    "elapsed": 0.052
+  },
+  "1110|2001": {
+    "key": "1110|2001",
+    "situation": "cluster_2",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "oral",
+    "H": 1.016892,
+    "e_direct": 1.732515,
+    "e_probe": 1.488343,
+    "p_best": 0.511657,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_2",
+      "variable_positions": [
+        1,
+        3
+      ],
+      "variable_letters": {
+        "1": [
+          "r",
+          "v"
+        ],
+        "3": [
+          "l",
+          "r"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.005
+  },
+  "0112|2202": {
+    "key": "0112|2202",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "orne",
+    "H": 0.830153,
+    "e_direct": 1.393405,
+    "e_probe": 1.393405,
+    "p_best": 0.73773,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        2
+      ],
+      "variable_letters": {
+        "2": [
+          "c",
+          "l",
+          "n"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.005
+  },
+  "1010|1020": {
+    "key": "1010|1020",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "iria",
+    "H": 0.99982,
+    "e_direct": 1.738169,
+    "e_probe": 1.738169,
+    "p_best": 0.507887,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "i",
+          "t"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.014
+  },
+  "2000|1002": {
+    "key": "2000|1002",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "afin",
+    "H": 1.0,
+    "e_direct": 1.012417,
+    "e_probe": 2.0,
+    "p_best": 0.987583,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0022|1100": {
+    "key": "0022|1100",
+    "situation": "cluster_1",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "jure",
+    "H": 0.945902,
+    "e_direct": 1.954095,
+    "e_probe": 1.954095,
+    "p_best": 0.363937,
+    "is_word": true,
+    "cluster_info": {
+      "type": "cluster_1",
+      "variable_positions": [
+        0
+      ],
+      "variable_letters": {
+        "0": [
+          "c",
+          "j",
+          "p"
+        ]
+      },
+      "cluster_size": 3,
+      "buster_origin": "exhaustive_won"
+    },
+    "elapsed": 0.008
+  },
+  "2000|1100": {
+    "key": "2000|1100",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "agil",
+    "H": 1.0,
+    "e_direct": 1.068533,
+    "e_probe": 2.0,
+    "p_best": 0.931467,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|1001": {
+    "key": "2000|1001",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "anti",
+    "H": 1.0,
+    "e_direct": 1.265934,
+    "e_probe": 2.0,
+    "p_best": 0.734066,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|1200": {
+    "key": "2000|1200",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "alli",
+    "H": 1.0,
+    "e_direct": 1.034562,
+    "e_probe": 2.0,
+    "p_best": 0.965438,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|0100": {
+    "key": "2000|0100",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "aval",
+    "H": 1.0,
+    "e_direct": 1.487078,
+    "e_probe": 2.0,
+    "p_best": 0.512922,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2002|0200": {
+    "key": "2002|0200",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "ante",
+    "H": 1.0,
+    "e_direct": 1.002583,
+    "e_probe": 2.0,
+    "p_best": 0.997417,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2120|2022": {
+    "key": "2120|2022",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "abro",
+    "H": 1.0,
+    "e_direct": 1.062964,
+    "e_probe": 2.0,
+    "p_best": 0.937036,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2100|0001": {
+    "key": "2100|0001",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "auto",
+    "H": 1.0,
+    "e_direct": 1.469416,
+    "e_probe": 2.0,
+    "p_best": 0.530584,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2001|2220": {
+    "key": "2001|2220",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "asea",
+    "H": 1.0,
+    "e_direct": 1.101076,
+    "e_probe": 2.0,
+    "p_best": 0.898924,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2011|2021": {
+    "key": "2011|2021",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "area",
+    "H": 1.0,
+    "e_direct": 1.016069,
+    "e_probe": 2.0,
+    "p_best": 0.983931,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2012|0000": {
+    "key": "2012|0000",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "arpe",
+    "H": 1.0,
+    "e_direct": 1.44254,
+    "e_probe": 2.0,
+    "p_best": 0.55746,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|2001": {
+    "key": "1000|2001",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "cuna",
+    "H": 1.0,
+    "e_direct": 1.466989,
+    "e_probe": 2.0,
+    "p_best": 0.533011,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|0012": {
+    "key": "1000|0012",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "plan",
+    "H": 1.0,
+    "e_direct": 1.049652,
+    "e_probe": 2.0,
+    "p_best": 0.950348,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|1010": {
+    "key": "1000|1010",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "luca",
+    "H": 1.0,
+    "e_direct": 1.090367,
+    "e_probe": 2.0,
+    "p_best": 0.909633,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|0011": {
+    "key": "1000|0011",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "luna",
+    "H": 1.0,
+    "e_direct": 1.493152,
+    "e_probe": 2.0,
+    "p_best": 0.506848,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|0110": {
+    "key": "1000|0110",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "lami",
+    "H": 1.0,
+    "e_direct": 1.024373,
+    "e_probe": 2.0,
+    "p_best": 0.975627,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|0200": {
+    "key": "1100|0200",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "onza",
+    "H": 1.0,
+    "e_direct": 1.493867,
+    "e_probe": 2.0,
+    "p_best": 0.506133,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0002|1101": {
+    "key": "0002|1101",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "ente",
+    "H": 1.0,
+    "e_direct": 1.002605,
+    "e_probe": 2.0,
+    "p_best": 0.997395,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|1100": {
+    "key": "0001|1100",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "veis",
+    "H": 1.0,
+    "e_direct": 1.075505,
+    "e_probe": 2.0,
+    "p_best": 0.924495,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|1010": {
+    "key": "0001|1010",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "lees",
+    "H": 1.0,
+    "e_direct": 1.065396,
+    "e_probe": 2.0,
+    "p_best": 0.934604,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|0200": {
+    "key": "0101|0200",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "echo",
+    "H": 1.0,
+    "e_direct": 1.000512,
+    "e_probe": 2.0,
+    "p_best": 0.999488,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|0011": {
+    "key": "0101|0011",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "seno",
+    "H": 1.0,
+    "e_direct": 1.020796,
+    "e_probe": 2.0,
+    "p_best": 0.979204,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0111": {
+    "key": "0000|0111",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "chis",
+    "H": 1.0,
+    "e_direct": 1.076201,
+    "e_probe": 2.0,
+    "p_best": 0.923799,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0202": {
+    "key": "0000|0202",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "zinc",
+    "H": 1.0,
+    "e_direct": 1.332279,
+    "e_probe": 2.0,
+    "p_best": 0.667721,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0011|0110": {
+    "key": "0011|0110",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "rien",
+    "H": 1.051334,
+    "e_direct": 1.571055,
+    "e_probe": 1.380703,
+    "p_best": 0.619297,
+    "is_word": true,
+    "elapsed": 0.095
+  },
+  "0000|1100": {
+    "key": "0000|1100",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "util",
+    "H": 1.0,
+    "e_direct": 1.046286,
+    "e_probe": 2.0,
+    "p_best": 0.953714,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|0101": {
+    "key": "1200|0101",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "sola",
+    "H": 1.0,
+    "e_direct": 1.298365,
+    "e_probe": 2.0,
+    "p_best": 0.701635,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|0011": {
+    "key": "0200|0011",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "como",
+    "H": 1.0,
+    "e_direct": 1.135351,
+    "e_probe": 2.0,
+    "p_best": 0.864649,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|0101": {
+    "key": "0200|0101",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "mono",
+    "H": 1.0,
+    "e_direct": 1.497632,
+    "e_probe": 2.0,
+    "p_best": 0.502368,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|0020": {
+    "key": "0202|0020",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "goce",
+    "H": 1.0,
+    "e_direct": 1.333006,
+    "e_probe": 2.0,
+    "p_best": 0.666994,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0210|0001": {
+    "key": "0210|0001",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "rock",
+    "H": 0.520089,
+    "e_direct": 1.166978,
+    "e_probe": 1.111318,
+    "p_best": 0.888682,
+    "is_word": true,
+    "elapsed": 0.047
+  },
+  "1011|1002": {
+    "key": "1011|1002",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "urea",
+    "H": 1.0,
+    "e_direct": 1.416126,
+    "e_probe": 2.0,
+    "p_best": 0.583874,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1011|2001": {
+    "key": "1011|2001",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "real",
+    "H": 1.0,
+    "e_direct": 1.001073,
+    "e_probe": 2.0,
+    "p_best": 0.998927,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1011|2002": {
+    "key": "1011|2002",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "reja",
+    "H": 1.0,
+    "e_direct": 1.278855,
+    "e_probe": 2.0,
+    "p_best": 0.721145,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0012|0200": {
+    "key": "0012|0200",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "cree",
+    "H": 1.0,
+    "e_direct": 1.124799,
+    "e_probe": 2.0,
+    "p_best": 0.875201,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0012|0110": {
+    "key": "0012|0110",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "rule",
+    "H": 1.0,
+    "e_direct": 1.008063,
+    "e_probe": 2.0,
+    "p_best": 0.991937,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0012|0210": {
+    "key": "0012|0210",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "urbe",
+    "H": 1.0,
+    "e_direct": 1.012946,
+    "e_probe": 2.0,
+    "p_best": 0.987054,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0011|0120": {
+    "key": "0011|0120",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "emir",
+    "H": 1.0,
+    "e_direct": 1.454992,
+    "e_probe": 2.0,
+    "p_best": 0.545008,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0111|0011": {
+    "key": "0111|0011",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "peor",
+    "H": 1.0,
+    "e_direct": 1.407845,
+    "e_probe": 2.0,
+    "p_best": 0.592155,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|1100": {
+    "key": "1010|1100",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "fray",
+    "H": 1.0,
+    "e_direct": 1.187259,
+    "e_probe": 2.0,
+    "p_best": 0.812741,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|2020": {
+    "key": "1010|2020",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "raiz",
+    "H": 1.0,
+    "e_direct": 1.332303,
+    "e_probe": 2.0,
+    "p_best": 0.667697,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|2001": {
+    "key": "1010|2001",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "rana",
+    "H": 1.0,
+    "e_direct": 1.011391,
+    "e_probe": 2.0,
+    "p_best": 0.988609,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1220|0000": {
+    "key": "1220|0000",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "lora",
+    "H": 1.0,
+    "e_direct": 1.076552,
+    "e_probe": 2.0,
+    "p_best": 0.923448,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0222|0222": {
+    "key": "0222|0222",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "core",
+    "H": 1.0,
+    "e_direct": 1.481251,
+    "e_probe": 2.0,
+    "p_best": 0.518749,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0010|0101": {
+    "key": "0010|0101",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "cruz",
+    "H": 1.0,
+    "e_direct": 1.000499,
+    "e_probe": 2.0,
+    "p_best": 0.999501,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0010|1201": {
+    "key": "0010|1201",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "rubi",
+    "H": 1.0,
+    "e_direct": 1.226619,
+    "e_probe": 2.0,
+    "p_best": 0.773381,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0101": {
+    "key": "0000|0101",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "chip",
+    "H": 0.076859,
+    "e_direct": 1.013004,
+    "e_probe": 1.008669,
+    "p_best": 0.991331,
+    "is_word": true,
+    "elapsed": 0.159
+  },
+  "1110|1002": {
+    "key": "1110|1002",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "proa",
+    "H": 1.0,
+    "e_direct": 1.000969,
+    "e_probe": 2.0,
+    "p_best": 0.999031,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0022|0200": {
+    "key": "0022|0200",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "sere",
+    "H": 1.0,
+    "e_direct": 1.39618,
+    "e_probe": 2.0,
+    "p_best": 0.60382,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0211|2220": {
+    "key": "0211|2220",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "roed",
+    "H": 1.0,
+    "e_direct": 1.027417,
+    "e_probe": 2.0,
+    "p_best": 0.972583,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0102|2012": {
+    "key": "0102|2012",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "ocle",
+    "H": 1.0,
+    "e_direct": 1.219314,
+    "e_probe": 2.0,
+    "p_best": 0.780686,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0122|2022": {
+    "key": "0122|2022",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "ocre",
+    "H": 1.0,
+    "e_direct": 1.011466,
+    "e_probe": 2.0,
+    "p_best": 0.988534,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0212|0000": {
+    "key": "0212|0000",
+    "situation": "two_cands",
+    "n_cands": 2,
+    "action": "direct",
+    "guess": "role",
+    "H": 1.0,
+    "e_direct": 1.439588,
+    "e_probe": 2.0,
+    "p_best": 0.560412,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|0220": {
+    "key": "2000|0220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "alud",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|0101": {
+    "key": "2000|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "anal",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|1020": {
+    "key": "2000|1020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aqui",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|0022": {
+    "key": "2000|0022",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "atun",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|0010": {
+    "key": "2000|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "auca",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|0110": {
+    "key": "2000|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aula",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2020|1100": {
+    "key": "2020|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "abra",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2020|1102": {
+    "key": "2020|1102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "abri",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2020|0110": {
+    "key": "2020|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "agra",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2020|0101": {
+    "key": "2020|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aira",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2000|0120": {
+    "key": "2000|0120",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "azul",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2022|1100": {
+    "key": "2022|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "abre",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2020|0100": {
+    "key": "2020|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aura",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2022|0110": {
+    "key": "2022|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "acre",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2022|0101": {
+    "key": "2022|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "adre",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2022|0100": {
+    "key": "2022|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aire",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2022|0200": {
+    "key": "2022|0200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "arre",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2002|0100": {
+    "key": "2002|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "acne",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2002|0020": {
+    "key": "2002|0020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ague",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2002|1000": {
+    "key": "2002|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "adie",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2002|1200": {
+    "key": "2002|1200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ande",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2002|0001": {
+    "key": "2002|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aspe",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2002|0110": {
+    "key": "2002|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aune",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2100|1001": {
+    "key": "2100|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "acto",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2002|0010": {
+    "key": "2002|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "auge",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2100|0200": {
+    "key": "2100|0200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aguo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2100|0110": {
+    "key": "2100|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "algo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2100|0011": {
+    "key": "2100|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "alto",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2100|1000": {
+    "key": "2100|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "asco",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2010|1020": {
+    "key": "2010|1020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "amar",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2010|1010": {
+    "key": "2010|1010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "arma",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2010|0120": {
+    "key": "2010|0120",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aras",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2010|0220": {
+    "key": "2010|0220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "asar",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2010|0210": {
+    "key": "2010|0210",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "asir",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2010|0021": {
+    "key": "2010|0021",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "azar",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2010|0011": {
+    "key": "2010|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "azur",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2101|2012": {
+    "key": "2101|2012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aedo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2001|2010": {
+    "key": "2001|2010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aeta",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2011|2022": {
+    "key": "2011|2022",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "afer",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2102|2022": {
+    "key": "2102|2022",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "azoe",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2110|0200": {
+    "key": "2110|0200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "amor",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2110|1000": {
+    "key": "2110|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "arco",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2110|0100": {
+    "key": "2110|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "armo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2110|0010": {
+    "key": "2110|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aron",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2110|0002": {
+    "key": "2110|0002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "aros",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2012|1000": {
+    "key": "2012|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "arce",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2012|0100": {
+    "key": "2012|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "arde",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2012|0020": {
+    "key": "2012|0020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "arme",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "2012|0001": {
+    "key": "2012|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "arte",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|2020": {
+    "key": "1000|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cala",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|2202": {
+    "key": "1000|2202",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cian",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|2012": {
+    "key": "1000|2012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "clan",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|2002": {
+    "key": "1000|2002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cuan",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|0212": {
+    "key": "1000|0212",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lian",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|1101": {
+    "key": "1000|1101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "naci",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|0211": {
+    "key": "1000|0211",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "nial",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|1001": {
+    "key": "1000|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "nuca",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|0021": {
+    "key": "1000|0021",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "nula",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|1100": {
+    "key": "1000|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "paci",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|1200": {
+    "key": "1000|1200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pica",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|0110": {
+    "key": "1100|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cano",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|0011": {
+    "key": "1100|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "caso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|0120": {
+    "key": "1100|0120",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "naco",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|1010": {
+    "key": "1100|1010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cato",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|1100": {
+    "key": "1100|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "nato",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|0021": {
+    "key": "1100|0021",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "saco",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|2020": {
+    "key": "1100|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "taco",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|1001": {
+    "key": "1100|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "sato",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|2002": {
+    "key": "1100|2002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "taos",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1100|2001": {
+    "key": "1100|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "taso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|1100": {
+    "key": "1002|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "bate",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|0101": {
+    "key": "1002|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "bale",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|0011": {
+    "key": "1002|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cale",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|0021": {
+    "key": "1002|0021",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lace",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|1001": {
+    "key": "1002|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "late",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|1010": {
+    "key": "1002|1010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cate",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|0110": {
+    "key": "1002|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cabe",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|2020": {
+    "key": "1002|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tace",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1120|1100": {
+    "key": "1120|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "baro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1120|1010": {
+    "key": "1120|1010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "caro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1002|2001": {
+    "key": "1002|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tale",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1120|1200": {
+    "key": "1120|1200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "obra",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1120|1001": {
+    "key": "1120|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "paro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1120|2000": {
+    "key": "1120|2000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "raro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|2002": {
+    "key": "1001|2002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "caen",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|2020": {
+    "key": "1001|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cela",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|2001": {
+    "key": "1001|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cena",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|2100": {
+    "key": "1001|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cesa",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|1200": {
+    "key": "1001|1200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "esca",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|0200": {
+    "key": "1001|0200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "esta",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|0012": {
+    "key": "1001|0012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lean",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|0110": {
+    "key": "1001|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lesa",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|0102": {
+    "key": "1001|0102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "sean",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|1100": {
+    "key": "1001|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "seca",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1001|0101": {
+    "key": "1001|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "sena",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0002|0121": {
+    "key": "0002|0121",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ende",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0002|2201": {
+    "key": "0002|2201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tene",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0002|2101": {
+    "key": "0002|2101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tune",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|0200": {
+    "key": "0001|0200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "diez",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|0110": {
+    "key": "0001|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "edil",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|0010": {
+    "key": "0001|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "leed",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|0012": {
+    "key": "0001|0012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "leen",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|0212": {
+    "key": "0001|0212",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lien",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|1200": {
+    "key": "0001|1200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mies",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|1101": {
+    "key": "0001|1101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "neis",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|2100": {
+    "key": "0001|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "seis",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|2000": {
+    "key": "0001|2000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "sexy",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|2202": {
+    "key": "0001|2202",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "sien",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|0020": {
+    "key": "0001|0020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tell",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|1002": {
+    "key": "0001|1002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "usen",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|0101": {
+    "key": "0001|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "veni",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|1100": {
+    "key": "0101|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "celo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|0101": {
+    "key": "0101|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ceno",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|0120": {
+    "key": "0101|0120",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ceso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|0210": {
+    "key": "0101|0210",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ecos",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|2002": {
+    "key": "0101|2002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "leon",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|2020": {
+    "key": "0101|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "leso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0101|0012": {
+    "key": "0101|0012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "osen",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0001|0001": {
+    "key": "0001|0001",
+    "situation": "few_cands",
+    "n_cands": 3,
+    "action": "probe",
+    "guess": "menu",
+    "H": 1.535111,
+    "e_direct": 1.837765,
+    "e_probe": 1.55851,
+    "p_best": 0.44149,
+    "is_word": true,
+    "elapsed": 0.304
+  },
+  "0101|0110": {
+    "key": "0101|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "seco",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0201": {
+    "key": "0000|0201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "bici",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0102": {
+    "key": "0000|0102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "chic",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0011": {
+    "key": "0000|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "chus",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0001": {
+    "key": "0000|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "chut",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|1102": {
+    "key": "0000|1102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "clic",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|1101": {
+    "key": "0000|1101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "clip",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|1001": {
+    "key": "0000|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "club",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0010": {
+    "key": "0000|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dvds",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|1000": {
+    "key": "0000|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "flux",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0120": {
+    "key": "0000|0120",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "jusi",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|2101": {
+    "key": "0000|2101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "luci",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|2100": {
+    "key": "0000|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ludi",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0220": {
+    "key": "0000|0220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "miss",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|1010": {
+    "key": "0000|1010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "plus",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0000": {
+    "key": "0000|0000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "vudu",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|2110": {
+    "key": "0000|2110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "luis",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|0202": {
+    "key": "0100|0202",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dios",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|0212": {
+    "key": "0100|0212",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lios",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|0210": {
+    "key": "0000|0210",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pius",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0000|2000": {
+    "key": "0000|2000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lulu",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|0211": {
+    "key": "0100|0211",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "liso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|0011": {
+    "key": "0100|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "luso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|0002": {
+    "key": "0100|0002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "obus",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|0110": {
+    "key": "0100|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "olio",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|1100": {
+    "key": "0100|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "opio",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|1002": {
+    "key": "0100|1002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "opus",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|2220": {
+    "key": "0100|2220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pilo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|2201": {
+    "key": "0100|2201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "piso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|2020": {
+    "key": "0100|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pulo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|2001": {
+    "key": "0100|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "puso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|0221": {
+    "key": "0100|0221",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "silo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0100|1001": {
+    "key": "0100|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "supo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|2100": {
+    "key": "1200|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cola",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|2001": {
+    "key": "1200|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cosa",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|2020": {
+    "key": "1200|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cota",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|0102": {
+    "key": "1200|0102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "loas",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|1100": {
+    "key": "1200|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "loca",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|0120": {
+    "key": "1200|0120",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lota",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|1001": {
+    "key": "1200|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "soca",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|0021": {
+    "key": "1200|0021",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "sota",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|0012": {
+    "key": "1200|0012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "toas",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|1010": {
+    "key": "1200|1010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "toca",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|0110": {
+    "key": "1200|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tola",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1200|0011": {
+    "key": "1200|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tosa",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|0002": {
+    "key": "0200|0002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "boom",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|0110": {
+    "key": "0200|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cono",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|1010": {
+    "key": "0200|1010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "coto",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|1001": {
+    "key": "0200|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "moto",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|1100": {
+    "key": "0200|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "noto",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|2020": {
+    "key": "0200|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "toco",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|2001": {
+    "key": "0200|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tomo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|2100": {
+    "key": "0200|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tono",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|0011": {
+    "key": "0202|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "come",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|1010": {
+    "key": "0202|1010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cote",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|0120": {
+    "key": "0202|0120",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "doce",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|0101": {
+    "key": "0202|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dome",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|1100": {
+    "key": "0202|1100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dote",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0200|0021": {
+    "key": "0200|0021",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "moco",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|1001": {
+    "key": "0202|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mote",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|2020": {
+    "key": "0202|2020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "toce",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0202|2001": {
+    "key": "0202|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tome",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0220|2002": {
+    "key": "0220|2002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "foro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0220|0101": {
+    "key": "0220|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "lord",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0220|0102": {
+    "key": "0220|0102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "loro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0220|0011": {
+    "key": "0220|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mori",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0220|0012": {
+    "key": "0220|0012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "moro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0220|0001": {
+    "key": "0220|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "york",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1011|1101": {
+    "key": "1011|1101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "caer",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1011|2022": {
+    "key": "1011|2022",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "reta",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1011|1102": {
+    "key": "1011|1102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "crea",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0012|2200": {
+    "key": "0012|2200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "irse",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0012|1101": {
+    "key": "0012|1101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rige",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0012|0111": {
+    "key": "0012|0111",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ruge",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0012|0220": {
+    "key": "0012|0220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "true",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0012|0211": {
+    "key": "0012|0211",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "urge",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0011|0210": {
+    "key": "0011|0210",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "crei",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0011|2210": {
+    "key": "0011|2210",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "frei",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0011|2200": {
+    "key": "0011|2200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "frey",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0011|2100": {
+    "key": "0011|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "fuer",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0011|0101": {
+    "key": "0011|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "peer",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0011|0201": {
+    "key": "0011|0201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "prez",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0111|0021": {
+    "key": "0111|0021",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "oler",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0111|1012": {
+    "key": "0111|1012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "remo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|2000": {
+    "key": "0110|2000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "flor",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0111|0112": {
+    "key": "0111|0112",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "reno",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|2100": {
+    "key": "0110|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "frio",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|0020": {
+    "key": "0110|0020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "orto",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|0002": {
+    "key": "0110|0002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pros",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|0202": {
+    "key": "0110|0202",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rios",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|0201": {
+    "key": "0110|0201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "riso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|0220": {
+    "key": "0110|0220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rito",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|1000": {
+    "key": "0110|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rufo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|0001": {
+    "key": "0110|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ruso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0110|0110": {
+    "key": "0110|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "trio",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0020|0022": {
+    "key": "0020|0022",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "inri",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1020|0210": {
+    "key": "1020|0210",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cari",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1020|2200": {
+    "key": "1020|2200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dara",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1020|2110": {
+    "key": "1020|2110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dira",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1020|2100": {
+    "key": "1020|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dura",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1020|0201": {
+    "key": "1020|0201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "para",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1020|0111": {
+    "key": "1020|0111",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pira",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1020|0101": {
+    "key": "1020|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pura",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1021|2000": {
+    "key": "1021|2000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cera",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1021|0100": {
+    "key": "1021|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mera",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1021|0010": {
+    "key": "1021|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "sera",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1021|0001": {
+    "key": "1021|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "vera",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0121|2200": {
+    "key": "0121|2200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cero",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0121|0100": {
+    "key": "0121|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "euro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0121|0210": {
+    "key": "0121|0210",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mero",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0121|0201": {
+    "key": "0121|0201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pero",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|1120": {
+    "key": "1010|1120",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "fria",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|1110": {
+    "key": "1010|1110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "fiar",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|1002": {
+    "key": "1010|1002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "gran",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|1012": {
+    "key": "1010|1012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "iran",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|2100": {
+    "key": "1010|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rafa",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|2022": {
+    "key": "1010|2022",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rain",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|2012": {
+    "key": "1010|2012",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rian",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|2002": {
+    "key": "1010|2002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ruan",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1010|1001": {
+    "key": "1010|1001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "urna",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1220|2000": {
+    "key": "1220|2000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "cora",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1220|0100": {
+    "key": "1220|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dora",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1220|0010": {
+    "key": "1220|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "hora",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1220|0001": {
+    "key": "1220|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mora",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0010|1011": {
+    "key": "0010|1011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "gris",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0010|2001": {
+    "key": "0010|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "iris",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0010|1102": {
+    "key": "0010|1102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "unir",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1110|2002": {
+    "key": "1110|2002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "orza",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0010|1101": {
+    "key": "0010|1101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "urdi",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1110|2011": {
+    "key": "1110|2011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "otar",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1110|2201": {
+    "key": "1110|2201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "osar",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1110|1101": {
+    "key": "1110|1101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "raso",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1110|1021": {
+    "key": "1110|1021",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rato",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0112|1202": {
+    "key": "0112|1202",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "croe",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0022|0110": {
+    "key": "0022|0110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dire",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0022|1110": {
+    "key": "0022|1110",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dure",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0022|0201": {
+    "key": "0022|0201",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mere",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0022|0101": {
+    "key": "0022|0101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mire",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0022|1101": {
+    "key": "0022|1101",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "mure",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0022|2100": {
+    "key": "0022|2100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ubre",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0120|2000": {
+    "key": "0120|2000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "giro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0120|2001": {
+    "key": "0120|2001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "guro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0120|0010": {
+    "key": "0120|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "miro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0120|0011": {
+    "key": "0120|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "muro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0120|1000": {
+    "key": "0120|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "ogro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0120|0200": {
+    "key": "0120|0200",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "otro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1022|2000": {
+    "key": "1022|2000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "dare",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0120|0100": {
+    "key": "0120|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tiro",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1022|0100": {
+    "key": "1022|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "hare",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1022|0010": {
+    "key": "1022|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "pare",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1022|0001": {
+    "key": "1022|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tare",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1022|0000": {
+    "key": "1022|0000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "vare",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0021|0220": {
+    "key": "0021|0220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "heri",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0021|2220": {
+    "key": "0021|2220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "peri",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1210|0010": {
+    "key": "1210|0010",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "loar",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1210|0020": {
+    "key": "1210|0020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rola",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1210|1000": {
+    "key": "1210|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "roja",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1210|0100": {
+    "key": "1210|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "roma",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0201|0220": {
+    "key": "0201|0220",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "loen",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1210|0001": {
+    "key": "1210|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rosa",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0210|1002": {
+    "key": "0210|1002",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "robo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0210|0102": {
+    "key": "0210|0102",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rojo",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0210|0022": {
+    "key": "0210|0022",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "roto",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0210|0011": {
+    "key": "0210|0011",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "tour",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0211|0222": {
+    "key": "0211|0222",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "moer",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0102|2202": {
+    "key": "0102|2202",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "onde",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0212|1000": {
+    "key": "0212|1000",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "robe",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0212|0100": {
+    "key": "0212|0100",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "roce",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0212|0020": {
+    "key": "0212|0020",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rode",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "0212|0001": {
+    "key": "0212|0001",
+    "situation": "trivial",
+    "n_cands": 1,
+    "action": "direct",
+    "guess": "rose",
+    "H": 0.0,
+    "e_direct": 1.0,
+    "e_probe": null,
+    "p_best": 1.0,
+    "is_word": true,
+    "elapsed": 0.0
+  },
+  "1000|0000": {
+    "key": "1000|0000",
+    "situation": "many_cands",
+    "n_cands": 96,
+    "action": "probe",
+    "guess": "tums",
+    "H": 3.646288,
+    "e_direct": 8.410755,
+    "e_probe": null,
+    "p_best": 0.021018,
+    "is_word": false,
+    "elapsed": 13.378
+  },
+  "0001|0000": {
+    "key": "0001|0000",
+    "situation": "few_cands",
+    "n_cands": 5,
+    "action": "probe",
+    "guess": "zucz",
+    "H": 1.58786,
+    "e_direct": 2.700829,
+    "e_probe": 2.0,
+    "p_best": 0.433057,
+    "is_word": false,
+    "elapsed": 1.434
+  }
+}
