@@ -1,10 +1,13 @@
 """
-Híbrido RG2 — mezcla de seguridad tardía + sondas ricas para frequency.
+Híbrido RG5 — RG4 + cluster-buster liviano en fallback T3.
 
-Usa las tablas JSON del root (t2_table_*.json y t3_table_*.json) y
-añade un fallback dinámico con sondas de no-palabras inspirado en
-strategy-rb para mejorar la separación cuando las probabilidades
-perturbadas del modo frequency vuelven frágil la decisión de entropía.
+Cambios vs RG4:
+- En T3 fallback, si n ≤ 8 y hay exactamente 1 o 2 posiciones variables
+  (cluster pequeño), construye un buster de no-palabra y compara su
+  expected_score contra el fallback normal; usa el mejor.
+- Uniform mantiene entropía como fallback; frequency mantiene probes
+  dinámicos + no-palabras y p_best>0.60 para direct.
+- Safe-guess T4/T5 y tablas T2/T3 se mantienen igual.
 """
 
 from __future__ import annotations
@@ -30,22 +33,20 @@ CHAR_TO_IDX = {ch: i for i, ch in enumerate(SPANISH_LETTERS)}
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
     5: {"uniform": "sareo", "frequency": "sareo"},
-    6: {"uniform": "ceriao", "frequency": "ceriao"},
+    6: {"uniform": "ceriao", "frequency": "carieo"},
 }
 
-# T4 thresholds — frequency se vuelve más conservador con shock
 T4_SAFE_GUESS_MAX_CANDS = 10
 T4_DIRECT_PROB_THRESHOLD_FREQ = 0.60
 T4_DIRECT_PROB_THRESHOLD_UNI = 0.50
 
-# T3 direct threshold elevado en frequency para forzar probe salvo alta certeza
-T3_DIRECT_PROB_THRESHOLD_FREQ = 0.65
+T3_DIRECT_PROB_THRESHOLD_FREQ = 0.60
 T3_DIRECT_PROB_THRESHOLD_UNI = 0.55
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
-# ─── Feedback vectorizado (para entropía) ────────────────────────────────────
+# ─── Feedback vectorizado ────────────────────────────────────────────────────
 
 def _encode_words_numpy(words: Sequence[str], wl: int) -> np.ndarray:
     mat = np.zeros((len(words), wl), dtype=np.int8)
@@ -159,7 +160,7 @@ def _best_entropy_guess_vocab(candidates: Sequence[str], vocab: Sequence[str], w
     return best_g
 
 
-# ─── Probes y expected-cost (modo frequency) ────────────────────────────────
+# ─── Probes y expected-cost (se usan en freq y buster) ──────────────────────
 
 def _f_hat(n: int) -> float:
     if n <= 1:
@@ -235,6 +236,51 @@ def _dynamic_best(candidates: Sequence[str], vocab: Sequence[str], wl: int,
     return best
 
 
+# ─── Cluster detection/buster (solo en T3 fallback, n ≤ 8) ──────────────────
+
+def _detect_cluster(candidates: Sequence[str], wl: int) -> tuple[int, tuple[int, ...], dict[int, set[str]]]:
+    if not candidates:
+        return 0, (), {}
+    pos_sets = [set() for _ in range(wl)]
+    for w in candidates:
+        for i, ch in enumerate(w):
+            pos_sets[i].add(ch)
+    var_pos = [i for i, s in enumerate(pos_sets) if len(s) > 1]
+    if len(var_pos) == 1:
+        return 1, tuple(var_pos), {var_pos[0]: pos_sets[var_pos[0]]}
+    if len(var_pos) == 2:
+        return 2, tuple(var_pos), {var_pos[0]: pos_sets[var_pos[0]], var_pos[1]: pos_sets[var_pos[1]]}
+    return 0, (), {}
+
+
+def _build_cluster_buster(var_pos: tuple[int, ...], var_letters: dict[int, set[str]], wl: int) -> str | None:
+    letters = []
+    for p in var_pos:
+        letters.extend(list(var_letters[p]))
+    if not letters:
+        return None
+    # simple spread: rotate variable letters off their original positions
+    letters = letters[:wl] if len(letters) >= wl else (letters + list(SPANISH_LETTERS))[:wl]
+    # place them in different positions to avoid greens
+    buster = ['a'] * wl
+    for i, ch in enumerate(letters):
+        target = (i + 1) % wl
+        buster[target] = ch
+    return ''.join(buster)
+
+
+def _cluster_buster_best(candidates: Sequence[str], wl: int, probs: dict[str, float]) -> tuple[str | None, float]:
+    kind, var_pos, var_letters = _detect_cluster(candidates, wl)
+    if kind == 0 or len(candidates) > 8:
+        return None, float('inf')
+    buster = _build_cluster_buster(var_pos, var_letters, wl)
+    if not buster:
+        return None, float('inf')
+    weights = _normalize_weights(candidates, probs)
+    score = _expected_score(buster, candidates, weights, wl)
+    return buster, score
+
+
 # ─── Expected cost directo ───────────────────────────────────────────────────
 
 def _expected_cost_direct(candidates: Sequence[str], probs_dict: dict[str, float], turns_left: int) -> float:
@@ -296,8 +342,9 @@ def _choose_t5(candidates: Sequence[str], vocab: Sequence[str], wl: int, mode: s
         if found:
             return safe_g
         return _most_probable(candidates, probs)
-    return _dynamic_best(candidates, vocab, wl, probs) if mode == "frequency" else \
-        _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=300)
+    if mode == "frequency":
+        return _dynamic_best(candidates, vocab, wl, probs)
+    return _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=300)
 
 
 def _choose_t3_runtime(candidates: Sequence[str], vocab: Sequence[str], wl: int, mode: str,
@@ -307,39 +354,43 @@ def _choose_t3_runtime(candidates: Sequence[str], vocab: Sequence[str], wl: int,
         return candidates[0] if candidates else vocab[0]
     if n == 2:
         return _most_probable(candidates, probs)
+    # small cluster buster attempt
+    buster, b_score = _cluster_buster_best(candidates, wl, probs)
+    # main paths
     if mode == "frequency":
         p_best = _best_prob(candidates, probs)
         if p_best > T3_DIRECT_PROB_THRESHOLD_FREQ:
             return _most_probable(candidates, probs)
-        return _dynamic_best(candidates, vocab, wl, probs)
+        dyn = _dynamic_best(candidates, vocab, wl, probs)
+        weights = _normalize_weights(candidates, probs)
+        dyn_score = _expected_score(dyn, candidates, weights, wl)
+        if buster and b_score + 1e-9 < dyn_score:
+            return buster
+        return dyn
     p_best = _best_prob(candidates, probs)
     if p_best > T3_DIRECT_PROB_THRESHOLD_UNI:
         return _most_probable(candidates, probs)
-    return _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=400)
+    ent = _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=400)
+    if buster:
+        weights = _normalize_weights(candidates, probs)
+        ent_score = _expected_score(ent, candidates, weights, wl)
+        if b_score + 1e-9 < ent_score:
+            return buster
+    return ent
 
 
 # ─── Clase principal ─────────────────────────────────────────────────────────
 
-class RG2_gabriel_regina(Strategy):
+class RG5_gabriel_regina(Strategy):
     _t2_tables: dict[str, dict] = {}
     _t3_tables: dict[str, dict] = {}
     _tables_loaded: set[str] = set()
 
     @property
     def name(self) -> str:
-        return "RG2_gabriel_regina"
+        return "RG5_gabriel_regina"
 
     @classmethod
-    def _load_tables(cls, wl: int, mode: str) -> None:
-        key = f"{wl}_{mode}"
-        if key in cls._tables_loaded:
-            return
-        t2_path = _REPO_ROOT / f"t2_table_{wl}_{mode}.json"
-        t3_path = _REPO_ROOT / f"t3_table_{wl}_{mode}.json"
-        cls._t2_tables[key] = json.load(open(t2_path, encoding="utf-8")) if t2_path.exists() else {}
-        cls._t3_tables[key] = json.load(open(t3_path, encoding="utf-8")) if t3_path.exists() else {}
-        cls._tables_loaded.add(key)
-
     def _load_tables(cls, wl: int, mode: str) -> None:
         key = f"{wl}_{mode}"
         if key in cls._tables_loaded:
@@ -357,9 +408,9 @@ class RG2_gabriel_regina(Strategy):
         self._probs = dict(config.probabilities)
         self._opener = OPENERS[self._wl][self._mode]
         self._max_g = config.max_guesses
-        RG2_gabriel_regina._load_tables(self._wl, self._mode)
-        self._t2 = RG2_gabriel_regina._t2_tables.get(f"{self._wl}_{self._mode}", {})
-        self._t3 = RG2_gabriel_regina._t3_tables.get(f"{self._wl}_{self._mode}", {})
+        RG5_gabriel_regina._load_tables(self._wl, self._mode)
+        self._t2 = RG5_gabriel_regina._t2_tables.get(f"{self._wl}_{self._mode}", {})
+        self._t3 = RG5_gabriel_regina._t3_tables.get(f"{self._wl}_{self._mode}", {})
 
     def guess(self, history: list[tuple[str, tuple[int, ...]]]) -> str:
         turn = len(history) + 1
@@ -381,8 +432,9 @@ class RG2_gabriel_regina(Strategy):
             g2 = self._t2.get(pat1)
             if g2:
                 return g2
-            return _dynamic_best(candidates, vocab, wl, probs) if mode == "frequency" else \
-                _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=500)
+            if mode == "frequency":
+                return _dynamic_best(candidates, vocab, wl, probs)
+            return _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=500)
 
         if turn == 3:
             pat1 = "".join(str(x) for x in history[0][1])
@@ -402,3 +454,4 @@ class RG2_gabriel_regina(Strategy):
             return _choose_t5(candidates, vocab, wl, mode, probs)
 
         return _most_probable(candidates, probs)
+

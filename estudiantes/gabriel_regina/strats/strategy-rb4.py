@@ -1,10 +1,14 @@
 """
-Híbrido RG2 — mezcla de seguridad tardía + sondas ricas para frequency.
+Híbrido RG4 — vuelve a la prudencia en uniform y conserva mejoras freq.
 
-Usa las tablas JSON del root (t2_table_*.json y t3_table_*.json) y
-añade un fallback dinámico con sondas de no-palabras inspirado en
-strategy-rb para mejorar la separación cuando las probabilidades
-perturbadas del modo frequency vuelven frágil la decisión de entropía.
+Objetivo: reducir la varianza que RG3 introdujo en uniform (4L/5L) al
+probar sondas agresivas, manteniendo las ganancias tempranas de freq.
+
+- Uniform: fallbacks vuelven a entropía clásica (sin sondas ni probes),
+  con los mismos umbrales seguros de RG2 (T3 0.55, T4 0.50).
+- Frequency: se mantienen sondas dinámicas + no-palabras y direct en
+  T3 a partir de p_best > 0.60 para aprovechar prob altas bajo shock.
+- Safe-guess tardío (T4/T5) se conserva.
 """
 
 from __future__ import annotations
@@ -30,22 +34,20 @@ CHAR_TO_IDX = {ch: i for i, ch in enumerate(SPANISH_LETTERS)}
 OPENERS = {
     4: {"uniform": "aore", "frequency": "aore"},
     5: {"uniform": "sareo", "frequency": "sareo"},
-    6: {"uniform": "ceriao", "frequency": "ceriao"},
+    6: {"uniform": "ceriao", "frequency": "carieo"},
 }
 
-# T4 thresholds — frequency se vuelve más conservador con shock
 T4_SAFE_GUESS_MAX_CANDS = 10
 T4_DIRECT_PROB_THRESHOLD_FREQ = 0.60
 T4_DIRECT_PROB_THRESHOLD_UNI = 0.50
 
-# T3 direct threshold elevado en frequency para forzar probe salvo alta certeza
-T3_DIRECT_PROB_THRESHOLD_FREQ = 0.65
+T3_DIRECT_PROB_THRESHOLD_FREQ = 0.60
 T3_DIRECT_PROB_THRESHOLD_UNI = 0.55
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
-# ─── Feedback vectorizado (para entropía) ────────────────────────────────────
+# ─── Feedback vectorizado ────────────────────────────────────────────────────
 
 def _encode_words_numpy(words: Sequence[str], wl: int) -> np.ndarray:
     mat = np.zeros((len(words), wl), dtype=np.int8)
@@ -159,7 +161,7 @@ def _best_entropy_guess_vocab(candidates: Sequence[str], vocab: Sequence[str], w
     return best_g
 
 
-# ─── Probes y expected-cost (modo frequency) ────────────────────────────────
+# ─── Probes y expected-cost (solo se usan en freq) ──────────────────────────
 
 def _f_hat(n: int) -> float:
     if n <= 1:
@@ -296,8 +298,9 @@ def _choose_t5(candidates: Sequence[str], vocab: Sequence[str], wl: int, mode: s
         if found:
             return safe_g
         return _most_probable(candidates, probs)
-    return _dynamic_best(candidates, vocab, wl, probs) if mode == "frequency" else \
-        _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=300)
+    if mode == "frequency":
+        return _dynamic_best(candidates, vocab, wl, probs)
+    return _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=300)
 
 
 def _choose_t3_runtime(candidates: Sequence[str], vocab: Sequence[str], wl: int, mode: str,
@@ -320,26 +323,16 @@ def _choose_t3_runtime(candidates: Sequence[str], vocab: Sequence[str], wl: int,
 
 # ─── Clase principal ─────────────────────────────────────────────────────────
 
-class RG2_gabriel_regina(Strategy):
+class RG4_gabriel_regina(Strategy):
     _t2_tables: dict[str, dict] = {}
     _t3_tables: dict[str, dict] = {}
     _tables_loaded: set[str] = set()
 
     @property
     def name(self) -> str:
-        return "RG2_gabriel_regina"
+        return "RG4_gabriel_regina"
 
     @classmethod
-    def _load_tables(cls, wl: int, mode: str) -> None:
-        key = f"{wl}_{mode}"
-        if key in cls._tables_loaded:
-            return
-        t2_path = _REPO_ROOT / f"t2_table_{wl}_{mode}.json"
-        t3_path = _REPO_ROOT / f"t3_table_{wl}_{mode}.json"
-        cls._t2_tables[key] = json.load(open(t2_path, encoding="utf-8")) if t2_path.exists() else {}
-        cls._t3_tables[key] = json.load(open(t3_path, encoding="utf-8")) if t3_path.exists() else {}
-        cls._tables_loaded.add(key)
-
     def _load_tables(cls, wl: int, mode: str) -> None:
         key = f"{wl}_{mode}"
         if key in cls._tables_loaded:
@@ -357,9 +350,9 @@ class RG2_gabriel_regina(Strategy):
         self._probs = dict(config.probabilities)
         self._opener = OPENERS[self._wl][self._mode]
         self._max_g = config.max_guesses
-        RG2_gabriel_regina._load_tables(self._wl, self._mode)
-        self._t2 = RG2_gabriel_regina._t2_tables.get(f"{self._wl}_{self._mode}", {})
-        self._t3 = RG2_gabriel_regina._t3_tables.get(f"{self._wl}_{self._mode}", {})
+        RG4_gabriel_regina._load_tables(self._wl, self._mode)
+        self._t2 = RG4_gabriel_regina._t2_tables.get(f"{self._wl}_{self._mode}", {})
+        self._t3 = RG4_gabriel_regina._t3_tables.get(f"{self._wl}_{self._mode}", {})
 
     def guess(self, history: list[tuple[str, tuple[int, ...]]]) -> str:
         turn = len(history) + 1
@@ -381,8 +374,9 @@ class RG2_gabriel_regina(Strategy):
             g2 = self._t2.get(pat1)
             if g2:
                 return g2
-            return _dynamic_best(candidates, vocab, wl, probs) if mode == "frequency" else \
-                _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=500)
+            if mode == "frequency":
+                return _dynamic_best(candidates, vocab, wl, probs)
+            return _best_entropy_guess_vocab(candidates, vocab, wl, probs, max_pool=500)
 
         if turn == 3:
             pat1 = "".join(str(x) for x in history[0][1])
@@ -402,3 +396,4 @@ class RG2_gabriel_regina(Strategy):
             return _choose_t5(candidates, vocab, wl, mode, probs)
 
         return _most_probable(candidates, probs)
+
